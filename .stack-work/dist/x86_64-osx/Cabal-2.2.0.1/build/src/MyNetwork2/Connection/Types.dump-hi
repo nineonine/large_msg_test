@@ -1,0 +1,721 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:10.614647 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork2.Connection.Types 8044
+  interface hash: 07bd7a51ad87e959b508d7745c8e9994
+  ABI hash: 51be07c429ba8b879e575de7dcfdab50
+  export-list hash: e292743f061efa581234ae7f2191f00b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 55177a78252024a43af6aaf08d7dd14d
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork2.Connection.Types.Connection{MyNetwork2.Connection.Types.Connection connectionBackend connectionBuffer connectionID}
+  MyNetwork2.Connection.Types.ConnectionBackend{MyNetwork2.Connection.Types.ConnectionSocket MyNetwork2.Connection.Types.ConnectionStream MyNetwork2.Connection.Types.ConnectionTLS}
+  MyNetwork2.Connection.Types.ConnectionContext{MyNetwork2.Connection.Types.ConnectionContext globalCertificateStore}
+  MyNetwork2.Connection.Types.ConnectionID
+  MyNetwork2.Connection.Types.ConnectionParams{MyNetwork2.Connection.Types.ConnectionParams connectionHostname connectionPort connectionUseSecure connectionUseSocks}
+  MyNetwork2.Connection.Types.ProxySettings{MyNetwork2.Connection.Types.OtherProxy MyNetwork2.Connection.Types.SockSettingsEnvironment MyNetwork2.Connection.Types.SockSettingsSimple}
+  MyNetwork2.Connection.Types.SockSettings
+  MyNetwork2.Connection.Types.TLSSettings{MyNetwork2.Connection.Types.TLSSettings MyNetwork2.Connection.Types.TLSSettingsSimple settingDisableCertificateValidation settingDisableSession settingUseServerName}
+module dependencies:
+package dependencies: array-0.5.2.0 asn1-encoding-0.9.5
+                      asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1 base-4.11.1.0
+                      basement-0.0.8 binary-0.8.5.1 bytestring-0.10.8.2 cereal-0.5.7.0
+                      containers-0.5.11.0 cryptonite-0.25 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 filepath-1.4.2 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 integer-gmp-1.0.2.0
+                      memory-0.14.18 mtl-2.2.2 network-2.6.3.6 pem-0.2.4 stm-2.4.5.1
+                      text-1.2.3.1 time-1.8.0.2 tls-1.4.1 transformers-0.5.5.0
+                      unix-2.7.2.2 x509-1.7.4 x509-store-1.6.6 x509-validation-1.6.10
+orphans: network-2.6.3.6:Network.Socket
+         stm-2.4.5.1:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.11.1.0:Control.Concurrent.MVar ca4c584bd9db3afcc6677dea708f87d7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.IO.Handle.Types d85072f60d88fceac27e39e3cbd01092
+import  -/  base-4.11.1.0:GHC.MVar 5887537e57bb20af86721190334ddceb
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO e02b6055b5362a3eac04f83991602a53
+import  -/  bytestring-0.10.8.2:Data.ByteString 273248cbc494640ee3139e6d00588e9f
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal dc7d0c96ef45c703ca21607112260299
+import  -/  data-default-class-0.1.2.0:Data.Default.Class a39e689fe2e8c378666d66c458dc0d1f
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  network-2.6.3.6:Network.BSD 08cba029d9c982f9e22a4d01815a36a6
+import  -/  network-2.6.3.6:Network.Socket ad6c399a864f4064035be687dd16ffec
+import  -/  network-2.6.3.6:Network.Socket.Types 49e70a5740de467f1a9c2675afd92abb
+import  -/  tls-1.4.1:Network.TLS aef78de4d3c5a8a69c31a47705baa540
+import  -/  tls-1.4.1:Network.TLS.Context.Internal 57f3040297345282c0491532305c5b3f
+import  -/  tls-1.4.1:Network.TLS.Parameters 4118d33a5c81a91b3a8665e195517478
+import  -/  x509-store-1.6.6:Data.X509.CertificateStore f2fd32e71148da1d42a9271eca8deddc
+585f0f189877b23386f5d25e0852d7a0
+  $fDefaultTLSSettings ::
+    Data.Default.Class.Default MyNetwork2.Connection.Types.TLSSettings
+  DFunId
+  {- Strictness: m1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                MyNetwork2.Connection.Types.$fDefaultTLSSettings_$cdef
+                  `cast`
+                (Sym (Data.Default.Class.N:Default[0]
+                          <MyNetwork2.Connection.Types.TLSSettings>_N)) -}
+585f0f189877b23386f5d25e0852d7a0
+  $fDefaultTLSSettings_$cdef ::
+    MyNetwork2.Connection.Types.TLSSettings
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (MyNetwork2.Connection.Types.TLSSettingsSimple
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.False) -}
+585f0f189877b23386f5d25e0852d7a0
+  $fShowTLSSettings ::
+    GHC.Show.Show MyNetwork2.Connection.Types.TLSSettings
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.Types.TLSSettings
+                  MyNetwork2.Connection.Types.$fShowTLSSettings_$cshowsPrec
+                  MyNetwork2.Connection.Types.$fShowTLSSettings_$cshow
+                  MyNetwork2.Connection.Types.$fShowTLSSettings_$cshowList -}
+585f0f189877b23386f5d25e0852d7a0
+  $fShowTLSSettings1 ::
+    MyNetwork2.Connection.Types.TLSSettings -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 MyNetwork2.Connection.Types.$w$cshowsPrec 0# w) -}
+c93b2ed32fb3538582e452d7a5302909
+  $fShowTLSSettings2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+585f0f189877b23386f5d25e0852d7a0
+  $fShowTLSSettings_$cshow ::
+    MyNetwork2.Connection.Types.TLSSettings -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 MyNetwork2.Connection.Types.$fShowTLSSettings_$cshowsPrec
+                   MyNetwork2.Connection.Types.$fShowTLSSettings2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+585f0f189877b23386f5d25e0852d7a0
+  $fShowTLSSettings_$cshowList ::
+    [MyNetwork2.Connection.Types.TLSSettings] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork2.Connection.Types.TLSSettings])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork2.Connection.Types.TLSSettings
+                   MyNetwork2.Connection.Types.$fShowTLSSettings1
+                   ls
+                   s) -}
+585f0f189877b23386f5d25e0852d7a0
+  $fShowTLSSettings_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.Types.TLSSettings -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 MyNetwork2.Connection.Types.$w$cshowsPrec ww1 w1 }) -}
+d98b84d3ab6f1afdf9257e37bfae12a5
+  $tc'Connection :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12870024762109861958##
+                   1158523571412407722##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'Connection2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'Connection1) -}
+f3e0c1413b15bbf9ce4824ea555f3029
+  $tc'Connection1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3bce449fc47048c2885131be4aa079b3
+  $tc'Connection2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'Connection3) -}
+876848de3ecbdc04054cbfe812d9f63c
+  $tc'Connection3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection"#) -}
+b0af835370c58ac1679470a8c9d91b57
+  $tc'ConnectionContext :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9180961404283536560##
+                   7056338043259993733##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'ConnectionContext2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'ConnectionContext1) -}
+e5f189602aa1d167db94472b5117dcc0
+  $tc'ConnectionContext1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1967a6e31c1a06be9034651a4bc1c1f9
+  $tc'ConnectionContext2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'ConnectionContext3) -}
+ebe373a599a8a4ad5fcec59bf88c4ceb
+  $tc'ConnectionContext3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConnectionContext"#) -}
+2b5b6cdc69af28dda35a9dbfc9e622a2
+  $tc'ConnectionParams :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10203783162674171908##
+                   3263504449285799190##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'ConnectionParams2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'ConnectionParams1) -}
+871c695d29b4bb815b09cb4887c16395
+  $tc'ConnectionParams1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bb28eeb6e5dd29d795adbb9f9303f99b
+  $tc'ConnectionParams2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'ConnectionParams3) -}
+2a159419309b3976dd16ff8ced04f3c5
+  $tc'ConnectionParams3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConnectionParams"#) -}
+69550dc3ae486f21cabe90c5b50c3255
+  $tc'ConnectionSocket :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3871144390608052227##
+                   15337553252120541739##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'ConnectionSocket2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'ConnectionSocket1) -}
+f6f1867c5f93395d04434cdaa0e501ed
+  $tc'ConnectionSocket1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1494907e1f6e15132b7a6a9a671488e1
+  $tc'ConnectionSocket2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'ConnectionSocket3) -}
+42f3f7e3b421e11c48c0b4c065bfb569
+  $tc'ConnectionSocket3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConnectionSocket"#) -}
+e873b070f61fb23eccc8bcc739d17676
+  $tc'ConnectionStream :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17733743865096131814##
+                   1145106629693121196##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'ConnectionStream2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'ConnectionStream1) -}
+77090e32cf338726b60b912468a3692d
+  $tc'ConnectionStream1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7701e374a0041bc9bd3d39e0e4faad1d
+  $tc'ConnectionStream2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'ConnectionStream3) -}
+7a30c186b0362aeff2003f2fb04a4569
+  $tc'ConnectionStream3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConnectionStream"#) -}
+d0deab07e0fdd74b53bab4c4d9b94071
+  $tc'ConnectionTLS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   564153734373414415##
+                   11256722925354118899##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'ConnectionTLS2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'ConnectionTLS1) -}
+ac26564f59911688d2ee12f09ca32d49
+  $tc'ConnectionTLS1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+31f8292900d9a2e2c05f7ac3829f057c
+  $tc'ConnectionTLS2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'ConnectionTLS3) -}
+1214a100ace7f9e14bc485942d79644f
+  $tc'ConnectionTLS3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ConnectionTLS"#) -}
+78753e8d54d401b56aebdc931408d523
+  $tc'OtherProxy :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9567974878835183648##
+                   16975861360919981887##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'OtherProxy2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'OtherProxy1) -}
+f88c79aa868b02265c4ffbd0bd0fc323
+  $tc'OtherProxy1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1c556b20627a18d7afbe8c37a278ce4d
+  $tc'OtherProxy2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'OtherProxy3) -}
+8f1b8813945f1a370b0a945e8eb53136
+  $tc'OtherProxy3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'OtherProxy"#) -}
+d0c243677f9c641fc84474dc8c5cb8cd
+  $tc'SockSettingsEnvironment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9501630712852127179##
+                   9301139019810975700##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'SockSettingsEnvironment2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'SockSettingsEnvironment1) -}
+1dbc3291b8cc7f1c024ccdf896cb6644
+  $tc'SockSettingsEnvironment1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9f029c59975ccd309e62814bc9e102b2
+  $tc'SockSettingsEnvironment2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'SockSettingsEnvironment3) -}
+aff0f23fef10e77c6e8342fda037f937
+  $tc'SockSettingsEnvironment3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SockSettingsEnvironment"#) -}
+d512208177f35dee8f012bd3d004c922
+  $tc'SockSettingsSimple :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5592352932239549870##
+                   6424651653783097629##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'SockSettingsSimple1
+                   0#
+                   MyNetwork2.Connection.Types.$tc'OtherProxy1) -}
+2ce25069ccde5a67aab6d56d293367db
+  $tc'SockSettingsSimple1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'SockSettingsSimple2) -}
+135451dfbf58fecd718568d80714a97c
+  $tc'SockSettingsSimple2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SockSettingsSimple"#) -}
+1483edd955ed68ae8a902fb4c6604d49
+  $tc'TLSSettings :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10786064769076097371##
+                   3720835750502932432##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'TLSSettings2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'TLSSettings1) -}
+48ac3698769a7e6104603583549a4bc3
+  $tc'TLSSettings1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ef45d688d173b06cf28fd7b3e7a06956
+  $tc'TLSSettings2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'TLSSettings3) -}
+206f37b39411afb6d0ceb4146e0d8e58
+  $tc'TLSSettings3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TLSSettings"#) -}
+bb539a0dc5567d244fd935f77cbc50c5
+  $tc'TLSSettingsSimple :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9271664561465330527##
+                   12537441938985934743##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tc'TLSSettingsSimple2
+                   0#
+                   MyNetwork2.Connection.Types.$tc'TLSSettingsSimple1) -}
+df840f1005dbf7a4abf5db9dac618903
+  $tc'TLSSettingsSimple1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a471317d5e978e0a1d6e082ead2526eb
+  $tc'TLSSettingsSimple2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tc'TLSSettingsSimple3) -}
+9eb8928fe6259b232f01d26d07af1bef
+  $tc'TLSSettingsSimple3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TLSSettingsSimple"#) -}
+08ab1a83ea1a4d2bdca8aaaff4896cea
+  $tcConnection :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15292617186960764317##
+                   18334405005363719221##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcConnection1
+                   0#
+                   GHC.Types.krep$*) -}
+a96a3d1cc320d26797d8ad968ff8fd92
+  $tcConnection1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcConnection2) -}
+0825b0019f9d2bae7627cc8ea0ab7506
+  $tcConnection2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Connection"#) -}
+f82b1909a8b86c092913f0f1c9bb6e73
+  $tcConnectionBackend :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3564643110906265235##
+                   11740841471852136361##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcConnectionBackend1
+                   0#
+                   GHC.Types.krep$*) -}
+5fad1a5283551b252b2e31fbc486976e
+  $tcConnectionBackend1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcConnectionBackend2) -}
+64243640dd8c083eb74a609e2dd89f74
+  $tcConnectionBackend2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ConnectionBackend"#) -}
+0c89e5cc569d80e4c8b0f0efd7b76d91
+  $tcConnectionContext :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5546482352999558167##
+                   5871210561824884526##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcConnectionContext1
+                   0#
+                   GHC.Types.krep$*) -}
+f1fe5d12e10e89fcca5f084f8e6525d0
+  $tcConnectionContext1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcConnectionContext2) -}
+e82599fff44add54b6356e16f8c4155a
+  $tcConnectionContext2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ConnectionContext"#) -}
+9acc9e8b18b72281dda27daceeeb6657
+  $tcConnectionParams :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4729763060815241131##
+                   1028842123094607854##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcConnectionParams1
+                   0#
+                   GHC.Types.krep$*) -}
+0ee54085623ee199266938a07f3cd8a8
+  $tcConnectionParams1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcConnectionParams2) -}
+0c47364c5acbc1eb0c11d96bd66e8fe8
+  $tcConnectionParams2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ConnectionParams"#) -}
+c81d19ad67b5ef0c26fef8867c2b0386
+  $tcProxySettings :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17792524412450948151##
+                   8529470763721438513##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcProxySettings1
+                   0#
+                   GHC.Types.krep$*) -}
+848cd14118f09f4ba6e9deb6a62e8b4c
+  $tcProxySettings1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcProxySettings2) -}
+269b2add2baa61e4499498d8af70f685
+  $tcProxySettings2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ProxySettings"#) -}
+dae76a9580347bd86f82d0d6a0675cd0
+  $tcTLSSettings :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7370567592252157363##
+                   10095915930329536572##
+                   MyNetwork2.Connection.Types.$trModule
+                   MyNetwork2.Connection.Types.$tcTLSSettings1
+                   0#
+                   GHC.Types.krep$*) -}
+e559cc0d933ac6f792f28efd977aea90
+  $tcTLSSettings1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$tcTLSSettings2) -}
+9d83cc073d063669f1720c1df98a385e
+  $tcTLSSettings2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TLSSettings"#) -}
+a50f166f935c11d09cfe8bb780f9ba16
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork2.Connection.Types.$trModule3
+                   MyNetwork2.Connection.Types.$trModule1) -}
+a02db96eda4ed6ea65b8dd4baf1d058c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$trModule2) -}
+c6b476e59820c0e4f73f7a9b989a6fb9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork2.Connection.Types"#) -}
+f4c1053c420348a0d9d41d400bd6dbff
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.Types.$trModule4) -}
+3c832fe1118330cb51aa273b928ff333
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+585f0f189877b23386f5d25e0852d7a0
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> MyNetwork2.Connection.Types.TLSSettings -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0] -}
+29e500bb503325b5eb7aca16d4a5c49c
+  data Connection
+    = Connection {connectionBackend :: GHC.MVar.MVar
+                                         MyNetwork2.Connection.Types.ConnectionBackend,
+                  connectionBuffer :: GHC.MVar.MVar
+                                        (GHC.Base.Maybe Data.ByteString.Internal.ByteString),
+                  connectionID :: MyNetwork2.Connection.Types.ConnectionID}
+14f48cf87613a93d892ec1d6fd9db640
+  data ConnectionBackend
+    = ConnectionStream GHC.IO.Handle.Types.Handle
+    | ConnectionSocket Network.Socket.Types.Socket
+    | ConnectionTLS Network.TLS.Context.Internal.Context
+c2870f146f4c03df53a15112a4925c14
+  data ConnectionContext
+    = ConnectionContext {globalCertificateStore :: !Data.X509.CertificateStore.CertificateStore}
+a088fdd0b82e81da7647a1161da02977
+  type ConnectionID =
+    (Network.Socket.HostName, Network.Socket.Types.PortNumber)
+6fde380bb0b00d4931a98ab1ff5988f4
+  data ConnectionParams
+    = ConnectionParams {connectionHostname :: Network.Socket.HostName,
+                        connectionPort :: Network.Socket.Types.PortNumber,
+                        connectionUseSecure :: GHC.Base.Maybe
+                                                 MyNetwork2.Connection.Types.TLSSettings,
+                        connectionUseSocks :: GHC.Base.Maybe
+                                                MyNetwork2.Connection.Types.ProxySettings}
+4502ede1c3a9b61bec2199271d54aa3b
+  data ProxySettings
+    = SockSettingsSimple Network.Socket.HostName
+                         Network.Socket.Types.PortNumber
+    | SockSettingsEnvironment (GHC.Base.Maybe GHC.Base.String)
+    | OtherProxy Network.Socket.HostName
+                 Network.Socket.Types.PortNumber
+9c278226cb87949b452a84379ad6ffef
+  type SockSettings = MyNetwork2.Connection.Types.ProxySettings
+585f0f189877b23386f5d25e0852d7a0
+  data TLSSettings
+    = TLSSettingsSimple {settingDisableCertificateValidation :: GHC.Types.Bool,
+                         settingDisableSession :: GHC.Types.Bool,
+                         settingUseServerName :: GHC.Types.Bool}
+    | TLSSettings Network.TLS.Parameters.ClientParams
+29e500bb503325b5eb7aca16d4a5c49c
+  connectionBackend ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.MVar.MVar MyNetwork2.Connection.Types.ConnectionBackend
+  RecSel Left MyNetwork2.Connection.Types.Connection
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.Connection) ->
+                 case ds of wild { MyNetwork2.Connection.Types.Connection ds1 ds2 ds3 ->
+                 ds1 }) -}
+29e500bb503325b5eb7aca16d4a5c49c
+  connectionBuffer ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.MVar.MVar
+         (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+  RecSel Left MyNetwork2.Connection.Types.Connection
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.Connection) ->
+                 case ds of wild { MyNetwork2.Connection.Types.Connection ds1 ds2 ds3 ->
+                 ds2 }) -}
+6fde380bb0b00d4931a98ab1ff5988f4
+  connectionHostname ::
+    MyNetwork2.Connection.Types.ConnectionParams
+    -> Network.Socket.HostName
+  RecSel Left MyNetwork2.Connection.Types.ConnectionParams
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.ConnectionParams) ->
+                 case ds of wild { MyNetwork2.Connection.Types.ConnectionParams ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+29e500bb503325b5eb7aca16d4a5c49c
+  connectionID ::
+    MyNetwork2.Connection.Types.Connection
+    -> MyNetwork2.Connection.Types.ConnectionID
+  RecSel Left MyNetwork2.Connection.Types.Connection
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.Connection) ->
+                 case ds of wild { MyNetwork2.Connection.Types.Connection ds1 ds2 ds3 ->
+                 ds3 }) -}
+6fde380bb0b00d4931a98ab1ff5988f4
+  connectionPort ::
+    MyNetwork2.Connection.Types.ConnectionParams
+    -> Network.Socket.Types.PortNumber
+  RecSel Left MyNetwork2.Connection.Types.ConnectionParams
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.ConnectionParams) ->
+                 case ds of wild { MyNetwork2.Connection.Types.ConnectionParams ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+6fde380bb0b00d4931a98ab1ff5988f4
+  connectionUseSecure ::
+    MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings
+  RecSel Left MyNetwork2.Connection.Types.ConnectionParams
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.ConnectionParams) ->
+                 case ds of wild { MyNetwork2.Connection.Types.ConnectionParams ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+6fde380bb0b00d4931a98ab1ff5988f4
+  connectionUseSocks ::
+    MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.ProxySettings
+  RecSel Left MyNetwork2.Connection.Types.ConnectionParams
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.ConnectionParams) ->
+                 case ds of wild { MyNetwork2.Connection.Types.ConnectionParams ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+c2870f146f4c03df53a15112a4925c14
+  globalCertificateStore ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> Data.X509.CertificateStore.CertificateStore
+  RecSel Left MyNetwork2.Connection.Types.ConnectionContext
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.ConnectionContext) ->
+                 case ds of wild { MyNetwork2.Connection.Types.ConnectionContext ds1 ->
+                 ds1 }) -}
+585f0f189877b23386f5d25e0852d7a0
+  settingDisableCertificateValidation ::
+    MyNetwork2.Connection.Types.TLSSettings -> GHC.Types.Bool
+  RecSel Left MyNetwork2.Connection.Types.TLSSettings
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 case ds of wild {
+                   MyNetwork2.Connection.Types.TLSSettingsSimple ds1 ds2 ds3 -> ds1
+                   MyNetwork2.Connection.Types.TLSSettings ipv
+                   -> MyNetwork2.Connection.Types.settingDisableCertificateValidation1 }) -}
+7fce3d400e29bf41c1e1c0c07dec3aa8
+  settingDisableCertificateValidation1 :: GHC.Types.Bool
+  {- Strictness: x -}
+585f0f189877b23386f5d25e0852d7a0
+  settingDisableSession ::
+    MyNetwork2.Connection.Types.TLSSettings -> GHC.Types.Bool
+  RecSel Left MyNetwork2.Connection.Types.TLSSettings
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 case ds of wild {
+                   MyNetwork2.Connection.Types.TLSSettingsSimple ds1 ds2 ds3 -> ds2
+                   MyNetwork2.Connection.Types.TLSSettings ipv
+                   -> MyNetwork2.Connection.Types.settingDisableSession1 }) -}
+2aad213f6b368746a1a5e89091786d9e
+  settingDisableSession1 :: GHC.Types.Bool
+  {- Strictness: x -}
+585f0f189877b23386f5d25e0852d7a0
+  settingUseServerName ::
+    MyNetwork2.Connection.Types.TLSSettings -> GHC.Types.Bool
+  RecSel Left MyNetwork2.Connection.Types.TLSSettings
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 case ds of wild {
+                   MyNetwork2.Connection.Types.TLSSettingsSimple ds1 ds2 ds3 -> ds3
+                   MyNetwork2.Connection.Types.TLSSettings ipv
+                   -> MyNetwork2.Connection.Types.settingUseServerName1 }) -}
+e01f0f4f0f8ff907289e18a1a2b97c75
+  settingUseServerName1 :: GHC.Types.Bool
+  {- Strictness: x -}
+instance Data.Default.Class.Default [MyNetwork2.Connection.Types.TLSSettings]
+  = MyNetwork2.Connection.Types.$fDefaultTLSSettings
+instance GHC.Show.Show [MyNetwork2.Connection.Types.TLSSettings]
+  = MyNetwork2.Connection.Types.$fShowTLSSettings
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,823 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:01.757212 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork.AMQP.Helpers 8044
+  interface hash: a0aa4c6b3dbb6b008f69999ed4bda8b3
+  ABI hash: 043a0b653c74173dd57f4e43719a3330
+  export-list hash: 78161c7b323a61f393bba5255c5e718b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7094489099c0169cd2963959018751c5
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork.AMQP.Helpers.chooseMin
+  MyNetwork.AMQP.Helpers.closeLock
+  MyNetwork.AMQP.Helpers.forkFinally'
+  MyNetwork.AMQP.Helpers.getTimestamp
+  MyNetwork.AMQP.Helpers.killLock
+  MyNetwork.AMQP.Helpers.newLock
+  MyNetwork.AMQP.Helpers.openLock
+  MyNetwork.AMQP.Helpers.scheduleAtFixedRate
+  MyNetwork.AMQP.Helpers.toLazy
+  MyNetwork.AMQP.Helpers.toStrict
+  MyNetwork.AMQP.Helpers.waitLock
+  MyNetwork.AMQP.Helpers.Lock{MyNetwork.AMQP.Helpers.Lock}
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0*
+                      bytestring-0.10.8.2* clock-0.7.2 deepseq-1.4.3.0 ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception clock-0.7.2:System.Clock
+import  -/  base-4.11.1.0:Control.Concurrent ef40f102578b6e7296c2a2358b631ee7
+import  -/  base-4.11.1.0:Control.Concurrent.MVar ca4c584bd9db3afcc6677dea708f87d7
+import  -/  base-4.11.1.0:Control.Exception 3d8e6cda20877f889f07bc7c0f5cac36
+import  -/  base-4.11.1.0:Control.Exception.Base 6b3335161fe9c47efeac02d92d6dc212
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Int f5d427cd3860d8572d1a4d519e117c0b
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Conc.IO 6a65980161bb76863e5722eb33606919
+import  -/  base-4.11.1.0:GHC.Conc.Sync 0f06fc4d7792ea35160385e7175366ba
+import  -/  base-4.11.1.0:GHC.Exception e1b7fe1dbd1d0e3fb049e1163c71a5e8
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.Int dbb9fa419302fe275e335328af678cb6
+import  -/  base-4.11.1.0:GHC.MVar 5887537e57bb20af86721190334ddceb
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  bytestring-0.10.8.2:Data.ByteString 273248cbc494640ee3139e6d00588e9f
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 801fee6d15f5471654463d991475364a
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal dc7d0c96ef45c703ca21607112260299
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 9b14d99e53cf2d30c74c7ddcd59ad2e2
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Char8 5c0364969ac6eb9d0c5aa887f86b8c66
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Internal af245ead1f52eca50149d040b0b86693
+import  -/  clock-0.7.2:System.Clock 3779e1d0a14c552fbdae41485108e7a0
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+65a93935b939fdf80d1f7113998569c6
+  $tc'Lock :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2385679745281627337##
+                   16316086183607323340##
+                   MyNetwork.AMQP.Helpers.$trModule
+                   MyNetwork.AMQP.Helpers.$tc'Lock2
+                   0#
+                   MyNetwork.AMQP.Helpers.$tc'Lock1) -}
+19ed12e005557d0de657f8ad2393e903
+  $tc'Lock1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+845f4f89bfa1c3f38d00cdf08df32da4
+  $tc'Lock2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Helpers.$tc'Lock3) -}
+bbaef63240bf1e62d3423bbd3b57a3bb
+  $tc'Lock3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Lock"#) -}
+7e2c0ee7c29b2c280c2851420b981b69
+  $tcLock :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4935846098719664132##
+                   17843630446384407127##
+                   MyNetwork.AMQP.Helpers.$trModule
+                   MyNetwork.AMQP.Helpers.$tcLock1
+                   0#
+                   GHC.Types.krep$*) -}
+445fad45f08fa83cd50fd9c52483444b
+  $tcLock1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Helpers.$tcLock2) -}
+240a918774ba43fa61089d3156e2afb3
+  $tcLock2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lock"#) -}
+a62d2ba00287df497256d3592676dbe5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork.AMQP.Helpers.$trModule3
+                   MyNetwork.AMQP.Helpers.$trModule1) -}
+910befd8470099fe1bae90fa9511a41b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Helpers.$trModule2) -}
+4e00bc9bec130eab7aa5503e49921796
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork.AMQP.Helpers"#) -}
+a23f78013de214d9f868341629a15035
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Helpers.$trModule4) -}
+41bc1e3e207d805b6c01ee4013980487
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+98112d28ea09af787719f1914fae9fed
+  $wcloseLock ::
+    GHC.Prim.MVar# GHC.Prim.RealWorld GHC.Types.Bool
+    -> GHC.MVar.MVar ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><L,1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.MVar#
+                            GHC.Prim.RealWorld GHC.Types.Bool)
+                   (ww1 :: GHC.MVar.MVar ())
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# w of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case GHC.Prim.takeMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case ipv3 of wild {
+                                   GHC.Types.False
+                                   -> case ww1 of wild1 { GHC.MVar.MVar m ->
+                                      case GHC.Prim.tryTakeMVar#
+                                             @ GHC.Prim.RealWorld
+                                             @ ()
+                                             m
+                                             eta of ds4 { (#,,#) ipv4 ipv5 ipv6 ->
+                                      (# ipv4, GHC.Tuple.() #) } }
+                                   GHC.Types.True -> (# eta, GHC.Tuple.() #) }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.putMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     ipv3
+                                     s1 of s2# { DEFAULT ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 s2# })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv3
+                             ipv4 of s2# { DEFAULT ->
+                      (# s2#, ipv5 #) } } }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ ()
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.takeMVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Bool
+                                ww
+                                s1 of ds2 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.catch#
+                                @ ()
+                                @ GHC.Exception.SomeException
+                                (GHC.Prim.unmaskAsyncExceptions#
+                                   @ ()
+                                   (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case ipv3 of wild {
+                                      GHC.Types.False
+                                      -> case ww1 of wild1 { GHC.MVar.MVar m ->
+                                         case GHC.Prim.tryTakeMVar#
+                                                @ GHC.Prim.RealWorld
+                                                @ ()
+                                                m
+                                                eta of ds4 { (#,,#) ipv4 ipv5 ipv6 ->
+                                         (# ipv4, GHC.Tuple.() #) } }
+                                      GHC.Types.True -> (# eta, GHC.Tuple.() #) }))
+                                (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                   (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.putMVar#
+                                        @ GHC.Prim.RealWorld
+                                        @ GHC.Types.Bool
+                                        ww
+                                        ipv3
+                                        s2 of s2# { DEFAULT ->
+                                 GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 s2# })
+                                ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case GHC.Prim.putMVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Bool
+                                ww
+                                ipv3
+                                ipv4 of s2# { DEFAULT ->
+                         (# s2#, ipv5 #) } } })
+                        ipv
+                   1#
+                   -> case GHC.Prim.takeMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case ipv3 of wild {
+                                   GHC.Types.False
+                                   -> case ww1 of wild1 { GHC.MVar.MVar m ->
+                                      case GHC.Prim.tryTakeMVar#
+                                             @ GHC.Prim.RealWorld
+                                             @ ()
+                                             m
+                                             eta of ds4 { (#,,#) ipv4 ipv5 ipv6 ->
+                                      (# ipv4, GHC.Tuple.() #) } }
+                                   GHC.Types.True -> (# eta, GHC.Tuple.() #) }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.putMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     ipv3
+                                     s1 of s2# { DEFAULT ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 s2# })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv3
+                             ipv4 of s2# { DEFAULT ->
+                      (# s2#, ipv5 #) } } } } }) -}
+91e7507951bc9a2724da33eeb703218e
+  $wkillLock ::
+    GHC.Prim.MVar# GHC.Prim.RealWorld GHC.Types.Bool
+    -> GHC.Prim.MVar# GHC.Prim.RealWorld ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.MVar#
+                            GHC.Prim.RealWorld GHC.Types.Bool)
+                   (ww1 :: GHC.Prim.MVar# GHC.Prim.RealWorld ())
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# w of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case GHC.Prim.takeMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ GHC.Types.Bool
+                             @ GHC.Exception.SomeException
+                             MyNetwork.AMQP.Helpers.killLock5
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.putMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     ipv3
+                                     s1 of s2# { DEFAULT ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ GHC.Types.Bool
+                                e1
+                                s2# })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv5
+                             ipv4 of s2# { DEFAULT ->
+                      case GHC.Prim.tryPutMVar#
+                             @ GHC.Prim.RealWorld
+                             @ ()
+                             ww1
+                             GHC.Tuple.()
+                             s2# of ds4 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of ds5 {
+                        DEFAULT -> (# ipv7, GHC.Types.True #)
+                        0# -> (# ipv7, GHC.Types.False #) } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.takeMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     s1 of ds2 { (#,#) ipv2 ipv3 ->
+                              case GHC.Prim.catch#
+                                     @ GHC.Types.Bool
+                                     @ GHC.Exception.SomeException
+                                     MyNetwork.AMQP.Helpers.killLock4
+                                     (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                        (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                      case GHC.Prim.putMVar#
+                                             @ GHC.Prim.RealWorld
+                                             @ GHC.Types.Bool
+                                             ww
+                                             ipv3
+                                             s2 of s2# { DEFAULT ->
+                                      GHC.Prim.raiseIO#
+                                        @ GHC.Exception.SomeException
+                                        @ GHC.Types.Bool
+                                        e1
+                                        s2# })
+                                     ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                              case GHC.Prim.putMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     ipv5
+                                     ipv4 of s2# { DEFAULT ->
+                              (# s2#, GHC.Tuple.() #) } } })
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.tryPutMVar#
+                             @ GHC.Prim.RealWorld
+                             @ ()
+                             ww1
+                             GHC.Tuple.()
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case ipv5 of ds4 {
+                        DEFAULT -> (# ipv4, GHC.Types.True #)
+                        0# -> (# ipv4, GHC.Types.False #) } } }
+                   1#
+                   -> case GHC.Prim.takeMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ GHC.Types.Bool
+                             @ GHC.Exception.SomeException
+                             MyNetwork.AMQP.Helpers.killLock2
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.putMVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Bool
+                                     ww
+                                     ipv3
+                                     s1 of s2# { DEFAULT ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ GHC.Types.Bool
+                                e1
+                                s2# })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ww
+                             ipv5
+                             ipv4 of s2# { DEFAULT ->
+                      case GHC.Prim.tryPutMVar#
+                             @ GHC.Prim.RealWorld
+                             @ ()
+                             ww1
+                             GHC.Tuple.()
+                             s2# of ds4 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of ds5 {
+                        DEFAULT -> (# ipv7, GHC.Types.True #)
+                        0# -> (# ipv7, GHC.Types.False #) } } } } } } }) -}
+6996dde85bc21853d2841248fbf6e16a
+  data Lock = Lock (GHC.MVar.MVar GHC.Types.Bool) (GHC.MVar.MVar ())
+9b79d7dbf6ab3a8aed135d94e2fd2a3c
+  chooseMin :: GHC.Classes.Ord a => a -> GHC.Base.Maybe a -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,A,1*C1(C1(U)))><L,U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (a1 :: a)
+                   (ds :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> a1
+                   GHC.Base.Just b -> GHC.Classes.min @ a $dOrd a1 b }) -}
+08d2fea49fdc7c0898a88092e633fe15
+  closeLock :: MyNetwork.AMQP.Helpers.Lock -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.closeLock1
+                  `cast`
+                (<MyNetwork.AMQP.Helpers.Lock>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c3bdf5428e27872ec47dfb4f38831ed2
+  closeLock1 ::
+    MyNetwork.AMQP.Helpers.Lock
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: MyNetwork.AMQP.Helpers.Lock)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork.AMQP.Helpers.Lock ww1 ww2 ->
+                 case ww1 of ww3 { GHC.MVar.MVar ww4 ->
+                 MyNetwork.AMQP.Helpers.$wcloseLock ww4 ww2 w1 } }) -}
+77b5b3f4a0b9d1652e4559fa6003066a
+  forkFinally' ::
+    GHC.Types.IO a
+    -> (Data.Either.Either GHC.Exception.SomeException a
+        -> GHC.Types.IO ())
+    -> GHC.Types.IO GHC.Conc.Sync.ThreadId
+  {- Arity: 3, Strictness: <L,C(U)><L,C(C1(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.forkFinally'1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Types.IO a>_R
+                 ->_R <Data.Either.Either GHC.Exception.SomeException a
+                       -> GHC.Types.IO ()>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Conc.Sync.ThreadId>_R)) -}
+97926cc0e4e68ce72dc2e32537053db7
+  forkFinally'1 ::
+    GHC.Types.IO a
+    -> (Data.Either.Either GHC.Exception.SomeException a
+        -> GHC.Types.IO ())
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Conc.Sync.ThreadId #)
+  {- Arity: 3, Strictness: <L,C(U)><L,C(C1(U))><S,U>,
+     Unfolding: (\ @ a
+                   (action :: GHC.Types.IO a)
+                   (and_then :: Data.Either.Either GHC.Exception.SomeException a
+                                -> GHC.Types.IO ())
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# eta of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case GHC.Prim.fork#
+                             @ (GHC.Types.IO ())
+                             (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                              GHC.Prim.catch#
+                                @ ()
+                                @ GHC.Exception.SomeException
+                                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.catch#
+                                        @ (Data.Either.Either GHC.Exception.SomeException a)
+                                        @ GHC.Exception.SomeException
+                                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                         case GHC.Prim.maskAsyncExceptions#
+                                                @ a
+                                                action `cast` (GHC.Types.N:IO[0] <a>_R)
+                                                s1 of ds2 { (#,#) ipv2 ipv3 ->
+                                         (# ipv2,
+                                            Data.Either.Right
+                                              @ GHC.Exception.SomeException
+                                              @ a
+                                              ipv3 #) })
+                                        (MyNetwork.AMQP.Helpers.forkFinally'2 @ a)
+                                        s of ds2 { (#,#) ipv2 ipv3 ->
+                                 (and_then ipv3) `cast` (GHC.Types.N:IO[0] <()>_R) ipv2 })
+                                GHC.Conc.Sync.forkIO2
+                                eta1)
+                               `cast`
+                             (Sym (GHC.Types.N:IO[0] <()>_R))
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      (# ipv2, GHC.Conc.Sync.ThreadId ipv3 #) }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ GHC.Conc.Sync.ThreadId
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.fork#
+                                @ (GHC.Types.IO ())
+                                (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                 GHC.Prim.catch#
+                                   @ ()
+                                   @ GHC.Exception.SomeException
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case GHC.Prim.catch#
+                                           @ (Data.Either.Either GHC.Exception.SomeException a)
+                                           @ GHC.Exception.SomeException
+                                           (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                            case GHC.Prim.unmaskAsyncExceptions#
+                                                   @ a
+                                                   action `cast` (GHC.Types.N:IO[0] <a>_R)
+                                                   s2 of ds2 { (#,#) ipv2 ipv3 ->
+                                            (# ipv2,
+                                               Data.Either.Right
+                                                 @ GHC.Exception.SomeException
+                                                 @ a
+                                                 ipv3 #) })
+                                           (MyNetwork.AMQP.Helpers.forkFinally'2 @ a)
+                                           s1 of ds2 { (#,#) ipv2 ipv3 ->
+                                    (and_then ipv3) `cast` (GHC.Types.N:IO[0] <()>_R) ipv2 })
+                                   GHC.Conc.Sync.forkIO2
+                                   eta1)
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <()>_R))
+                                s of ds2 { (#,#) ipv2 ipv3 ->
+                         (# ipv2, GHC.Conc.Sync.ThreadId ipv3 #) })
+                        ipv
+                   1#
+                   -> case GHC.Prim.fork#
+                             @ (GHC.Types.IO ())
+                             (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                              GHC.Prim.catch#
+                                @ ()
+                                @ GHC.Exception.SomeException
+                                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.catch#
+                                        @ (Data.Either.Either GHC.Exception.SomeException a)
+                                        @ GHC.Exception.SomeException
+                                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                         case GHC.Prim.maskUninterruptible#
+                                                @ a
+                                                action `cast` (GHC.Types.N:IO[0] <a>_R)
+                                                s1 of ds2 { (#,#) ipv2 ipv3 ->
+                                         (# ipv2,
+                                            Data.Either.Right
+                                              @ GHC.Exception.SomeException
+                                              @ a
+                                              ipv3 #) })
+                                        (MyNetwork.AMQP.Helpers.forkFinally'2 @ a)
+                                        s of ds2 { (#,#) ipv2 ipv3 ->
+                                 (and_then ipv3) `cast` (GHC.Types.N:IO[0] <()>_R) ipv2 })
+                                GHC.Conc.Sync.forkIO2
+                                eta1)
+                               `cast`
+                             (Sym (GHC.Types.N:IO[0] <()>_R))
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      (# ipv2, GHC.Conc.Sync.ThreadId ipv3 #) } } }) -}
+eb56091dec5062b2869f8cf1488e18a5
+  forkFinally'2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either GHC.Exception.SomeException a #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta1,
+                    Data.Either.Left @ GHC.Exception.SomeException @ a e1 #)) -}
+3b1e56ba5641809fc2565c58cfad5ca9
+  getTimestamp :: GHC.Types.IO GHC.Int.Int64
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.getTimestamp1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Int.Int64>_R)) -}
+ba2b6613e5ccc1871fd581eb9f095310
+  getTimestamp1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Int.Int64 #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Clock.$w$j1 0# s of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    case ipv1 of wild { System.Clock.TimeSpec dt dt1 ->
+                    case GHC.Classes.divInt# dt1 1000# of ww4 { DEFAULT ->
+                    GHC.Int.I64#
+                      (GHC.Prim.+#
+                         (GHC.Prim.*# (GHC.Prim.*# dt 1000#) 1000#)
+                         ww4) } } #) }) -}
+0cd73d703edad87df7982f1105ef3079
+  killLock ::
+    MyNetwork.AMQP.Helpers.Lock -> GHC.Types.IO GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.killLock1
+                  `cast`
+                (<MyNetwork.AMQP.Helpers.Lock>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
+b869c152e03719e715282ffb2a98eb9f
+  killLock1 ::
+    MyNetwork.AMQP.Helpers.Lock
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: MyNetwork.AMQP.Helpers.Lock)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork.AMQP.Helpers.Lock ww1 ww2 ->
+                 case ww1 of ww3 { GHC.MVar.MVar ww4 ->
+                 case ww2 of ww5 { GHC.MVar.MVar ww6 ->
+                 MyNetwork.AMQP.Helpers.$wkillLock ww4 ww6 w1 } } }) -}
+6f0328d3634eec6c6952a7b095c025f1
+  killLock2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Prim.maskUninterruptible#
+                   @ GHC.Types.Bool
+                   MyNetwork.AMQP.Helpers.killLock3) -}
+32761203bfa75f2622c42329e45a7bd2
+  killLock3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, GHC.Types.True #)) -}
+4b44a3b48d9f5c6583bc26475289cfdb
+  killLock4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Prim.unmaskAsyncExceptions#
+                   @ GHC.Types.Bool
+                   MyNetwork.AMQP.Helpers.killLock3) -}
+d0f606ff91744f26fc5e9cbfdec0fbad
+  killLock5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Prim.maskAsyncExceptions#
+                   @ GHC.Types.Bool
+                   MyNetwork.AMQP.Helpers.killLock3) -}
+376bdd660cb73f3b0061a75dce76fb43
+  newLock :: GHC.Types.IO MyNetwork.AMQP.Helpers.Lock
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.newLock1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <MyNetwork.AMQP.Helpers.Lock>_R)) -}
+cecdda1ffdd25cb6be066d05ebd4866f
+  newLock1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork.AMQP.Helpers.Lock #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newMVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Bool
+                        s of ds { (#,#) ipv ipv1 ->
+                 case GHC.Prim.putMVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Bool
+                        ipv1
+                        GHC.Types.False
+                        ipv of s2# { DEFAULT ->
+                 case GHC.Prim.newMVar#
+                        @ GHC.Prim.RealWorld
+                        @ ()
+                        s2# of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.putMVar#
+                        @ GHC.Prim.RealWorld
+                        @ ()
+                        ipv3
+                        GHC.Tuple.()
+                        ipv2 of s2#1 { DEFAULT ->
+                 (# s2#1,
+                    MyNetwork.AMQP.Helpers.Lock
+                      (GHC.MVar.MVar @ GHC.Types.Bool ipv1)
+                      (GHC.MVar.MVar @ () ipv3) #) } } } }) -}
+83fabccc8c599ee31f3e50cddc860c6f
+  openLock :: MyNetwork.AMQP.Helpers.Lock -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)),1*U(A,1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.openLock1
+                  `cast`
+                (<MyNetwork.AMQP.Helpers.Lock>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+42db0cf518b123c835a5486e4f875e9a
+  openLock1 ::
+    MyNetwork.AMQP.Helpers.Lock
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)),1*U(A,1*U(U))><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: MyNetwork.AMQP.Helpers.Lock)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds of wild { MyNetwork.AMQP.Helpers.Lock ds1 b ->
+                 case b of wild1 { GHC.MVar.MVar mvar# ->
+                 case GHC.Prim.tryPutMVar#
+                        @ GHC.Prim.RealWorld
+                        @ ()
+                        mvar#
+                        GHC.Tuple.()
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Tuple.() #) } } }) -}
+916efd9dfee3064c46392588aa67bab1
+  scheduleAtFixedRate ::
+    GHC.Types.Int
+    -> GHC.Types.IO () -> GHC.Types.IO GHC.Conc.Sync.ThreadId
+  {- Arity: 3, Strictness: <L,U(U)><L,C(U(U,A))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.scheduleAtFixedRate1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R <GHC.Types.IO ()>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Conc.Sync.ThreadId>_R)) -}
+765580cb2ceb5c9d656cd08b3e0285df
+  scheduleAtFixedRate1 ::
+    GHC.Types.Int
+    -> GHC.Types.IO ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Conc.Sync.ThreadId #)
+  {- Arity: 3, Strictness: <L,U(U)><L,C(U(U,A))><S,U>,
+     Unfolding: (\ (interval_µs :: GHC.Types.Int)
+                   (action :: GHC.Types.IO ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.fork#
+                        @ (GHC.Types.IO ())
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                         GHC.Prim.catch#
+                           @ ()
+                           @ GHC.Exception.SomeException
+                           (letrec {
+                              a' :: GHC.Prim.State# GHC.Prim.RealWorld
+                                    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                {- Arity: 1, Strictness: <S,U> -}
+                              = \ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case action `cast` (GHC.Types.N:IO[0] <()>_R)
+                                       s1 of ds1 { (#,#) ipv ipv1 ->
+                                case {__pkg_ccall base-4.11.1.0 GHC.Prim.State# GHC.Prim.RealWorld
+                                                                -> (# GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld,
+                                                                      GHC.Prim.Int# #)}
+                                       GHC.Prim.realWorld# of wild { (#,#) ds ds2 ->
+                                case ds2 of wild1 {
+                                  DEFAULT
+                                  -> case GHC.Event.Thread.threadDelay1
+                                            interval_µs
+                                            ipv of ds3 { (#,#) ipv2 ipv3 ->
+                                     a' ipv2 }
+                                  0#
+                                  -> case interval_µs of wild2 { GHC.Types.I# time# ->
+                                     case GHC.Prim.delay#
+                                            @ GHC.Prim.RealWorld
+                                            time#
+                                            ipv of s' { DEFAULT ->
+                                     a' s' } } } } }
+                            } in
+                            a')
+                           GHC.Conc.Sync.forkIO2
+                           eta)
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0] <()>_R))
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Conc.Sync.ThreadId ipv1 #) }) -}
+bfecb99d14db471265db20ded97ef3b8
+  toLazy ::
+    Data.ByteString.Internal.ByteString
+    -> Data.ByteString.Lazy.Internal.ByteString
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.ByteString.Internal.ByteString) ->
+                 Data.ByteString.Lazy.fromChunks_go
+                   (GHC.Types.:
+                      @ Data.ByteString.Internal.ByteString
+                      x
+                      (GHC.Types.[] @ Data.ByteString.Internal.ByteString))) -}
+a157d855f53c2b0ef64e73a86ed967f0
+  toStrict ::
+    Data.ByteString.Lazy.Internal.ByteString
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.ByteString.Lazy.Internal.ByteString) ->
+                 Data.ByteString.concat (Data.ByteString.Lazy.toChunks_go x)) -}
+ac35c6f469bc0532e2a6fa4605ab552d
+  waitLock :: MyNetwork.AMQP.Helpers.Lock -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)),1*U(A,1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Helpers.waitLock1
+                  `cast`
+                (<MyNetwork.AMQP.Helpers.Lock>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+53b0b9a4bb7619f2f9cf0b2850134903
+  waitLock1 ::
+    MyNetwork.AMQP.Helpers.Lock
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S)),1*U(A,1*U(U))><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: MyNetwork.AMQP.Helpers.Lock)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds of wild { MyNetwork.AMQP.Helpers.Lock ds1 b ->
+                 GHC.MVar.readMVar1 @ () b eta }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

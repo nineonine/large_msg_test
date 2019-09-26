@@ -1,0 +1,86 @@
+name:                largemsgtest
+version:             0.1.0.0
+github:              "githubuser/simple"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2018 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/githubuser/simple#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- binary >= 0.5
+- containers>=0.2
+- bytestring>=0.9
+- data-binary-ieee754>=0.4.2.1
+- text>=0.11.2
+- split>=0.2
+- clock >= 0.4.0.1
+- monad-control >= 0.3
+# - connection == 0.2.*
+- vector
+- stm >= 2.4.0
+- network
+- network-uri
+- deepseq
+
+- amqp
+- bytestring
+- byteable
+- containers
+- data-default-class
+- network
+- tls
+- socks
+- x509
+- x509-store
+- x509-system
+- x509-validation
+
+
+default-extensions:
+- OverloadedStrings
+#         TemplateHaskell
+#         DeriveDataTypeable
+#         DeriveGeneric
+#         RecordWildCards
+#         ScopedTypeVariables
+#         BangPatterns
+#         NamedFieldPuns
+
+library:
+  source-dirs: src
+
+executables:
+  largemsgtest-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - largemsgtest
+
+tests:
+  largemsgtest-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - largemsgtest

@@ -1,0 +1,2966 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:07.680216 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork.AMQP.Generated 8044
+  interface hash: 2d248fbe13f3140a2f13569d636e5ed2
+  ABI hash: 90da3e6fbc699ef42abc037524eddac1
+  export-list hash: d4f7fdf541b79210f3809a636b8d849c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9c4831a6e049578f2f855ee140344e7b
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork.AMQP.Generated.condGet
+  MyNetwork.AMQP.Generated.condPut
+  MyNetwork.AMQP.Generated.getBits
+  MyNetwork.AMQP.Generated.getBits'
+  MyNetwork.AMQP.Generated.getClassIDOf
+  MyNetwork.AMQP.Generated.getContentHeaderProperties
+  MyNetwork.AMQP.Generated.getPropBits
+  MyNetwork.AMQP.Generated.getPropBits'
+  MyNetwork.AMQP.Generated.putBits
+  MyNetwork.AMQP.Generated.putBits'
+  MyNetwork.AMQP.Generated.putContentHeaderProperties
+  MyNetwork.AMQP.Generated.putPropBits
+  MyNetwork.AMQP.Generated.putPropBits'
+  MyNetwork.AMQP.Generated.ContentHeaderProperties{MyNetwork.AMQP.Generated.CHBasic MyNetwork.AMQP.Generated.CHChannel MyNetwork.AMQP.Generated.CHConfirm MyNetwork.AMQP.Generated.CHConnection MyNetwork.AMQP.Generated.CHExchange MyNetwork.AMQP.Generated.CHQueue MyNetwork.AMQP.Generated.CHTx}
+  MyNetwork.AMQP.Generated.MethodPayload{MyNetwork.AMQP.Generated.Basic_ack MyNetwork.AMQP.Generated.Basic_cancel MyNetwork.AMQP.Generated.Basic_cancel_ok MyNetwork.AMQP.Generated.Basic_consume MyNetwork.AMQP.Generated.Basic_consume_ok MyNetwork.AMQP.Generated.Basic_deliver MyNetwork.AMQP.Generated.Basic_get MyNetwork.AMQP.Generated.Basic_get_empty MyNetwork.AMQP.Generated.Basic_get_ok MyNetwork.AMQP.Generated.Basic_nack MyNetwork.AMQP.Generated.Basic_publish MyNetwork.AMQP.Generated.Basic_qos MyNetwork.AMQP.Generated.Basic_qos_ok MyNetwork.AMQP.Generated.Basic_recover MyNetwork.AMQP.Generated.Basic_recover_async MyNetwork.AMQP.Generated.Basic_recover_ok MyNetwork.AMQP.Generated.Basic_reject MyNetwork.AMQP.Generated.Basic_return MyNetwork.AMQP.Generated.Channel_close MyNetwork.AMQP.Generated.Channel_close_ok MyNetwork.AMQP.Generated.Channel_flow MyNetwork.AMQP.Generated.Channel_flow_ok MyNetwork.AMQP.Generated.Channel_open MyNetwork.AMQP.Generated.Channel_open_ok MyNetwork.AMQP.Generated.Confirm_select MyNetwork.AMQP.Generated.Confirm_select_ok MyNetwork.AMQP.Generated.Connection_blocked MyNetwork.AMQP.Generated.Connection_close MyNetwork.AMQP.Generated.Connection_close_ok MyNetwork.AMQP.Generated.Connection_open MyNetwork.AMQP.Generated.Connection_open_ok MyNetwork.AMQP.Generated.Connection_secure MyNetwork.AMQP.Generated.Connection_secure_ok MyNetwork.AMQP.Generated.Connection_start MyNetwork.AMQP.Generated.Connection_start_ok MyNetwork.AMQP.Generated.Connection_tune MyNetwork.AMQP.Generated.Connection_tune_ok MyNetwork.AMQP.Generated.Connection_unblocked MyNetwork.AMQP.Generated.Exchange_bind MyNetwork.AMQP.Generated.Exchange_bind_ok MyNetwork.AMQP.Generated.Exchange_declare MyNetwork.AMQP.Generated.Exchange_declare_ok MyNetwork.AMQP.Generated.Exchange_delete MyNetwork.AMQP.Generated.Exchange_delete_ok MyNetwork.AMQP.Generated.Exchange_unbind MyNetwork.AMQP.Generated.Exchange_unbind_ok MyNetwork.AMQP.Generated.Queue_bind MyNetwork.AMQP.Generated.Queue_bind_ok MyNetwork.AMQP.Generated.Queue_declare MyNetwork.AMQP.Generated.Queue_declare_ok MyNetwork.AMQP.Generated.Queue_delete MyNetwork.AMQP.Generated.Queue_delete_ok MyNetwork.AMQP.Generated.Queue_purge MyNetwork.AMQP.Generated.Queue_purge_ok MyNetwork.AMQP.Generated.Queue_unbind MyNetwork.AMQP.Generated.Queue_unbind_ok MyNetwork.AMQP.Generated.Tx_commit MyNetwork.AMQP.Generated.Tx_commit_ok MyNetwork.AMQP.Generated.Tx_rollback MyNetwork.AMQP.Generated.Tx_rollback_ok MyNetwork.AMQP.Generated.Tx_select MyNetwork.AMQP.Generated.Tx_select_ok}
+module dependencies: MyNetwork.AMQP.Types
+package dependencies: array-0.5.2.0 base-4.11.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 data-binary-ieee754-0.4.4
+                      deepseq-1.4.3.0 ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 text-1.2.3.1
+orphans: text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         text-1.2.3.1:Data.Text
+import  -/  base-4.11.1.0:Data.Bits bbb4ac3d5246b98befe8bd31900b1c2f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:GHC.Word bc9bdf9b61a0f9352e5a1baeee5690a5
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  binary-0.8.5.1:Data.Binary 08d99786e937f906c100d31770fc35f8
+import  -/  binary-0.8.5.1:Data.Binary.Class ca30142b0b1a68ad57845f336fc35efd
+import  -/  binary-0.8.5.1:Data.Binary.Get 128c6b1e04dcd8453c5a7a652083702b
+import  -/  binary-0.8.5.1:Data.Binary.Get.Internal 1a063dbb1b51807d783806a64525f1eb
+import  -/  binary-0.8.5.1:Data.Binary.Put 46413a3745068b8c82c5993962a4bce7
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  MyNetwork.AMQP.Types b8f148f2de1f7b1663f31cc0624f4831
+  exports: 79710897a339f37e0aa0cd0013badcb8
+  Bit 21e69a202fca5cede130803a375dd47f
+  FieldTable e2dab219ac237204a5b8f05eb2c223b2
+  LongInt ac595cdb6b68e94f7f2c0d49e73bc99a
+  LongLongInt 763ed05ff03a034b2d61b6cd62071d38
+  LongString 8934302af8d2d461daa104bfea132d7b
+  Octet 0c12da92e95c9ecd7c7d5f96482f878f
+  ShortInt 15f4581b8c999bc6f1b6893509e8bfe7
+  ShortString 38cae7775dddc9d1315af9405a40993b
+  Timestamp b6cef2c2c9fafffa6c51bd6a46296326
+d545a4d0fe3db4a1a490807052f182f2
+  $fBinaryMethodPayload ::
+    Data.Binary.Class.Binary MyNetwork.AMQP.Generated.MethodPayload
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork.AMQP.Generated.MethodPayload
+                  MyNetwork.AMQP.Generated.$fBinaryMethodPayload_$cput
+                  MyNetwork.AMQP.Generated.$fBinaryMethodPayload1
+                    `cast`
+                  (Sym (Data.Binary.Get.Internal.N:Get[0]
+                            <MyNetwork.AMQP.Generated.MethodPayload>_R))
+                  MyNetwork.AMQP.Generated.$fBinaryMethodPayload_$sdefaultPutList -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fBinaryMethodPayload1 ::
+    Data.ByteString.Internal.ByteString
+    -> Data.Binary.Get.Internal.Success
+         MyNetwork.AMQP.Generated.MethodPayload r
+    -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ r
+                   (w :: Data.ByteString.Internal.ByteString)
+                   (w1 :: Data.Binary.Get.Internal.Success
+                            MyNetwork.AMQP.Generated.MethodPayload r) ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 MyNetwork.AMQP.Generated.$w$cget @ r ww1 ww2 ww3 ww4 w1 }) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fBinaryMethodPayload_$cput ::
+    MyNetwork.AMQP.Generated.MethodPayload -> Data.Binary.Put.Put
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: MyNetwork.AMQP.Generated.MethodPayload) ->
+                 case MyNetwork.AMQP.Generated.$w$cput w of ww { (#,#) ww1 ww2 ->
+                 (Data.Binary.Put.PairS @ () ww1 ww2)
+                   `cast`
+                 (Sym (Data.Binary.Put.N:PutM[0]) <()>_N) }) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fBinaryMethodPayload_$sdefaultPutList ::
+    [MyNetwork.AMQP.Generated.MethodPayload] -> Data.Binary.Put.Put
+  {- Arity: 1, Strictness: <L,U>m, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (xs :: [MyNetwork.AMQP.Generated.MethodPayload]) ->
+                 Data.Binary.Put.$WPairS
+                   @ ()
+                   GHC.Tuple.()
+                   (Data.ByteString.Builder.Internal.append
+                      (Data.ByteString.Builder.Prim.primBounded
+                         @ GHC.Int.Int64
+                         Data.Binary.Class.$dmputList1
+                         (case GHC.Base.foldr
+                                 @ MyNetwork.AMQP.Generated.MethodPayload
+                                 @ (GHC.Types.Int -> GHC.Types.Int)
+                                 (GHC.List.lengthFB @ MyNetwork.AMQP.Generated.MethodPayload)
+                                 GHC.List.idLength
+                                 xs
+                                 (GHC.Types.I# 0#) of wild { GHC.Types.I# x# ->
+                          GHC.Int.I64# x# }))
+                      (case (GHC.Base.foldr
+                               @ MyNetwork.AMQP.Generated.MethodPayload
+                               @ (Data.Binary.Put.PutM ())
+                               (\ (x :: MyNetwork.AMQP.Generated.MethodPayload) ->
+                                Data.Binary.Put.$fApplicativePutM_$c*>
+                                  @ ()
+                                  @ ()
+                                  (MyNetwork.AMQP.Generated.$fBinaryMethodPayload_$cput x))
+                               (Data.Binary.Put.$WPairS
+                                  @ ()
+                                  GHC.Tuple.()
+                                  Data.ByteString.Builder.Internal.empty)
+                                 `cast`
+                               (Sym (Data.Binary.Put.N:PutM[0]) <()>_N)
+                               xs)
+                              `cast`
+                            (Data.Binary.Put.N:PutM[0] <()>_N) of wild { Data.Binary.Put.PairS ds1 w' ->
+                       w' })))
+                  `cast`
+                (<[MyNetwork.AMQP.Generated.MethodPayload]>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+c20948d00d7211dcad96a6d620298a11
+  $fShowContentHeaderProperties ::
+    GHC.Show.Show MyNetwork.AMQP.Generated.ContentHeaderProperties
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork.AMQP.Generated.ContentHeaderProperties
+                  MyNetwork.AMQP.Generated.$fShowContentHeaderProperties_$cshowsPrec
+                  MyNetwork.AMQP.Generated.$fShowContentHeaderProperties_$cshow
+                  MyNetwork.AMQP.Generated.$fShowContentHeaderProperties_$cshowList -}
+c20948d00d7211dcad96a6d620298a11
+  $fShowContentHeaderProperties1 ::
+    MyNetwork.AMQP.Generated.ContentHeaderProperties -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (MyNetwork.AMQP.Generated.$fShowContentHeaderProperties_$cshowsPrec
+                   MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2) -}
+63b27fcff22e14e6429e6c25b47a4eeb
+  $fShowContentHeaderProperties2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c20948d00d7211dcad96a6d620298a11
+  $fShowContentHeaderProperties_$cshow ::
+    MyNetwork.AMQP.Generated.ContentHeaderProperties -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyNetwork.AMQP.Generated.ContentHeaderProperties) ->
+                 MyNetwork.AMQP.Generated.$fShowContentHeaderProperties_$cshowsPrec
+                   MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c20948d00d7211dcad96a6d620298a11
+  $fShowContentHeaderProperties_$cshowList ::
+    [MyNetwork.AMQP.Generated.ContentHeaderProperties]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork.AMQP.Generated.ContentHeaderProperties])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork.AMQP.Generated.ContentHeaderProperties
+                   MyNetwork.AMQP.Generated.$fShowContentHeaderProperties1
+                   ls
+                   s) -}
+c20948d00d7211dcad96a6d620298a11
+  $fShowContentHeaderProperties_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork.AMQP.Generated.ContentHeaderProperties
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fShowMethodPayload ::
+    GHC.Show.Show MyNetwork.AMQP.Generated.MethodPayload
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork.AMQP.Generated.MethodPayload
+                  MyNetwork.AMQP.Generated.$fShowMethodPayload_$cshowsPrec
+                  MyNetwork.AMQP.Generated.$fShowMethodPayload_$cshow
+                  MyNetwork.AMQP.Generated.$fShowMethodPayload_$cshowList -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fShowMethodPayload1 ::
+    MyNetwork.AMQP.Generated.MethodPayload -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (MyNetwork.AMQP.Generated.$fShowMethodPayload_$cshowsPrec
+                   MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fShowMethodPayload_$cshow ::
+    MyNetwork.AMQP.Generated.MethodPayload -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyNetwork.AMQP.Generated.MethodPayload) ->
+                 MyNetwork.AMQP.Generated.$fShowMethodPayload_$cshowsPrec
+                   MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fShowMethodPayload_$cshowList ::
+    [MyNetwork.AMQP.Generated.MethodPayload] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork.AMQP.Generated.MethodPayload])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork.AMQP.Generated.MethodPayload
+                   MyNetwork.AMQP.Generated.$fShowMethodPayload1
+                   ls
+                   s) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $fShowMethodPayload_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork.AMQP.Generated.MethodPayload -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+9fd009b840eba713559fd99160b88707
+  $s^1 :: GHC.Word.Word8
+  {- Strictness: x -}
+69a5e103bb49aca0f9a6a68040a862b4
+  $s^4 :: GHC.Word.Word16
+  {- Strictness: x -}
+d539ac04cbd68075d2ea982ee2cd48bd
+  $tc'Basic_ack :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10186644779421095404##
+                   6880086564913273269##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_ack2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_ack1) -}
+9e24308f7ab9c641d0fa9ca3cacb8e3d
+  $tc'Basic_ack1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b390e7434e157a25a1bc1c66422ffc11
+  $tc'Basic_ack2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_ack3) -}
+9f9beeda99a44f64e344492bd56b295c
+  $tc'Basic_ack3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_ack"#) -}
+4c8fab258ba123fb6d680ea639fb3f61
+  $tc'Basic_cancel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4807294231361366738##
+                   579815655252375972##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel1) -}
+3eb589f97271c572c04232a1e042a59d
+  $tc'Basic_cancel1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c685ad8206f2a9d3b5a52047f57513aa
+  $tc'Basic_cancel2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel3) -}
+e216e01c921e210c4ab24b2b775cde84
+  $tc'Basic_cancel3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_cancel"#) -}
+4509a7e13e9271a063c95b70ec8d5740
+  $tc'Basic_cancel_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5655487639606922003##
+                   3560181724163712470##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+dc597251035a60e003b693d1dd55362d
+  $tc'Basic_cancel_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0b6d72e66db5f94a5aa9fa9baab974f6
+  $tc'Basic_cancel_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok3) -}
+7100c42ff376d0c268f09688e1034f27
+  $tc'Basic_cancel_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_cancel_ok"#) -}
+12615ee2c1caef5c0a11f9a9c7a3747a
+  $tc'Basic_consume :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15271659654028876078##
+                   79354072362268043##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_consume2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_consume1) -}
+0f3e6910feefd9d3743e1ec99244da42
+  $tc'Basic_consume1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5f2b2539fe62012e111d6a41d89bf485
+  $tc'Basic_consume2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_consume3) -}
+2d329d6207492015b4f859a1a91a0e46
+  $tc'Basic_consume3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_consume"#) -}
+58cd4c3da4fbb2b4e08ae1a9291a65ad
+  $tc'Basic_consume_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12015966343606001986##
+                   7612620205433298215##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_consume_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+93f72dc585191be1976088fa92bc7664
+  $tc'Basic_consume_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_consume_ok2) -}
+a0a2ef7f64c1b1f2fd44f42317492280
+  $tc'Basic_consume_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_consume_ok"#) -}
+ab0bb425856a6d01f892e7a65f9d6b9d
+  $tc'Basic_deliver :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   466576656937711484##
+                   17527645947565650062##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_deliver2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_deliver1) -}
+83214e9e2b191c8fcab1a52989199bd2
+  $tc'Basic_deliver1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c1dc4d5d497a529a22aa5bde88b7d203
+  $tc'Basic_deliver2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_deliver3) -}
+a792a8294e2702958e533bd9af8e8765
+  $tc'Basic_deliver3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_deliver"#) -}
+9ebd9b8d8a7edca1b6e7efa1ca862797
+  $tc'Basic_get :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8284323407844872679##
+                   13426416567107443373##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_get2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_get1) -}
+e61bcedccf16cb3e8ee59dd3cb7719ba
+  $tc'Basic_get1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+95e5df0ca616beb52dc7751fcd77b62a
+  $tc'Basic_get2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_get3) -}
+4d4a5463084336332c4983df5a98c813
+  $tc'Basic_get3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_get"#) -}
+4a6e4455946641329dbc07621fcb486e
+  $tc'Basic_get_empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9921936970545163061##
+                   10230076875922864026##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_get_empty1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+e783a87874e78e0b0e3974176c125780
+  $tc'Basic_get_empty1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_get_empty2) -}
+53e80d6feda5f30862584d8c582c88e1
+  $tc'Basic_get_empty2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_get_empty"#) -}
+851beddd00dcc656cedfb382b8c5cdbc
+  $tc'Basic_get_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4156851096454630059##
+                   8340310682238049957##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_get_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_get_ok1) -}
+bf26b9262a09ce23f7193278f4b433d5
+  $tc'Basic_get_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+50893a1997c34b1039aea9ee2c9eec36
+  $tc'Basic_get_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_get_ok3) -}
+3308d918b944cd8bc7cd6e226f1e06f8
+  $tc'Basic_get_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_get_ok"#) -}
+73efe6049f35cf82de04f5da04d1400f
+  $tc'Basic_nack :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7423026975942964476##
+                   4923039291520939779##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_nack2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_nack1) -}
+b2f64ef5d8a7b8bc35c519c977e2fa3f
+  $tc'Basic_nack1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+27311f52f44f583a841e1490eb8eef20
+  $tc'Basic_nack2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_nack3) -}
+0147d5be84c64fd20a4cdd3eb9f196b5
+  $tc'Basic_nack3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_nack"#) -}
+70d60d638dc0c469ba21f7fdb2cbe616
+  $tc'Basic_publish :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13003912495432034810##
+                   12023454998964826305##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_publish2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_publish1) -}
+6b9cbf30a29e799fe8a5d766e26a5df5
+  $tc'Basic_publish1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+07a9552923b7feb2776d2ac047b3c847
+  $tc'Basic_publish2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_publish3) -}
+e0242d293df643126683b35147efcdb9
+  $tc'Basic_publish3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_publish"#) -}
+6ba2b014b0155c7d8a69ac69ce6485b2
+  $tc'Basic_qos :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18138224514171389210##
+                   15946278067353415425##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos1) -}
+ae737990d7761bc928755806fbaa7df7
+  $tc'Basic_qos1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a17a6e6dfd78d91232c92c5b0b793116
+  $tc'Basic_qos2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos3) -}
+a49420f3d55ffd6b231d802e0129e3c7
+  $tc'Basic_qos3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_qos"#) -}
+816a30a3cd089f100e7778dbc0eebbc1
+  $tc'Basic_qos_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15754743885885549599##
+                   17850889476260543576##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+e4baa29ce7beabcab6f9e8086fd4a893
+  $tc'Basic_qos_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+1fb91eabe8e57b8c0193beec4264fcfe
+  $tc'Basic_qos_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok3) -}
+3e1c7f28882fa25cbe02cd8158522fba
+  $tc'Basic_qos_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_qos_ok"#) -}
+fa28fb635894406c61652e12df349735
+  $tc'Basic_recover :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18201612160352701437##
+                   14269350642128804485##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover1) -}
+32bea15a92c1b097ed437b55772f205b
+  $tc'Basic_recover1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+45f0cdc23be5db8da81f6c308f8b7d73
+  $tc'Basic_recover2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover3) -}
+15d07f2d2c139efd949fac312d58e87d
+  $tc'Basic_recover3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_recover"#) -}
+bc075b14d4aa4ca151a6e7d93cd42b27
+  $tc'Basic_recover_async :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9928021159799647709##
+                   17318420487866656070##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover_async1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover1) -}
+724751d6b58349138c159b731d91e1b5
+  $tc'Basic_recover_async1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover_async2) -}
+28215119098217d995d79d6077145198
+  $tc'Basic_recover_async2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_recover_async"#) -}
+8b52702f4412d39a32b9494f76474aad
+  $tc'Basic_recover_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15797589279964638881##
+                   8881062349042371610##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+788ec0d52c7d6528048b327ae9f4ea19
+  $tc'Basic_recover_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover_ok2) -}
+bb9e6b600991ff2ffff20d855edf626b
+  $tc'Basic_recover_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_recover_ok"#) -}
+78b58d5b4cd45f974ffeb44eadbbe375
+  $tc'Basic_reject :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11280004078620850278##
+                   500497936318536469##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_reject1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_ack1) -}
+558f5638ab963dd0a19eefe6a79e99c6
+  $tc'Basic_reject1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_reject2) -}
+db26c8d7cea09474d2011d5fcad6dad8
+  $tc'Basic_reject2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_reject"#) -}
+94fbbf5cdc1bc2da354d1b2ad1274e19
+  $tc'Basic_return :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16536373433009568566##
+                   874334064960643561##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Basic_return2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_return1) -}
+203c0451de80841ce18674bdb10383be
+  $tc'Basic_return1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c029c6b83c9055180be5279a901b4c7e
+  $tc'Basic_return2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Basic_return3) -}
+5732f277819954381b8c7b42ddea2aac
+  $tc'Basic_return3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Basic_return"#) -}
+331f7cce3279f799504e21419c12a7d7
+  $tc'CHBasic :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3498830414196655622##
+                   2538163949586722870##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHBasic2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHBasic1) -}
+ffe33d67e2ff7830c52bfb17419b67f8
+  $tc'CHBasic1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a65fbf937d032bdf1ca79f83b486a537
+  $tc'CHBasic2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHBasic3) -}
+55f072db70ed7fd7cb25a042bd65e942
+  $tc'CHBasic3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHBasic"#) -}
+ececf3f985f4d22662e2c3e73a6175b1
+  $tc'CHChannel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9954221510546548295##
+                   14841376686642324760##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHChannel2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+84f5c71355b491b3e051dd21ac217930
+  $tc'CHChannel1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+058e637266ce4bae767b75276e9c4862
+  $tc'CHChannel2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHChannel3) -}
+8a2644818504a297fecac086825e8830
+  $tc'CHChannel3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHChannel"#) -}
+f81a84a14c4b57ec6d61a5ad81adf0da
+  $tc'CHConfirm :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3353150442538967981##
+                   10963768450453781965##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHConfirm1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+2855adc43864f38e663f5bd2c247443e
+  $tc'CHConfirm1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHConfirm2) -}
+5b2f4bae5271b3f5db506b442b78eb84
+  $tc'CHConfirm2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHConfirm"#) -}
+f11a020c59bfb5d929917e2ed57a5e04
+  $tc'CHConnection :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15596178498200589292##
+                   2949770493578913013##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHConnection1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+09786d70582ed1743b138f9ff9fae3fb
+  $tc'CHConnection1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHConnection2) -}
+502135dce63d4f8579cdef7fb19356b2
+  $tc'CHConnection2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHConnection"#) -}
+f7b299c328ecc3789d9ff019e5a8283e
+  $tc'CHExchange :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8423133811841896781##
+                   6181084827295784485##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHExchange1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+56ebfbdaaa6bc0eb4081755fd83f06e5
+  $tc'CHExchange1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHExchange2) -}
+da3d69c8bb2305a1c1966c32f77ea8e4
+  $tc'CHExchange2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHExchange"#) -}
+ee9f8016ec51e039e64071c2a8eda105
+  $tc'CHQueue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4744844316873083769##
+                   1932755693634682416##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHQueue1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+d6b0ac4ae4d060bbe77f6059faa33302
+  $tc'CHQueue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHQueue2) -}
+ffc8206128bcd4c55de11ddb8b079b4a
+  $tc'CHQueue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHQueue"#) -}
+22b769c733ce831934c579a950e8f06d
+  $tc'CHTx :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3725963021989217648##
+                   14680422411967092177##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'CHTx1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'CHChannel1) -}
+0cc266478f4f79591df809ec19700733
+  $tc'CHTx1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'CHTx2) -}
+4a8b56f0cdd84fd7454d863288402e83
+  $tc'CHTx2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CHTx"#) -}
+4fb833a831325d6e1bea7ff8ee0c85bb
+  $tc'Channel_close :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   345632170960361252##
+                   2354630802168010438##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_close2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Channel_close1) -}
+61fd9f36594a5be36ace14d5de9fca29
+  $tc'Channel_close1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+54a80b25bdb3bf015a501c996ebf82b9
+  $tc'Channel_close2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_close3) -}
+9f0c8a5e4cb4f8317f917d75cf447682
+  $tc'Channel_close3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_close"#) -}
+0127ddbbf10eaa2bca9b4a8427dff283
+  $tc'Channel_close_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8414206477711426920##
+                   13808590266081316464##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_close_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+6f9fa1715b2470c220862c53061f7daa
+  $tc'Channel_close_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_close_ok2) -}
+75f0f8ecdc55878212a4a872f29aa7de
+  $tc'Channel_close_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_close_ok"#) -}
+22f59144953aad22b18ad141ae3f9edb
+  $tc'Channel_flow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11505323648688084539##
+                   5947598451717218447##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_flow1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover1) -}
+3ba7aee0665ea884737517e2cdabf42f
+  $tc'Channel_flow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_flow2) -}
+9760a17e98d4f93fd9e30085f67aad06
+  $tc'Channel_flow2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_flow"#) -}
+8e618e26b855bca6daaba4661cf7b651
+  $tc'Channel_flow_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11735041451640072282##
+                   7180075795650646442##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_flow_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover1) -}
+0fd612ca998e37b7588214384bc73391
+  $tc'Channel_flow_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_flow_ok2) -}
+d20bbad39675b06e5eec3e0998a3c281
+  $tc'Channel_flow_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_flow_ok"#) -}
+860b2366c67fe5815a7828c96f3551e4
+  $tc'Channel_open :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   849704580683234827##
+                   13801913914642881564##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_open1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+25377b76b40367303f51e238477314c9
+  $tc'Channel_open1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_open2) -}
+070b2a640a16478a11ab789c2d745d3b
+  $tc'Channel_open2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_open"#) -}
+4c8f7d2ec66eb169c73715420bad2595
+  $tc'Channel_open_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4701560336004164378##
+                   9160635519481731181##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Channel_open_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Channel_open_ok1) -}
+563cd896de960fba0f2a9761da355daa
+  $tc'Channel_open_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1989fb3a51f8d5120aa0825bd679dd45
+  $tc'Channel_open_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Channel_open_ok3) -}
+522cd8d0c21416efa861ea600afdf927
+  $tc'Channel_open_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Channel_open_ok"#) -}
+0917a7becfa19777c36ec607390efb22
+  $tc'Confirm_select :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8033876204556282893##
+                   3835813451393379496##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Confirm_select1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_recover1) -}
+21fff46e07611f6ca95ce5f96c32c1a9
+  $tc'Confirm_select1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Confirm_select2) -}
+bdb182cb57e162c84dcc36918c480f10
+  $tc'Confirm_select2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Confirm_select"#) -}
+dcc4450a754adda1ac22f2ee9e1179c5
+  $tc'Confirm_select_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16761305723537970967##
+                   5628363100802369489##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Confirm_select_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+83981ebeaae68e2f98b254b0362dacd7
+  $tc'Confirm_select_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Confirm_select_ok2) -}
+e79dc9f87b8ef3c25d44451a5a11cf39
+  $tc'Confirm_select_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Confirm_select_ok"#) -}
+32115035a2c035955cb8891fd0dcba92
+  $tc'Connection_blocked :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   198773456695784667##
+                   2823345442837055944##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_blocked1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+31b5c79d792c717366e47325a09bd6bf
+  $tc'Connection_blocked1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_blocked2) -}
+56c0855bdc62a64bf435ff8f30646381
+  $tc'Connection_blocked2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_blocked"#) -}
+c059a03ebf404106b8b30ffa939a0092
+  $tc'Connection_close :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17895640552278690308##
+                   9839115009419742396##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_close1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Channel_close1) -}
+553bb8766db0a46167273eb7c8ee3ac2
+  $tc'Connection_close1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_close2) -}
+cd1d8ad2aa1f6f9d32272181a0a18246
+  $tc'Connection_close2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_close"#) -}
+a4f6c12dbb55151c97065dff6a33b2aa
+  $tc'Connection_close_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17055137260063672750##
+                   4944214330091691751##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_close_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+78fbfc8eabb0f14689ecf805ae9fdce1
+  $tc'Connection_close_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_close_ok2) -}
+86e85a43f22597a64b259143396e36e5
+  $tc'Connection_close_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_close_ok"#) -}
+7460479dc2188a843d838a8ced916ca9
+  $tc'Connection_open :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13000134365734356890##
+                   17902146706744666361##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_open2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Connection_open1) -}
+6db175dad709979dd6188912763b1676
+  $tc'Connection_open1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+37b20ae5714d5ceab8d9e82a869e085d
+  $tc'Connection_open2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_open3) -}
+3f3b39934c8cc711f6f5c2b78bb9dc5e
+  $tc'Connection_open3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_open"#) -}
+18d64e9940b2826dabef8a8740d78f99
+  $tc'Connection_open_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2582637468939154706##
+                   15444096212755412099##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_open_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_cancel_ok1) -}
+0b245735bfac289229b61e7a8d394146
+  $tc'Connection_open_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_open_ok2) -}
+8b81284ec815cedec6ebc8921f69a61a
+  $tc'Connection_open_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_open_ok"#) -}
+0b18253667716a3c06fa5dac264547c6
+  $tc'Connection_secure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2595070701800723254##
+                   15316508054235935043##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_secure1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Channel_open_ok1) -}
+19b8524e40eb5ac2da86022bd27171e8
+  $tc'Connection_secure1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_secure2) -}
+dc7ba6cd3719f305c4f269601ce3792e
+  $tc'Connection_secure2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_secure"#) -}
+ee555dabffb9031e7b7347d28f78c318
+  $tc'Connection_secure_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15261598961133434927##
+                   10793059503325075206##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_secure_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Channel_open_ok1) -}
+fdd146e7e40016388277e4c89da9d034
+  $tc'Connection_secure_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_secure_ok2) -}
+2d4c6d5e8630ddc4be738cbc26b28d2a
+  $tc'Connection_secure_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_secure_ok"#) -}
+3f6518684ddd15eaa8ca6744587b7c14
+  $tc'Connection_start :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14495035950595230518##
+                   15902100944233108540##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_start2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Connection_start1) -}
+af14e5ebd844e89b22e54f4882cf9429
+  $tc'Connection_start1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+945161310f6c009c78242ab0a9b866a6
+  $tc'Connection_start2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_start3) -}
+c2e73c0b64f497f9aac3d924169b5b96
+  $tc'Connection_start3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_start"#) -}
+841c8e985b10c89fe61b90c8d3659c22
+  $tc'Connection_start_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2631189923449774697##
+                   15289072488384145222##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_start_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Connection_start_ok1) -}
+98ba4a68ac487bd8e1df0ddf1f01ba04
+  $tc'Connection_start_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+cb3188d1716e6f053027e964e0540df0
+  $tc'Connection_start_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_start_ok3) -}
+6f8b0efc90897c9dd999bc9f563e9d60
+  $tc'Connection_start_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_start_ok"#) -}
+f8a2e77e4ae662f8ea466b036b3f8cc0
+  $tc'Connection_tune :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   975126321007051668##
+                   11629740095291640615##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune1) -}
+0f1db1b4777979ae2a7a1caf8aa3c309
+  $tc'Connection_tune1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+afe565a9891d710a741d882c3135d1c7
+  $tc'Connection_tune2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune3) -}
+a9ea65d552878f0237c60ba0230ff65f
+  $tc'Connection_tune3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_tune"#) -}
+f19bde2445a93aa2da44958fa4af7e7d
+  $tc'Connection_tune_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8729994563146626121##
+                   9367668075639659202##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune1) -}
+d17ef0bfc153478f52921a15b2fcc3ca
+  $tc'Connection_tune_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_tune_ok2) -}
+c955f5bd807f2dbeffdd1123d9b75a3f
+  $tc'Connection_tune_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_tune_ok"#) -}
+484256dbf5358df84eb9e1c67f7d2966
+  $tc'Connection_unblocked :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1653787621274336881##
+                   4832134111144176608##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Connection_unblocked1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+648917af7a901ed9fe216a06e1a91aad
+  $tc'Connection_unblocked1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Connection_unblocked2) -}
+1d9d77dd1d6e65d786746272e0f221be
+  $tc'Connection_unblocked2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Connection_unblocked"#) -}
+75536b065b2dfe10427578e9deeffded
+  $tc'Exchange_bind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15684285492480567405##
+                   6630225456264693548##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind1) -}
+16bed855cb8957db812bb0c2b3c04c7f
+  $tc'Exchange_bind1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1ff2322ebc74914547a6c1826f74e3e0
+  $tc'Exchange_bind2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind3) -}
+c5683045f91754097b44572a6abe1322
+  $tc'Exchange_bind3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_bind"#) -}
+c407503f12bd696d6fbed91a15a0faf8
+  $tc'Exchange_bind_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9372283834816380510##
+                   10774635092979457216##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+2501522ab9e986df44f954afbfb2247e
+  $tc'Exchange_bind_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind_ok2) -}
+5cb2ab326567cfea6c434a2f15fad6b6
+  $tc'Exchange_bind_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_bind_ok"#) -}
+c9ddc7087e1b18723e022e65799c5ff5
+  $tc'Exchange_declare :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15550758233666132502##
+                   6842296780604144303##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_declare2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Exchange_declare1) -}
+831869bea7b1cacfe703221eb5667f59
+  $tc'Exchange_declare1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c940189a85f681b3dbe908e4fe188b8b
+  $tc'Exchange_declare2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_declare3) -}
+c514af2811fb2cd2975582ec49475d68
+  $tc'Exchange_declare3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_declare"#) -}
+39bd4221836253815178b9e0c308bdf0
+  $tc'Exchange_declare_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   586988970377095495##
+                   12886951312207296827##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_declare_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+ae9bf2ea468e91a9eb6bb7dc245dd1f3
+  $tc'Exchange_declare_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_declare_ok2) -}
+8fff9a15e2abf62031da7b061609b1eb
+  $tc'Exchange_declare_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_declare_ok"#) -}
+b6695f100400f4a73b5929594206a9f4
+  $tc'Exchange_delete :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12710949783620343282##
+                   14623744629483050824##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_delete2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Exchange_delete1) -}
+2c29c1fc1af6c48a9e2dae26523c3c48
+  $tc'Exchange_delete1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+040c1434416f5f9ae6631dcbb38365b5
+  $tc'Exchange_delete2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_delete3) -}
+23624c75b6da8778bab52ec57937937c
+  $tc'Exchange_delete3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_delete"#) -}
+b7cc07e45215c3d3e2a725bec77d2cf5
+  $tc'Exchange_delete_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15107771157232318686##
+                   15205390334362246570##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_delete_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+4f7ddfc70a551c26bf6b084bd8757c81
+  $tc'Exchange_delete_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_delete_ok2) -}
+7933e3bb070d4b1b001d4e9fcec34ae5
+  $tc'Exchange_delete_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_delete_ok"#) -}
+b0c48bb04505c3bdf984b226a0ab1dcf
+  $tc'Exchange_unbind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9638555891402800798##
+                   17498709287070183732##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_unbind1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind1) -}
+437b7af042a7ed4fdc5ac9b77519275d
+  $tc'Exchange_unbind1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_unbind2) -}
+c49ac73c475e546af147d199ec08c4e9
+  $tc'Exchange_unbind2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_unbind"#) -}
+a15879d3be59b9d3b4a918b7aeb96ba6
+  $tc'Exchange_unbind_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13497828098720439877##
+                   11259884430303410788##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Exchange_unbind_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+348f6c99088622ffa26787aa19d95e4c
+  $tc'Exchange_unbind_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Exchange_unbind_ok2) -}
+4494fbc3ad1e613e3f766af204dbadb6
+  $tc'Exchange_unbind_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Exchange_unbind_ok"#) -}
+1e2e9b42a45ace17791841ef649f757a
+  $tc'Queue_bind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14430182215789142977##
+                   14871846509572998773##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_bind1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Exchange_bind1) -}
+fc3633e914e3250ffa7afa4c7a42566a
+  $tc'Queue_bind1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_bind2) -}
+f9b39c7dd4be3bbb192cc146f8c815ff
+  $tc'Queue_bind2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_bind"#) -}
+4d7dbd54479dbc862d367dfd1e9cf348
+  $tc'Queue_bind_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13859338848019809927##
+                   17385055339958994598##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_bind_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+93e9ddf33931796b6871b428d196069d
+  $tc'Queue_bind_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_bind_ok2) -}
+00bc4b1626c41db061aba3e9a04fb616
+  $tc'Queue_bind_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_bind_ok"#) -}
+a52d7a444b862c8db54a5331b92a8caa
+  $tc'Queue_declare :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4993563703707882569##
+                   12284380745083609690##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare1) -}
+e66b3cfb6a38287a4eaee60e8aff36b0
+  $tc'Queue_declare1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a206063b510b33a6044c7cd3f53fe7e6
+  $tc'Queue_declare2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare3) -}
+f26e3128a78e873cfbd48ec4269bbca6
+  $tc'Queue_declare3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_declare"#) -}
+8043b1075be2095e83e9f694d30c2b20
+  $tc'Queue_declare_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4451042821037189308##
+                   10661939511057314944##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare_ok1) -}
+314abb35fceb023580a6ceff653f773c
+  $tc'Queue_declare_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+88f901fbce081105844abad701e28ab0
+  $tc'Queue_declare_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_declare_ok3) -}
+5d708356818027cc72ee763532ecacad
+  $tc'Queue_declare_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_declare_ok"#) -}
+49667d0b6e1f28d850db8d8330ca6c3a
+  $tc'Queue_delete :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6915956149221062476##
+                   17655311364809719910##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete1) -}
+5dc8bc0a2566117b7c1f0493214113dd
+  $tc'Queue_delete1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+21fb83618152b035bd88382fcddfcca4
+  $tc'Queue_delete2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete3) -}
+4d5bb3366e232dfcfa9de766b12e22eb
+  $tc'Queue_delete3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_delete"#) -}
+b45c870f563b76115f73908de9cb6d54
+  $tc'Queue_delete_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11687439899622505963##
+                   9118923744138808372##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete_ok2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete_ok1) -}
+60c08a3fc5d6ddf8b2c7085967893f78
+  $tc'Queue_delete_ok1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c83ef484454ffcf5269f796f4e100616
+  $tc'Queue_delete_ok2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete_ok3) -}
+447f8c5096d212ad0c6f7e8934510e9d
+  $tc'Queue_delete_ok3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_delete_ok"#) -}
+4bab5491f64f67fa0b99bdd50539b105
+  $tc'Queue_purge :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13511692135684099628##
+                   3650817180042618345##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_purge1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_get1) -}
+4d5c2e9241d2a045c987171d3b19072f
+  $tc'Queue_purge1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_purge2) -}
+17e8a144b8f4f04cdbd5948ce3a098b5
+  $tc'Queue_purge2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_purge"#) -}
+77504643663629bdf2ee46c27e8938bb
+  $tc'Queue_purge_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6995736406750143328##
+                   6430140697736354012##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_purge_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_delete_ok1) -}
+1636661b112c3f729ab61f94f934e5a8
+  $tc'Queue_purge_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_purge_ok2) -}
+0833b48620c78d552c71d6cdda32d1cb
+  $tc'Queue_purge_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_purge_ok"#) -}
+63a18e345a12534063a129d2966485ef
+  $tc'Queue_unbind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2615944299969351732##
+                   1241517992651538703##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_unbind2
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Queue_unbind1) -}
+f8e4c19d3fe457c89f4b8273c4fedd5d
+  $tc'Queue_unbind1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+33182a5596c471c6d88f08dcb011feaf
+  $tc'Queue_unbind2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_unbind3) -}
+75fc10e96f27eef425c6c0ad827e4a40
+  $tc'Queue_unbind3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_unbind"#) -}
+b93153443bca717a24d1213c3542bd79
+  $tc'Queue_unbind_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4036479350483236527##
+                   8037833669810959543##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Queue_unbind_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+55720f18294d4e2ef4c434751d04e6fb
+  $tc'Queue_unbind_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Queue_unbind_ok2) -}
+b4f0442e3638891b75be9f57679af0a9
+  $tc'Queue_unbind_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Queue_unbind_ok"#) -}
+bf2e643fd5977cfbf8dc819f0e778424
+  $tc'Tx_commit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   983602015565532184##
+                   3182372296124168440##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_commit1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+35f7d7e4a861412b646db1a6da755a40
+  $tc'Tx_commit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_commit2) -}
+ccb1955db45376c912e1a8d893b07f17
+  $tc'Tx_commit2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_commit"#) -}
+c3f5fd54022705476dc15ce5c0cab86b
+  $tc'Tx_commit_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   385778098619335482##
+                   1690535689175815992##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_commit_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+e33480f051922c475ca82e3382e7bf16
+  $tc'Tx_commit_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_commit_ok2) -}
+4b7fb0fa544a806a451b13e9fecee5d9
+  $tc'Tx_commit_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_commit_ok"#) -}
+ef441defe0207785ebb50d4f29c0825e
+  $tc'Tx_rollback :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2158829075000866104##
+                   5446331170542814358##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_rollback1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+a978beed9b81aed80d1e0e8a0e413e4e
+  $tc'Tx_rollback1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_rollback2) -}
+2bb23709fdabddd13ff041323e7b28f1
+  $tc'Tx_rollback2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_rollback"#) -}
+795d23462d28f73ae244e10c995a42d4
+  $tc'Tx_rollback_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17172837956596045987##
+                   6725050265059417848##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_rollback_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+474b05ada9dbb6c680fd555304187a7d
+  $tc'Tx_rollback_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_rollback_ok2) -}
+72245170b2e768b3bc2784398c33e44c
+  $tc'Tx_rollback_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_rollback_ok"#) -}
+6d9a51669c7ff1fcb378b80c10e4d175
+  $tc'Tx_select :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8633575810512286821##
+                   290322633984505647##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_select1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+04998ca03008a5dc5598c1fa8390df70
+  $tc'Tx_select1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_select2) -}
+a40d8b4fe9ad8e0bb11b8d8020445cd3
+  $tc'Tx_select2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_select"#) -}
+bf8af04ea946451159284d2ffab1df53
+  $tc'Tx_select_ok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18186486205152937904##
+                   16171015595003796781##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tc'Tx_select_ok1
+                   0#
+                   MyNetwork.AMQP.Generated.$tc'Basic_qos_ok1) -}
+8b282eaf8cf79b2953f02d00ed4c344f
+  $tc'Tx_select_ok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tc'Tx_select_ok2) -}
+85bc856e29e86c72a9b6823fcf7781c7
+  $tc'Tx_select_ok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tx_select_ok"#) -}
+773ad0fbcb15606e034a6911ba0b031f
+  $tcContentHeaderProperties :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7882320437048370827##
+                   15116752881156587684##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tcContentHeaderProperties1
+                   0#
+                   GHC.Types.krep$*) -}
+b3e8f2dbbfa5d4b451b505dbe7ccb90d
+  $tcContentHeaderProperties1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tcContentHeaderProperties2) -}
+e4da75dc30d3a1d06bf04601d9ef93e0
+  $tcContentHeaderProperties2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ContentHeaderProperties"#) -}
+75bdb30d8887d139b8a2da6a99a9d670
+  $tcMethodPayload :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3630371421900965895##
+                   10306045044296041862##
+                   MyNetwork.AMQP.Generated.$trModule
+                   MyNetwork.AMQP.Generated.$tcMethodPayload1
+                   0#
+                   GHC.Types.krep$*) -}
+b4658c402981a536be39a45c0d9bf2cc
+  $tcMethodPayload1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$tcMethodPayload2) -}
+f63faae817ae2a663d41cbfb57e37b48
+  $tcMethodPayload2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MethodPayload"#) -}
+35b90682e0aecfa000ebf82906d607e7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork.AMQP.Generated.$trModule3
+                   MyNetwork.AMQP.Generated.$trModule1) -}
+ad4366b6dbcdc751622ee03320f318b4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$trModule2) -}
+6cb9230c61ddd6eaf9c43ac60243690a
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork.AMQP.Generated"#) -}
+1f918d6a065e72a3f32227a213af8b34
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.Generated.$trModule4) -}
+ce8a22cfa677596eaf760bb0269e8e85
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+d545a4d0fe3db4a1a490807052f182f2
+  $w$cget ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Binary.Get.Internal.Success
+         MyNetwork.AMQP.Generated.MethodPayload r
+    -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><S,U><L,C(C1(U))>,
+     Inline: [0] -}
+d545a4d0fe3db4a1a490807052f182f2
+  $w$cput ::
+    MyNetwork.AMQP.Generated.MethodPayload
+    -> (# (), Data.ByteString.Builder.Internal.Builder #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+9583406a0cd92f9f0efbcaed7ee57991
+  $wf :: GHC.Prim.Word# -> GHC.Prim.Int# -> GHC.Prim.Word#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+52d4f0133735dd2a749d953265a79cb9
+  $wf1 :: GHC.Prim.Word# -> GHC.Prim.Int# -> GHC.Prim.Word#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+7a1c0d4863cc755d176a4b872c70e711
+  $wgetBits ::
+    GHC.Types.Int
+    -> forall r.
+       GHC.Prim.Addr#
+       -> GHC.ForeignPtr.ForeignPtrContents
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> Data.Binary.Get.Internal.Success [MyNetwork.AMQP.Types.Bit] r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 6, Strictness: <L,U(U)><L,U><L,U><L,U><S,U><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int)
+                   @ r
+                   (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w1 :: Data.Binary.Get.Internal.Success
+                            [MyNetwork.AMQP.Types.Bit] r) ->
+                 case GHC.Prim.>=# ww3 1# of lwild {
+                   DEFAULT
+                   -> Data.Binary.Get.Internal.readN1
+                        @ GHC.Types.Int
+                        @ Data.ByteString.Internal.ByteString
+                        MyNetwork.AMQP.Generated.condGet8
+                        MyNetwork.AMQP.Generated.condGet6
+                        MyNetwork.AMQP.Generated.condGet5
+                        MyNetwork.AMQP.Generated.condGet2
+                          `cast`
+                        (<[Data.ByteString.Internal.ByteString]>_R
+                         ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                       <Data.ByteString.Internal.ByteString>_R))
+                        @ r
+                        (Data.ByteString.Internal.PS ww ww1 ww2 ww3)
+                        (\ (i' :: Data.ByteString.Internal.ByteString)
+                           (a1 :: Data.ByteString.Internal.ByteString) ->
+                         case a1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                         case GHC.Prim.readWord8OffAddr#
+                                @ GHC.Prim.RealWorld
+                                (GHC.Prim.plusAddr# dt dt2)
+                                0#
+                                GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                dt1
+                                ipv of s' { DEFAULT ->
+                         w1
+                           (Data.ByteString.Internal.PS
+                              dt
+                              dt1
+                              (GHC.Prim.+# dt2 1#)
+                              (GHC.Prim.-# dt3 1#))
+                           (case w of ww4 { GHC.Types.I# ww5 ->
+                            MyNetwork.AMQP.Generated.$wgetBits'
+                              ww5
+                              MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                              (GHC.Word.W8# ipv1) }) } } })
+                   1#
+                   -> case GHC.Prim.readWord8OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# ww ww2)
+                             0#
+                             GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ipv of s' { DEFAULT ->
+                      w1
+                        (Data.ByteString.Internal.PS
+                           ww
+                           ww1
+                           (GHC.Prim.+# ww2 1#)
+                           (GHC.Prim.-# ww3 1#))
+                        (case w of ww4 { GHC.Types.I# ww5 ->
+                         MyNetwork.AMQP.Generated.$wgetBits'
+                           ww5
+                           MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                           (GHC.Word.W8# ipv1) }) } } }) -}
+b71840135990e599392a8202895ea674
+  $wgetBits' ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int -> GHC.Word.Word8 -> [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3, Strictness: <S,1*U><L,U(U)><L,U(U)>, Inline: [0] -}
+5f4a40926aedd811a157143595aa4148
+  $wgetContentHeaderProperties ::
+    GHC.Prim.Word#
+    -> forall r.
+       GHC.Prim.Addr#
+       -> GHC.ForeignPtr.ForeignPtrContents
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> Data.Binary.Get.Internal.Success
+            MyNetwork.AMQP.Generated.ContentHeaderProperties r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 6, Strictness: <S,1*U><S,U><L,U><S,U><S,U><L,C(C1(U))>,
+     Inline: [0] -}
+d4b0833e3067bb6af408ad649865b484
+  $wgetPropBits ::
+    GHC.Types.Int
+    -> forall r.
+       GHC.Prim.Addr#
+       -> GHC.ForeignPtr.ForeignPtrContents
+       -> GHC.Prim.Int#
+       -> GHC.Prim.Int#
+       -> Data.Binary.Get.Internal.Success [MyNetwork.AMQP.Types.Bit] r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 6, Strictness: <L,U(U)><L,U><L,U><L,U><S,U><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int)
+                   @ r
+                   (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w1 :: Data.Binary.Get.Internal.Success
+                            [MyNetwork.AMQP.Types.Bit] r) ->
+                 case GHC.Prim.>=# ww3 2# of lwild {
+                   DEFAULT
+                   -> Data.Binary.Get.Internal.readN1
+                        @ GHC.Types.Int
+                        @ Data.ByteString.Internal.ByteString
+                        MyNetwork.AMQP.Generated.getPropBits2
+                        MyNetwork.AMQP.Generated.condGet6
+                        MyNetwork.AMQP.Generated.condGet5
+                        MyNetwork.AMQP.Generated.condGet2
+                          `cast`
+                        (<[Data.ByteString.Internal.ByteString]>_R
+                         ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                       <Data.ByteString.Internal.ByteString>_R))
+                        @ r
+                        (Data.ByteString.Internal.PS ww ww1 ww2 ww3)
+                        (\ (i' :: Data.ByteString.Internal.ByteString)
+                           (a1 :: Data.ByteString.Internal.ByteString) ->
+                         case a1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                         case GHC.Prim.readWord8OffAddr#
+                                @ GHC.Prim.RealWorld
+                                (GHC.Prim.plusAddr# dt dt2)
+                                0#
+                                GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                dt1
+                                ipv of s' { DEFAULT ->
+                         case GHC.Prim.readWord8OffAddr#
+                                @ GHC.Prim.RealWorld
+                                (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                                0#
+                                GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                dt1
+                                ipv2 of s'1 { DEFAULT ->
+                         w1
+                           (Data.ByteString.Internal.PS
+                              dt
+                              dt1
+                              (GHC.Prim.+# dt2 2#)
+                              (GHC.Prim.-# dt3 2#))
+                           (case w of ww4 { GHC.Types.I# ww5 ->
+                            MyNetwork.AMQP.Generated.$wgetPropBits'
+                              ww5
+                              MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                              (GHC.Word.W16#
+                                 (GHC.Prim.or#
+                                    (GHC.Prim.uncheckedShiftL# ipv1 8#)
+                                    ipv3)) }) } } } } })
+                   1#
+                   -> case GHC.Prim.readWord8OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# ww ww2)
+                             0#
+                             GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ipv of s' { DEFAULT ->
+                      case GHC.Prim.readWord8OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# ww (GHC.Prim.+# ww2 1#))
+                             0#
+                             GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ipv2 of s'1 { DEFAULT ->
+                      w1
+                        (Data.ByteString.Internal.PS
+                           ww
+                           ww1
+                           (GHC.Prim.+# ww2 2#)
+                           (GHC.Prim.-# ww3 2#))
+                        (case w of ww4 { GHC.Types.I# ww5 ->
+                         MyNetwork.AMQP.Generated.$wgetPropBits'
+                           ww5
+                           MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                           (GHC.Word.W16#
+                              (GHC.Prim.or#
+                                 (GHC.Prim.uncheckedShiftL# ipv1 8#)
+                                 ipv3)) }) } } } } }) -}
+78e71bdd01bf541210121073e53afe67
+  $wgetPropBits' ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int -> GHC.Word.Word16 -> [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3, Strictness: <S,1*U><L,U(U)><L,U(U)>, Inline: [0] -}
+d67c6ae49e6492c95512861248b6dd2d
+  $wputBits ::
+    [MyNetwork.AMQP.Types.Bit]
+    -> (# (), Data.ByteString.Builder.Internal.Builder #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: [MyNetwork.AMQP.Types.Bit]) ->
+                 (# GHC.Tuple.(),
+                    let {
+                      x :: GHC.Word.Word8
+                      = case MyNetwork.AMQP.Generated.$wputBits'
+                               MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                               w of ww { DEFAULT ->
+                        GHC.Word.W8# ww }
+                    } in
+                    (\ @ r
+                       (x1 :: Data.ByteString.Builder.Internal.BuildStep r)
+                       (eta :: Data.ByteString.Builder.Internal.BufferRange)
+                       (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case eta of wild { Data.ByteString.Builder.Internal.BufferRange dt dt1 ->
+                     case GHC.Prim.<# (GHC.Prim.minusAddr# dt1 dt) 1# of lwild {
+                       DEFAULT
+                       -> case x of wild2 { GHC.Word.W8# x2 ->
+                          case GHC.Prim.writeWord8OffAddr#
+                                 @ GHC.Prim.RealWorld
+                                 dt
+                                 0#
+                                 x2
+                                 eta1 of s2 { DEFAULT ->
+                          (x1
+                             (Data.ByteString.Builder.Internal.BufferRange
+                                (GHC.Prim.plusAddr# dt 1#)
+                                dt1))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                            s2 } }
+                       1#
+                       -> (# eta1,
+                             Data.ByteString.Builder.Internal.BufferFull
+                               @ r
+                               1#
+                               dt
+                               (\ (ds1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                  (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case ds1 of wild1 { Data.ByteString.Builder.Internal.BufferRange dt2 dt3 ->
+                                case x of wild2 { GHC.Word.W8# x2 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       dt2
+                                       0#
+                                       x2
+                                       eta2 of s2 { DEFAULT ->
+                                (x1
+                                   (Data.ByteString.Builder.Internal.BufferRange
+                                      (GHC.Prim.plusAddr# dt2 1#)
+                                      dt3))
+                                  `cast`
+                                (GHC.Types.N:IO[0]
+                                     <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                  s2 } } })
+                                 `cast`
+                               (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Data.ByteString.Builder.Internal.BuildSignal
+                                                 r>_R)) #) } })
+                      `cast`
+                    ((forall (r :: <*>_N).
+                      <Data.ByteString.Builder.Internal.BuildStep r>_R
+                      ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.ByteString.Builder.Internal.BuildSignal
+                                       r>_R)) ; Sym (Data.ByteString.Builder.Internal.N:Builder[0])) #)) -}
+8ae7d53bb4787240de57dc98bb2af920
+  $wputBits' ::
+    GHC.Types.Int -> [MyNetwork.AMQP.Types.Bit] -> GHC.Prim.Word#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+a901b11cf80abc4bcae937747b096b11
+  $wputContentHeaderProperties ::
+    MyNetwork.AMQP.Generated.ContentHeaderProperties
+    -> (# (), Data.ByteString.Builder.Internal.Builder #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+9c01a99d4e15c769bf787dcef62aef29
+  $wputPropBits ::
+    [MyNetwork.AMQP.Types.Bit]
+    -> (# (), Data.ByteString.Builder.Internal.Builder #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: [MyNetwork.AMQP.Types.Bit]) ->
+                 (# GHC.Tuple.(),
+                    let {
+                      x :: GHC.Word.Word16
+                      = case MyNetwork.AMQP.Generated.$wputPropBits'
+                               MyNetwork.AMQP.Generated.$fShowContentHeaderProperties2
+                               w of ww { DEFAULT ->
+                        GHC.Word.W16# ww }
+                    } in
+                    (\ @ r
+                       (x1 :: Data.ByteString.Builder.Internal.BuildStep r)
+                       (eta :: Data.ByteString.Builder.Internal.BufferRange)
+                       (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case eta of wild { Data.ByteString.Builder.Internal.BufferRange dt dt1 ->
+                     case GHC.Prim.<# (GHC.Prim.minusAddr# dt1 dt) 2# of lwild {
+                       DEFAULT
+                       -> case x of wild1 { GHC.Word.W16# w1 ->
+                          case GHC.Prim.writeWord8OffAddr#
+                                 @ GHC.Prim.RealWorld
+                                 dt
+                                 0#
+                                 (GHC.Prim.narrow8Word# (GHC.Prim.uncheckedShiftRL# w1 8#))
+                                 eta1 of s2 { DEFAULT ->
+                          case GHC.Prim.writeWord8OffAddr#
+                                 @ GHC.Prim.RealWorld
+                                 (GHC.Prim.plusAddr# dt 1#)
+                                 0#
+                                 (GHC.Prim.narrow8Word# w1)
+                                 s2 of s1 { DEFAULT ->
+                          (x1
+                             (Data.ByteString.Builder.Internal.BufferRange
+                                (GHC.Prim.plusAddr# dt 2#)
+                                dt1))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                            s1 } } }
+                       1#
+                       -> (# eta1,
+                             Data.ByteString.Builder.Internal.BufferFull
+                               @ r
+                               2#
+                               dt
+                               (\ (ds1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                  (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                case ds1 of wild1 { Data.ByteString.Builder.Internal.BufferRange dt2 dt3 ->
+                                case x of wild2 { GHC.Word.W16# w1 ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       dt2
+                                       0#
+                                       (GHC.Prim.narrow8Word# (GHC.Prim.uncheckedShiftRL# w1 8#))
+                                       eta2 of s2 { DEFAULT ->
+                                case GHC.Prim.writeWord8OffAddr#
+                                       @ GHC.Prim.RealWorld
+                                       (GHC.Prim.plusAddr# dt2 1#)
+                                       0#
+                                       (GHC.Prim.narrow8Word# w1)
+                                       s2 of s1 { DEFAULT ->
+                                (x1
+                                   (Data.ByteString.Builder.Internal.BufferRange
+                                      (GHC.Prim.plusAddr# dt2 2#)
+                                      dt3))
+                                  `cast`
+                                (GHC.Types.N:IO[0]
+                                     <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                  s1 } } } })
+                                 `cast`
+                               (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                ->_R Sym (GHC.Types.N:IO[0]
+                                              <Data.ByteString.Builder.Internal.BuildSignal
+                                                 r>_R)) #) } })
+                      `cast`
+                    ((forall (r :: <*>_N).
+                      <Data.ByteString.Builder.Internal.BuildStep r>_R
+                      ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.ByteString.Builder.Internal.BuildSignal
+                                       r>_R)) ; Sym (Data.ByteString.Builder.Internal.N:Builder[0])) #)) -}
+972f3c01102cf06811579354712f1332
+  $wputPropBits' ::
+    GHC.Types.Int -> [MyNetwork.AMQP.Types.Bit] -> GHC.Prim.Word#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+c20948d00d7211dcad96a6d620298a11
+  data ContentHeaderProperties
+    = CHConnection
+    | CHChannel
+    | CHExchange
+    | CHQueue
+    | CHBasic (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.FieldTable)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.Octet)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.Octet)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.Timestamp)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+              (GHC.Base.Maybe MyNetwork.AMQP.Types.ShortString)
+    | CHTx
+    | CHConfirm
+d545a4d0fe3db4a1a490807052f182f2
+  data MethodPayload
+    = Connection_start MyNetwork.AMQP.Types.Octet
+                       MyNetwork.AMQP.Types.Octet
+                       MyNetwork.AMQP.Types.FieldTable
+                       MyNetwork.AMQP.Types.LongString
+                       MyNetwork.AMQP.Types.LongString
+    | Connection_start_ok MyNetwork.AMQP.Types.FieldTable
+                          MyNetwork.AMQP.Types.ShortString
+                          MyNetwork.AMQP.Types.LongString
+                          MyNetwork.AMQP.Types.ShortString
+    | Connection_secure MyNetwork.AMQP.Types.LongString
+    | Connection_secure_ok MyNetwork.AMQP.Types.LongString
+    | Connection_tune MyNetwork.AMQP.Types.ShortInt
+                      MyNetwork.AMQP.Types.LongInt
+                      MyNetwork.AMQP.Types.ShortInt
+    | Connection_tune_ok MyNetwork.AMQP.Types.ShortInt
+                         MyNetwork.AMQP.Types.LongInt
+                         MyNetwork.AMQP.Types.ShortInt
+    | Connection_open MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.Bit
+    | Connection_open_ok MyNetwork.AMQP.Types.ShortString
+    | Connection_close MyNetwork.AMQP.Types.ShortInt
+                       MyNetwork.AMQP.Types.ShortString
+                       MyNetwork.AMQP.Types.ShortInt
+                       MyNetwork.AMQP.Types.ShortInt
+    | Connection_close_ok
+    | Connection_blocked MyNetwork.AMQP.Types.ShortString
+    | Connection_unblocked
+    | Channel_open MyNetwork.AMQP.Types.ShortString
+    | Channel_open_ok MyNetwork.AMQP.Types.LongString
+    | Channel_flow MyNetwork.AMQP.Types.Bit
+    | Channel_flow_ok MyNetwork.AMQP.Types.Bit
+    | Channel_close MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortInt
+    | Channel_close_ok
+    | Exchange_declare MyNetwork.AMQP.Types.ShortInt
+                       MyNetwork.AMQP.Types.ShortString
+                       MyNetwork.AMQP.Types.ShortString
+                       MyNetwork.AMQP.Types.Bit
+                       MyNetwork.AMQP.Types.Bit
+                       MyNetwork.AMQP.Types.Bit
+                       MyNetwork.AMQP.Types.Bit
+                       MyNetwork.AMQP.Types.Bit
+                       MyNetwork.AMQP.Types.FieldTable
+    | Exchange_declare_ok
+    | Exchange_delete MyNetwork.AMQP.Types.ShortInt
+                      MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.Bit
+                      MyNetwork.AMQP.Types.Bit
+    | Exchange_delete_ok
+    | Exchange_bind MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.FieldTable
+    | Exchange_bind_ok
+    | Exchange_unbind MyNetwork.AMQP.Types.ShortInt
+                      MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.ShortString
+                      MyNetwork.AMQP.Types.Bit
+                      MyNetwork.AMQP.Types.FieldTable
+    | Exchange_unbind_ok
+    | Queue_declare MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.FieldTable
+    | Queue_declare_ok MyNetwork.AMQP.Types.ShortString
+                       MyNetwork.AMQP.Types.LongInt
+                       MyNetwork.AMQP.Types.LongInt
+    | Queue_bind MyNetwork.AMQP.Types.ShortInt
+                 MyNetwork.AMQP.Types.ShortString
+                 MyNetwork.AMQP.Types.ShortString
+                 MyNetwork.AMQP.Types.ShortString
+                 MyNetwork.AMQP.Types.Bit
+                 MyNetwork.AMQP.Types.FieldTable
+    | Queue_bind_ok
+    | Queue_unbind MyNetwork.AMQP.Types.ShortInt
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.FieldTable
+    | Queue_unbind_ok
+    | Queue_purge MyNetwork.AMQP.Types.ShortInt
+                  MyNetwork.AMQP.Types.ShortString
+                  MyNetwork.AMQP.Types.Bit
+    | Queue_purge_ok MyNetwork.AMQP.Types.LongInt
+    | Queue_delete MyNetwork.AMQP.Types.ShortInt
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.Bit
+                   MyNetwork.AMQP.Types.Bit
+                   MyNetwork.AMQP.Types.Bit
+    | Queue_delete_ok MyNetwork.AMQP.Types.LongInt
+    | Basic_qos MyNetwork.AMQP.Types.LongInt
+                MyNetwork.AMQP.Types.ShortInt
+                MyNetwork.AMQP.Types.Bit
+    | Basic_qos_ok
+    | Basic_consume MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.FieldTable
+    | Basic_consume_ok MyNetwork.AMQP.Types.ShortString
+    | Basic_cancel MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.Bit
+    | Basic_cancel_ok MyNetwork.AMQP.Types.ShortString
+    | Basic_publish MyNetwork.AMQP.Types.ShortInt
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.Bit
+    | Basic_return MyNetwork.AMQP.Types.ShortInt
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.ShortString
+    | Basic_deliver MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.LongLongInt
+                    MyNetwork.AMQP.Types.Bit
+                    MyNetwork.AMQP.Types.ShortString
+                    MyNetwork.AMQP.Types.ShortString
+    | Basic_get MyNetwork.AMQP.Types.ShortInt
+                MyNetwork.AMQP.Types.ShortString
+                MyNetwork.AMQP.Types.Bit
+    | Basic_get_ok MyNetwork.AMQP.Types.LongLongInt
+                   MyNetwork.AMQP.Types.Bit
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.ShortString
+                   MyNetwork.AMQP.Types.LongInt
+    | Basic_get_empty MyNetwork.AMQP.Types.ShortString
+    | Basic_ack MyNetwork.AMQP.Types.LongLongInt
+                MyNetwork.AMQP.Types.Bit
+    | Basic_reject MyNetwork.AMQP.Types.LongLongInt
+                   MyNetwork.AMQP.Types.Bit
+    | Basic_recover_async MyNetwork.AMQP.Types.Bit
+    | Basic_recover MyNetwork.AMQP.Types.Bit
+    | Basic_recover_ok
+    | Basic_nack MyNetwork.AMQP.Types.LongLongInt
+                 MyNetwork.AMQP.Types.Bit
+                 MyNetwork.AMQP.Types.Bit
+    | Tx_select
+    | Tx_select_ok
+    | Tx_commit
+    | Tx_commit_ok
+    | Tx_rollback
+    | Tx_rollback_ok
+    | Confirm_select MyNetwork.AMQP.Types.Bit
+    | Confirm_select_ok
+6b678e4dc0cef148c0a4b90feac120ff
+  condGet ::
+    Data.Binary.Class.Binary a =>
+    GHC.Types.Bool -> Data.Binary.Get.Internal.Get (GHC.Base.Maybe a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A)><S,1*U><L,U><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.condGet1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Binary.Class.Binary a>_R
+                 ->_R <GHC.Types.Bool>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                               <GHC.Base.Maybe a>_R)) -}
+7c5774caa5b4f22ce91ee90af42cb617
+  condGet1 ::
+    Data.Binary.Class.Binary a =>
+    GHC.Types.Bool
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success (GHC.Base.Maybe a) r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A)><S,1*U><L,U><L,C(C1(U))>,
+     Unfolding: (\ @ a
+                   ($dBinary :: Data.Binary.Class.Binary a)
+                   (ds1 :: GHC.Types.Bool)
+                   @ r
+                   (eta :: Data.ByteString.Internal.ByteString)
+                   (eta1 :: Data.Binary.Get.Internal.Success (GHC.Base.Maybe a) r) ->
+                 case ds1 of wild {
+                   GHC.Types.False -> eta1 eta (GHC.Base.Nothing @ a)
+                   GHC.Types.True
+                   -> (Data.Binary.Class.get @ a $dBinary)
+                        `cast`
+                      (Data.Binary.Get.Internal.N:Get[0] <a>_R)
+                        @ r
+                        eta
+                        (\ (i' :: Data.ByteString.Internal.ByteString) (a1 :: a) ->
+                         eta1 i' (GHC.Base.Just @ a a1)) }) -}
+9987bd70029f353414575d400f0edb8b
+  condGet2 ::
+    [Data.ByteString.Internal.ByteString]
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success
+            Data.ByteString.Internal.ByteString r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3, Strictness: <L,U><L,A><L,A>m1,
+     Unfolding: (\ (bss :: [Data.ByteString.Internal.ByteString])
+                   @ r
+                   (ds1 :: Data.ByteString.Internal.ByteString)[OneShot]
+                   (ds2 :: Data.Binary.Get.Internal.Success
+                             Data.ByteString.Internal.ByteString r)[OneShot] ->
+                 case Data.ByteString.concat
+                        bss of dt { Data.ByteString.Internal.PS ipv1 ipv2 ipv3 ipv4 ->
+                 Data.Binary.Get.Internal.Fail
+                   @ r
+                   dt
+                   MyNetwork.AMQP.Generated.condGet3 }) -}
+723a8493035b9fd4e95b3ade1885f94b
+  condGet3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork.AMQP.Generated.condGet4) -}
+53c7d560871d1af02c901fc7a8000115
+  condGet4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("not enough bytes"#) -}
+140438bad0212bd9135e469fa58d8ed7
+  condGet5 ::
+    [Data.ByteString.Internal.ByteString]
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: [Data.ByteString.Internal.ByteString]) ->
+                 Data.ByteString.concat
+                   (GHC.List.dropWhile
+                      @ Data.ByteString.Internal.ByteString
+                      Data.ByteString.null
+                      x)) -}
+e62716864092ecc7f56dc52985dfddde
+  condGet6 ::
+    GHC.Types.Int
+    -> Data.ByteString.Internal.ByteString
+    -> Data.Either.Either
+         GHC.Types.Int
+         (Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString)
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(LLLS),1*U(U,U,U,U)>,
+     Unfolding: (\ (n2 :: GHC.Types.Int)
+                   (str2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 case str2 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case n2 of wild1 { GHC.Types.I# y ->
+                 case GHC.Prim.>=# dt3 y of lwild {
+                   DEFAULT
+                   -> Data.Either.Left
+                        @ GHC.Types.Int
+                        @ (Data.ByteString.Internal.ByteString,
+                           Data.ByteString.Internal.ByteString)
+                        (GHC.Types.I# (GHC.Prim.-# y dt3))
+                   1#
+                   -> Data.Either.Right
+                        @ GHC.Types.Int
+                        @ (Data.ByteString.Internal.ByteString,
+                           Data.ByteString.Internal.ByteString)
+                        (wild, Data.ByteString.empty) } } }) -}
+8a092121d52fc8d4b593722497d5f817
+  condGet7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 8#) -}
+8f438e8554f1254ede45126a65ed62f0
+  condGet8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+91ee51120391a45320b8fc45446ed5e9
+  condGet_$scondGet1 ::
+    GHC.Types.Bool
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success
+            (GHC.Base.Maybe MyNetwork.AMQP.Types.Timestamp) r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3, Strictness: <S,1*U><L,U(U,U,U,U)><L,C(C1(U))>,
+     Unfolding: (\ (ds1 :: GHC.Types.Bool)
+                   @ r
+                   (eta :: Data.ByteString.Internal.ByteString)
+                   (eta1 :: Data.Binary.Get.Internal.Success
+                              (GHC.Base.Maybe MyNetwork.AMQP.Types.Timestamp) r) ->
+                 case ds1 of wild {
+                   GHC.Types.False
+                   -> eta1 eta (GHC.Base.Nothing @ MyNetwork.AMQP.Types.Timestamp)
+                   GHC.Types.True
+                   -> case eta of wild1 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                      case GHC.Prim.>=# dt3 8# of lwild {
+                        DEFAULT
+                        -> Data.Binary.Get.Internal.readN1
+                             @ GHC.Types.Int
+                             @ Data.ByteString.Internal.ByteString
+                             MyNetwork.AMQP.Generated.condGet7
+                             MyNetwork.AMQP.Generated.condGet6
+                             MyNetwork.AMQP.Generated.condGet5
+                             MyNetwork.AMQP.Generated.condGet2
+                               `cast`
+                             (<[Data.ByteString.Internal.ByteString]>_R
+                              ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                            <Data.ByteString.Internal.ByteString>_R))
+                             @ r
+                             wild1
+                             (\ (i' :: Data.ByteString.Internal.ByteString)
+                                (a1 :: Data.ByteString.Internal.ByteString) ->
+                              case a1 of wild2 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 dt6)
+                                     0#
+                                     GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv of s' { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 1#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds3 { (#,#) ipv2 ipv3 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv2 of s'1 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 2#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds4 { (#,#) ipv4 ipv5 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv4 of s'2 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 3#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds5 { (#,#) ipv6 ipv7 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv6 of s'3 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 4#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds6 { (#,#) ipv8 ipv9 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv8 of s'4 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 5#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds7 { (#,#) ipv10 ipv11 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv10 of s'5 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 6#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds8 { (#,#) ipv12 ipv13 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv12 of s'6 { DEFAULT ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 (GHC.Prim.+# dt6 7#))
+                                     0#
+                                     GHC.Prim.realWorld# of ds9 { (#,#) ipv14 ipv15 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv14 of s'7 { DEFAULT ->
+                              eta1
+                                (Data.ByteString.Internal.PS
+                                   dt4
+                                   dt5
+                                   (GHC.Prim.+# dt6 8#)
+                                   (GHC.Prim.-# dt7 8#))
+                                (GHC.Base.Just
+                                   @ MyNetwork.AMQP.Types.Timestamp
+                                   (GHC.Word.W64#
+                                      (GHC.Prim.or#
+                                         (GHC.Prim.or#
+                                            (GHC.Prim.or#
+                                               (GHC.Prim.or#
+                                                  (GHC.Prim.or#
+                                                     (GHC.Prim.or#
+                                                        (GHC.Prim.or#
+                                                           (GHC.Prim.uncheckedShiftL# ipv1 56#)
+                                                           (GHC.Prim.uncheckedShiftL# ipv3 48#))
+                                                        (GHC.Prim.uncheckedShiftL# ipv5 40#))
+                                                     (GHC.Prim.uncheckedShiftL# ipv7 32#))
+                                                  (GHC.Prim.uncheckedShiftL# ipv9 24#))
+                                               (GHC.Prim.uncheckedShiftL# ipv11 16#))
+                                            (GHC.Prim.uncheckedShiftL# ipv13 8#))
+                                         ipv15))) } } } } } } } } } } } } } } } } })
+                        1#
+                        -> case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt dt2)
+                                  0#
+                                  GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv of s' { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 1#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds3 { (#,#) ipv2 ipv3 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv2 of s'1 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 2#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds4 { (#,#) ipv4 ipv5 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv4 of s'2 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 3#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds5 { (#,#) ipv6 ipv7 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv6 of s'3 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 4#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds6 { (#,#) ipv8 ipv9 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv8 of s'4 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 5#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds7 { (#,#) ipv10 ipv11 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv10 of s'5 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 6#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds8 { (#,#) ipv12 ipv13 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv12 of s'6 { DEFAULT ->
+                           case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt (GHC.Prim.+# dt2 7#))
+                                  0#
+                                  GHC.Prim.realWorld# of ds9 { (#,#) ipv14 ipv15 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv14 of s'7 { DEFAULT ->
+                           eta1
+                             (Data.ByteString.Internal.PS
+                                dt
+                                dt1
+                                (GHC.Prim.+# dt2 8#)
+                                (GHC.Prim.-# dt3 8#))
+                             (GHC.Base.Just
+                                @ MyNetwork.AMQP.Types.Timestamp
+                                (GHC.Word.W64#
+                                   (GHC.Prim.or#
+                                      (GHC.Prim.or#
+                                         (GHC.Prim.or#
+                                            (GHC.Prim.or#
+                                               (GHC.Prim.or#
+                                                  (GHC.Prim.or#
+                                                     (GHC.Prim.or#
+                                                        (GHC.Prim.uncheckedShiftL# ipv1 56#)
+                                                        (GHC.Prim.uncheckedShiftL# ipv3 48#))
+                                                     (GHC.Prim.uncheckedShiftL# ipv5 40#))
+                                                  (GHC.Prim.uncheckedShiftL# ipv7 32#))
+                                               (GHC.Prim.uncheckedShiftL# ipv9 24#))
+                                            (GHC.Prim.uncheckedShiftL# ipv11 16#))
+                                         (GHC.Prim.uncheckedShiftL# ipv13 8#))
+                                      ipv15))) } } } } } } } } } } } } } } } } } } }) -}
+4fab01c887df82dd3416f22b8df7ccbb
+  condGet_$scondGet2 ::
+    GHC.Types.Bool
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success
+            (GHC.Base.Maybe MyNetwork.AMQP.Types.Octet) r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3, Strictness: <S,1*U><L,U(U,U,U,U)><L,C(C1(U))>,
+     Unfolding: (\ (ds1 :: GHC.Types.Bool)
+                   @ r
+                   (eta :: Data.ByteString.Internal.ByteString)
+                   (eta1 :: Data.Binary.Get.Internal.Success
+                              (GHC.Base.Maybe MyNetwork.AMQP.Types.Octet) r) ->
+                 case ds1 of wild {
+                   GHC.Types.False
+                   -> eta1 eta (GHC.Base.Nothing @ MyNetwork.AMQP.Types.Octet)
+                   GHC.Types.True
+                   -> case eta of wild1 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                      case GHC.Prim.>=# dt3 1# of lwild {
+                        DEFAULT
+                        -> Data.Binary.Get.Internal.readN1
+                             @ GHC.Types.Int
+                             @ Data.ByteString.Internal.ByteString
+                             MyNetwork.AMQP.Generated.condGet8
+                             MyNetwork.AMQP.Generated.condGet6
+                             MyNetwork.AMQP.Generated.condGet5
+                             MyNetwork.AMQP.Generated.condGet2
+                               `cast`
+                             (<[Data.ByteString.Internal.ByteString]>_R
+                              ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                                            <Data.ByteString.Internal.ByteString>_R))
+                             @ r
+                             wild1
+                             (\ (i' :: Data.ByteString.Internal.ByteString)
+                                (a1 :: Data.ByteString.Internal.ByteString) ->
+                              case a1 of wild2 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                              case GHC.Prim.readWord8OffAddr#
+                                     @ GHC.Prim.RealWorld
+                                     (GHC.Prim.plusAddr# dt4 dt6)
+                                     0#
+                                     GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                              case GHC.Prim.touch#
+                                     @ 'GHC.Types.LiftedRep
+                                     @ GHC.ForeignPtr.ForeignPtrContents
+                                     dt5
+                                     ipv of s' { DEFAULT ->
+                              eta1
+                                (Data.ByteString.Internal.PS
+                                   dt4
+                                   dt5
+                                   (GHC.Prim.+# dt6 1#)
+                                   (GHC.Prim.-# dt7 1#))
+                                (GHC.Base.Just
+                                   @ MyNetwork.AMQP.Types.Octet
+                                   (GHC.Word.W8# ipv1)) } } })
+                        1#
+                        -> case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt dt2)
+                                  0#
+                                  GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv of s' { DEFAULT ->
+                           eta1
+                             (Data.ByteString.Internal.PS
+                                dt
+                                dt1
+                                (GHC.Prim.+# dt2 1#)
+                                (GHC.Prim.-# dt3 1#))
+                             (GHC.Base.Just
+                                @ MyNetwork.AMQP.Types.Octet
+                                (GHC.Word.W8# ipv1)) } } } } }) -}
+9b313bccb92a439ba5ca317a889b8a51
+  condPut ::
+    Data.Binary.Class.Binary a =>
+    GHC.Base.Maybe a -> Data.Binary.Put.Put
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(U(U,U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dBinary :: Data.Binary.Class.Binary a)
+                   (eta :: GHC.Base.Maybe a) ->
+                 case eta of wild {
+                   GHC.Base.Nothing
+                   -> MyNetwork.AMQP.Generated.condPut1
+                        `cast`
+                      (Sym (Data.Binary.Put.N:PutM[0]) <()>_N)
+                   GHC.Base.Just x -> Data.Binary.Class.put @ a $dBinary x }) -}
+6e6806fce31c56482e93ff180ebfebf3
+  condPut1 :: Data.Binary.Put.PairS ()
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Binary.Put.PairS
+                   @ ()
+                   GHC.Tuple.()
+                   MyNetwork.AMQP.Generated.condPut2
+                     `cast`
+                   (Sym (Data.ByteString.Builder.Internal.N:Builder[0]))) -}
+99596a0923f45320c1649715b2e177ed
+  condPut2 ::
+    Data.ByteString.Builder.Internal.BuildStep r
+    -> Data.ByteString.Builder.Internal.BufferRange
+    -> GHC.Types.IO (Data.ByteString.Builder.Internal.BuildSignal r)
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ r
+                   (cont :: Data.ByteString.Builder.Internal.BuildStep r)
+                   (range :: Data.ByteString.Builder.Internal.BufferRange) ->
+                 cont range) -}
+0dfc3d5d21accaabb119b9d62c3f5c77
+  getBits ::
+    GHC.Types.Int
+    -> Data.Binary.Get.Internal.Get [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.getBits1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                               <[MyNetwork.AMQP.Types.Bit]>_R)) -}
+e37d66872ef8a8fab9af7295575af150
+  getBits' ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Word.Word8 -> [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3, Strictness: <S(S),1*U(1*U)><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Word.Word8) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 MyNetwork.AMQP.Generated.$wgetBits' ww1 w1 w2 }) -}
+6ed923c0fbc08718e453c1509d05681d
+  getBits1 ::
+    GHC.Types.Int
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success [MyNetwork.AMQP.Types.Bit] r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   @ r
+                   (w1 :: Data.ByteString.Internal.ByteString)
+                   (w2 :: Data.Binary.Get.Internal.Success
+                            [MyNetwork.AMQP.Types.Bit] r) ->
+                 case w1 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 MyNetwork.AMQP.Generated.$wgetBits w @ r ww1 ww2 ww3 ww4 w2 }) -}
+43c032c64cf87fce955b6fa1c8dff5ce
+  getClassIDOf ::
+    MyNetwork.AMQP.Generated.ContentHeaderProperties
+    -> MyNetwork.AMQP.Types.ShortInt
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds1 :: MyNetwork.AMQP.Generated.ContentHeaderProperties) ->
+                 case ds1 of wild {
+                   MyNetwork.AMQP.Generated.CHConnection
+                   -> MyNetwork.AMQP.Generated.getClassIDOf7
+                   MyNetwork.AMQP.Generated.CHChannel
+                   -> MyNetwork.AMQP.Generated.getClassIDOf6
+                   MyNetwork.AMQP.Generated.CHExchange
+                   -> MyNetwork.AMQP.Generated.getClassIDOf5
+                   MyNetwork.AMQP.Generated.CHQueue
+                   -> MyNetwork.AMQP.Generated.getClassIDOf4
+                   MyNetwork.AMQP.Generated.CHBasic ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15
+                   -> MyNetwork.AMQP.Generated.getClassIDOf3
+                   MyNetwork.AMQP.Generated.CHTx
+                   -> MyNetwork.AMQP.Generated.getClassIDOf2
+                   MyNetwork.AMQP.Generated.CHConfirm
+                   -> MyNetwork.AMQP.Generated.getClassIDOf1 }) -}
+db52b3971d3b6623d36445ce2a6343c8
+  getClassIDOf1 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 85##) -}
+22e375fde937c73a0971f6d4ef212ed8
+  getClassIDOf2 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 90##) -}
+60adeac4e89e94d71d9399c3792a4160
+  getClassIDOf3 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 60##) -}
+1b2a93abd2f5968231a980360bc8e895
+  getClassIDOf4 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 50##) -}
+2395c7aaf09bf9c7fda2d9a8cd42c3fb
+  getClassIDOf5 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 40##) -}
+a71d5cc187ddde8e051e70c164337cd7
+  getClassIDOf6 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 20##) -}
+de072777f42bc72364f8b6120307d927
+  getClassIDOf7 :: GHC.Word.Word16
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W16# 10##) -}
+64eb294ce72e4aa2d487eb11218b9e74
+  getContentHeaderProperties ::
+    MyNetwork.AMQP.Types.ShortInt
+    -> Data.Binary.Get.Internal.Get
+         MyNetwork.AMQP.Generated.ContentHeaderProperties
+  {- Arity: 3,
+     Strictness: <S(S),1*U(1*U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.getContentHeaderProperties1
+                  `cast`
+                (<MyNetwork.AMQP.Types.ShortInt>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                               <MyNetwork.AMQP.Generated.ContentHeaderProperties>_R)) -}
+dda3ab0cc7153b1e089acc8fbb16845f
+  getContentHeaderProperties1 ::
+    MyNetwork.AMQP.Types.ShortInt
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success
+            MyNetwork.AMQP.Generated.ContentHeaderProperties r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3,
+     Strictness: <S(S),1*U(1*U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork.AMQP.Types.ShortInt)
+                   @ r
+                   (w1 :: Data.ByteString.Internal.ByteString)
+                   (w2 :: Data.Binary.Get.Internal.Success
+                            MyNetwork.AMQP.Generated.ContentHeaderProperties r) ->
+                 case w of ww { GHC.Word.W16# ww1 ->
+                 case w1 of ww2 { Data.ByteString.Internal.PS ww3 ww4 ww5 ww6 ->
+                 MyNetwork.AMQP.Generated.$wgetContentHeaderProperties
+                   ww1
+                   @ r
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   w2 } }) -}
+3a541d611b2b918c50bff498acdcf91a
+  getPropBits ::
+    GHC.Types.Int
+    -> Data.Binary.Get.Internal.Get [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.getPropBits1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (Data.Binary.Get.Internal.N:Get[0]
+                               <[MyNetwork.AMQP.Types.Bit]>_R)) -}
+b39f7eb88d2df313faceef257ad770f0
+  getPropBits' ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Word.Word16 -> [MyNetwork.AMQP.Types.Bit]
+  {- Arity: 3, Strictness: <S(S),1*U(1*U)><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Word.Word16) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 MyNetwork.AMQP.Generated.$wgetPropBits' ww1 w1 w2 }) -}
+b286379927006f385042865be20e267d
+  getPropBits1 ::
+    GHC.Types.Int
+    -> forall r.
+       Data.ByteString.Internal.ByteString
+       -> Data.Binary.Get.Internal.Success [MyNetwork.AMQP.Types.Bit] r
+       -> Data.Binary.Get.Internal.Decoder r
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(SLSS),1*U(U,U,U,U)><L,C(C1(U))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   @ r
+                   (w1 :: Data.ByteString.Internal.ByteString)
+                   (w2 :: Data.Binary.Get.Internal.Success
+                            [MyNetwork.AMQP.Types.Bit] r) ->
+                 case w1 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 MyNetwork.AMQP.Generated.$wgetPropBits
+                   w
+                   @ r
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   w2 }) -}
+6d142e7de9dd34129ce91faff79bd1a3
+  getPropBits2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+60a94464b8d7447ca7f787cd3ec3e8a5
+  putBits :: [MyNetwork.AMQP.Types.Bit] -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.putBits1
+                  `cast`
+                (<[MyNetwork.AMQP.Types.Bit]>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+7dce62a384c080cef2e5de042e0e5804
+  putBits' ::
+    GHC.Types.Int -> [MyNetwork.AMQP.Types.Bit] -> GHC.Word.Word8
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: [MyNetwork.AMQP.Types.Bit]) ->
+                 case MyNetwork.AMQP.Generated.$wputBits' w w1 of ww { DEFAULT ->
+                 GHC.Word.W8# ww }) -}
+e8827356e385f0281c16432e9642a6e3
+  putBits1 :: [MyNetwork.AMQP.Types.Bit] -> Data.Binary.Put.PairS ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [MyNetwork.AMQP.Types.Bit]) ->
+                 case MyNetwork.AMQP.Generated.$wputBits w of ww { (#,#) ww1 ww2 ->
+                 Data.Binary.Put.PairS @ () ww1 ww2 }) -}
+04c6491bbf9a145cf403cc66f652fd2a
+  putContentHeaderProperties ::
+    MyNetwork.AMQP.Generated.ContentHeaderProperties
+    -> Data.Binary.Put.Put
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: MyNetwork.AMQP.Generated.ContentHeaderProperties) ->
+                 case MyNetwork.AMQP.Generated.$wputContentHeaderProperties
+                        w of ww { (#,#) ww1 ww2 ->
+                 (Data.Binary.Put.PairS @ () ww1 ww2)
+                   `cast`
+                 (Sym (Data.Binary.Put.N:PutM[0]) <()>_N) }) -}
+8934b2e6f3beab497f919c7bcf458995
+  putPropBits :: [MyNetwork.AMQP.Types.Bit] -> Data.Binary.Put.Put
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.Generated.putPropBits1
+                  `cast`
+                (<[MyNetwork.AMQP.Types.Bit]>_R
+                 ->_R Sym (Data.Binary.Put.N:PutM[0]) <()>_N) -}
+9a7020ef274d48e0e9a821d96e1b5eef
+  putPropBits' ::
+    GHC.Types.Int -> [MyNetwork.AMQP.Types.Bit] -> GHC.Word.Word16
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: [MyNetwork.AMQP.Types.Bit]) ->
+                 case MyNetwork.AMQP.Generated.$wputPropBits'
+                        w
+                        w1 of ww { DEFAULT ->
+                 GHC.Word.W16# ww }) -}
+fb1b92b760de1219417e0bcd863521d5
+  putPropBits1 ::
+    [MyNetwork.AMQP.Types.Bit] -> Data.Binary.Put.PairS ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [MyNetwork.AMQP.Types.Bit]) ->
+                 case MyNetwork.AMQP.Generated.$wputPropBits
+                        w of ww { (#,#) ww1 ww2 ->
+                 Data.Binary.Put.PairS @ () ww1 ww2 }) -}
+instance Data.Binary.Class.Binary [MyNetwork.AMQP.Generated.MethodPayload]
+  = MyNetwork.AMQP.Generated.$fBinaryMethodPayload
+instance GHC.Show.Show [MyNetwork.AMQP.Generated.ContentHeaderProperties]
+  = MyNetwork.AMQP.Generated.$fShowContentHeaderProperties
+instance GHC.Show.Show [MyNetwork.AMQP.Generated.MethodPayload]
+  = MyNetwork.AMQP.Generated.$fShowMethodPayload
+"SPEC condGet @ Octet" forall ($dBinary :: Data.Binary.Class.Binary
+                                             MyNetwork.AMQP.Types.Octet)
+  MyNetwork.AMQP.Generated.condGet1 @ GHC.Word.Word8 $dBinary
+  = MyNetwork.AMQP.Generated.condGet_$scondGet2
+"SPEC condGet @ Timestamp" forall ($dBinary :: Data.Binary.Class.Binary
+                                                 MyNetwork.AMQP.Types.Timestamp)
+  MyNetwork.AMQP.Generated.condGet1 @ GHC.Word.Word64 $dBinary
+  = MyNetwork.AMQP.Generated.condGet_$scondGet1
+"SPEC/MyNetwork.AMQP.Generated defaultPutList @ MethodPayload" forall ($dBinary :: Data.Binary.Class.Binary
+                                                                                     MyNetwork.AMQP.Generated.MethodPayload)
+  Data.Binary.Class.defaultPutList @ MyNetwork.AMQP.Generated.MethodPayload
+                                   $dBinary
+  = MyNetwork.AMQP.Generated.$fBinaryMethodPayload_$sdefaultPutList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

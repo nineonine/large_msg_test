@@ -1,0 +1,2383 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:11.434101 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork2.Connection 8044
+  interface hash: 37565e54c96dfe9d29c645386dc4ce21
+  ABI hash: 01bbdb4519fe0c2ca291d5915f83dd01
+  export-list hash: acb70fd33cbecc6be8c81ac8454ac003
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e161cb1ecbdd4dbd0729b10e2f680342
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork2.Connection.connectFromHandle
+  MyNetwork2.Connection.connectFromSocket
+  MyNetwork2.Connection.connectTo
+  MyNetwork2.Connection.connectionClose
+  MyNetwork2.Connection.connectionGet
+  MyNetwork2.Connection.connectionGetChunk
+  MyNetwork2.Connection.connectionGetChunk'
+  MyNetwork2.Connection.connectionGetExact
+  MyNetwork2.Connection.connectionGetLine
+  MyNetwork2.Connection.connectionIsSecure
+  MyNetwork2.Connection.connectionPut
+  MyNetwork2.Connection.connectionSetSecure
+  MyNetwork2.Connection.connectionWaitForInput
+  MyNetwork2.Connection.initConnectionContext
+  MyNetwork2.Connection.HostCannotConnect{MyNetwork2.Connection.HostCannotConnect}
+  MyNetwork2.Connection.HostNotResolved{MyNetwork2.Connection.HostNotResolved}
+  MyNetwork2.Connection.LineTooLong{MyNetwork2.Connection.LineTooLong}
+  MyNetwork2.Connection.Types.Connection{connectionID}
+  MyNetwork2.Connection.Types.ConnectionContext
+  MyNetwork2.Connection.Types.ConnectionParams{MyNetwork2.Connection.Types.ConnectionParams connectionHostname connectionPort connectionUseSecure connectionUseSocks}
+  MyNetwork2.Connection.Types.ProxySettings{MyNetwork2.Connection.Types.OtherProxy MyNetwork2.Connection.Types.SockSettingsEnvironment MyNetwork2.Connection.Types.SockSettingsSimple}
+  MyNetwork2.Connection.Types.SockSettings
+  MyNetwork2.Connection.Types.TLSSettings{MyNetwork2.Connection.Types.TLSSettings MyNetwork2.Connection.Types.TLSSettingsSimple settingDisableCertificateValidation settingDisableSession settingUseServerName}
+module dependencies: MyNetwork2.Connection.Types
+package dependencies: array-0.5.2.0 asn1-encoding-0.9.5
+                      asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1 base-4.11.1.0
+                      basement-0.0.8 binary-0.8.5.1 bytestring-0.10.8.2 cereal-0.5.7.0
+                      containers-0.5.11.0 cryptonite-0.25 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 filepath-1.4.2 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 integer-gmp-1.0.2.0
+                      memory-0.14.18 mtl-2.2.2 network-2.6.3.6 pem-0.2.4 process-1.6.3.0
+                      socks-0.5.6 stm-2.4.5.1 text-1.2.3.1 time-1.8.0.2 tls-1.4.1
+                      transformers-0.5.5.0 unix-2.7.2.2 x509-1.7.4 x509-store-1.6.6
+                      x509-system-1.6.6 x509-validation-1.6.10
+orphans: network-2.6.3.6:Network.Socket
+         stm-2.4.5.1:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.11.1.0:Control.Applicative 55d9b3a7491623b0362290e162d67308
+import  -/  base-4.11.1.0:Control.Concurrent.MVar ca4c584bd9db3afcc6677dea708f87d7
+import  -/  base-4.11.1.0:Control.Exception 3d8e6cda20877f889f07bc7c0f5cac36
+import  -/  base-4.11.1.0:Control.Exception.Base 6b3335161fe9c47efeac02d92d6dc212
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Data b150502d549600eff3202c16ff6cf22d
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:Data.Maybe 409c3da2b142470b68be39ce1d97a9f7
+import  -/  base-4.11.1.0:Data.Tuple 3af66f3ac61ed95ba8a3a3f68ebc5003
+import  -/  base-4.11.1.0:Data.Typeable.Internal 0b0201144a992d956fd13a21fc2d4b48
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.Exception e1b7fe1dbd1d0e3fb049e1163c71a5e8
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.IO.Exception acc060dca2e46d8b8275d06ee7d5d60d
+import  -/  base-4.11.1.0:GHC.IO.Handle fb550f271baae6fe7b19205b8166986b
+import  -/  base-4.11.1.0:GHC.IO.Handle.Types d85072f60d88fceac27e39e3cbd01092
+import  -/  base-4.11.1.0:GHC.List 1e4357702d8d00cded0703bd293e50e8
+import  -/  base-4.11.1.0:GHC.MVar 5887537e57bb20af86721190334ddceb
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.Environment 06420d98d10ee04b8dda9c0d88032c55
+import  -/  base-4.11.1.0:System.IO e02b6055b5362a3eac04f83991602a53
+import  -/  base-4.11.1.0:System.IO.Error e9cae3ab377d64b36ad020e6acace3fb
+import  -/  base-4.11.1.0:System.Timeout f155285dedda0b3cd27ffde15dac6e4b
+import  -/  base-4.11.1.0:Text.Read 6c02630607b565ffcb34e8127673989b
+import  -/  bytestring-0.10.8.2:Data.ByteString 273248cbc494640ee3139e6d00588e9f
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 801fee6d15f5471654463d991475364a
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal dc7d0c96ef45c703ca21607112260299
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 9b14d99e53cf2d30c74c7ddcd59ad2e2
+import  -/  containers-0.5.11.0:Data.Map 0dbdaec812ef695a364aa6c69e7f7d53
+import  -/  containers-0.5.11.0:Data.Map.Internal 0150e210d0ae8df0f3a0669d5e32d8fa
+import  -/  data-default-class-0.1.2.0:Data.Default.Class a39e689fe2e8c378666d66c458dc0d1f
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  MyNetwork2.Connection.Types 51be07c429ba8b879e575de7dcfdab50
+  exports: e292743f061efa581234ae7f2191f00b
+  Connection c60734cd03215c555ea50f62f2c478e2
+  Connection 29e500bb503325b5eb7aca16d4a5c49c
+  ConnectionBackend 14f48cf87613a93d892ec1d6fd9db640
+  ConnectionContext 39f905ec6387392353453b267e18d90f
+  ConnectionContext c2870f146f4c03df53a15112a4925c14
+  ConnectionID a088fdd0b82e81da7647a1161da02977
+  ConnectionParams 38ba4c65e72fd213c09060e380be52d8
+  ConnectionParams 6fde380bb0b00d4931a98ab1ff5988f4
+  ConnectionSocket 891976b899ce4fddbd6a55f91b5bc1a8
+  ConnectionStream 7b24a5d3bc020b998c4c37d40506aba0
+  ConnectionTLS 5b34a9b73849fdfc2514e9c5203ac2b6
+  OtherProxy 295b91499ed4bcfdf02ab596d205c858
+  ProxySettings 4502ede1c3a9b61bec2199271d54aa3b
+  SockSettings 9c278226cb87949b452a84379ad6ffef
+  SockSettingsEnvironment 22c1907eecba064431dfb53f8ec95728
+  SockSettingsSimple b394a0e1868aae0454c2fa9713da1ead
+  TLSSettings cba6ac51fa9850af8c71b1f80df3a470
+  TLSSettings 585f0f189877b23386f5d25e0852d7a0
+  TLSSettingsSimple 8cfe69b9676644ec911251d0ff7c49eb
+  connectionBackend 29e500bb503325b5eb7aca16d4a5c49c
+  connectionBuffer 29e500bb503325b5eb7aca16d4a5c49c
+  connectionHostname 6fde380bb0b00d4931a98ab1ff5988f4
+  connectionID 29e500bb503325b5eb7aca16d4a5c49c
+  connectionPort 6fde380bb0b00d4931a98ab1ff5988f4
+  connectionUseSecure 6fde380bb0b00d4931a98ab1ff5988f4
+  connectionUseSocks 6fde380bb0b00d4931a98ab1ff5988f4
+  globalCertificateStore c2870f146f4c03df53a15112a4925c14
+  settingDisableCertificateValidation 585f0f189877b23386f5d25e0852d7a0
+  settingDisableSession 585f0f189877b23386f5d25e0852d7a0
+  settingUseServerName 585f0f189877b23386f5d25e0852d7a0
+import  -/  network-2.6.3.6:Network b2d886de20c575a44d4fc25c74e0fc87
+import  -/  network-2.6.3.6:Network.BSD 08cba029d9c982f9e22a4d01815a36a6
+import  -/  network-2.6.3.6:Network.Socket ad6c399a864f4064035be687dd16ffec
+import  -/  network-2.6.3.6:Network.Socket.ByteString 83c99bfbe6c864db98f536ea19c51a1a
+import  -/  network-2.6.3.6:Network.Socket.ByteString.Lazy cba9ca27e6b07368e20c622388db1c3a
+import  -/  network-2.6.3.6:Network.Socket.ByteString.Lazy.Posix c94b9edb68599414d5046105e4afe3a7
+import  -/  network-2.6.3.6:Network.Socket.Types 49e70a5740de467f1a9c2675afd92abb
+import  -/  socks-0.5.6:Network.Socks5 8939e1a040ca13580fb15117148808f4
+import  -/  tls-1.4.1:Network.TLS aef78de4d3c5a8a69c31a47705baa540
+import  -/  tls-1.4.1:Network.TLS.Backend ac69a8042fe606b5299a396ee280a67c
+import  -/  tls-1.4.1:Network.TLS.Context f8f2aea5b94f72f7823fc4ebfb5dba64
+import  -/  tls-1.4.1:Network.TLS.Context.Internal 57f3040297345282c0491532305c5b3f
+import  -/  tls-1.4.1:Network.TLS.Core 9d45cbbd58cfcc44ca75db306575480e
+import  -/  tls-1.4.1:Network.TLS.Extra 5db9241523a6d359663763e7b7c0c195
+import  -/  tls-1.4.1:Network.TLS.Extra.Cipher e4d02119e6e13fc42c8ae1971c36fe80
+import  -/  tls-1.4.1:Network.TLS.Handshake 4fb6939b74717df008e235824c2518c7
+import  -/  tls-1.4.1:Network.TLS.Parameters 4118d33a5c81a91b3a8665e195517478
+import  -/  tls-1.4.1:Network.TLS.Session 5fc388ea7e299882cd23ffa629f62ada
+import  -/  tls-1.4.1:Network.TLS.Types bd6dfaaf43f8dbb015f9e78ba32537c1
+import  -/  x509-system-1.6.6:System.X509 c22f90d3be5e6e658c6f0f67339a115b
+import  -/  x509-system-1.6.6:System.X509.MacOS 0241bf12f6851042802af5dca3400f97
+import  -/  x509-validation-1.6.10:Data.X509.Validation.Cache e5fd9578b8dfdce61f160d1ab57fe94e
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect ::
+    GHC.Exception.Exception MyNetwork2.Connection.HostCannotConnect
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.HostCannotConnect
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect4
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <MyNetwork2.Connection.HostCannotConnect>_N)
+                  MyNetwork2.Connection.$fShowHostCannotConnect
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect_$ctoException
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect_$cfromException
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect_$cshow -}
+80193a2be6ab4f5b4326a4c5ab47dcfd
+  $fExceptionHostCannotConnect1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+5b5f51d16d951546db7c339895fb069c
+  $fExceptionHostCannotConnect2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HostCannotConnect "#) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect3 :: GHC.Fingerprint.Type.Fingerprint
+  {- Unfolding: (Data.Typeable.Internal.typeRepFingerprint
+                   @ *
+                   @ MyNetwork2.Connection.HostCannotConnect
+                   MyNetwork2.Connection.$fExceptionHostCannotConnect4) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect4 ::
+    Data.Typeable.Internal.TypeRep
+      MyNetwork2.Connection.HostCannotConnect
+  {- Unfolding: (case Data.Typeable.Internal.$wmkTrCon
+                        @ *
+                        @ MyNetwork2.Connection.HostCannotConnect
+                        15186413227349377266##
+                        18403186070091392950##
+                        MyNetwork2.Connection.$trModule
+                        MyNetwork2.Connection.$fExceptionHostCannotConnect5
+                        0#
+                        GHC.Types.krep$*
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.SomeTypeRep) of ww7 { (#,,,,#) ww8 ww9 ww10 ww11 ww12 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ MyNetwork2.Connection.HostCannotConnect
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12 }) -}
+1ca3bcf4273cd1b9fd218e38ccdd915d
+  $fExceptionHostCannotConnect5 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$fExceptionHostCannotConnect6) -}
+6d5b96c60708c3160a28baf640fceb8e
+  $fExceptionHostCannotConnect6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HostCannotConnect"#) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe MyNetwork2.Connection.HostCannotConnect
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.typeRepFingerprint
+                        @ *
+                        @ e1
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N) of wild1 { GHC.Fingerprint.Type.Fingerprint dt dt1 ->
+                 case MyNetwork2.Connection.$fExceptionHostCannotConnect3 of wild2 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                 case GHC.Prim.eqWord# dt dt2 of lwild {
+                   DEFAULT
+                   -> GHC.Base.Nothing @ MyNetwork2.Connection.HostCannotConnect
+                   1#
+                   -> case GHC.Prim.eqWord# dt1 dt3 of lwild1 {
+                        DEFAULT
+                        -> GHC.Base.Nothing @ MyNetwork2.Connection.HostCannotConnect
+                        1#
+                        -> (GHC.Base.Just @ e1 e2)
+                             `cast`
+                           (GHC.Base.Maybe
+                              (UnsafeCo representational e1 MyNetwork2.Connection.HostCannotConnect))_R } } } } }) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect_$cshow ::
+    MyNetwork2.Connection.HostCannotConnect -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyNetwork2.Connection.HostCannotConnect) ->
+                 MyNetwork2.Connection.$fExceptionHostCannotConnect_$cshowsPrec
+                   MyNetwork2.Connection.$fExceptionHostCannotConnect1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.HostCannotConnect -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: MyNetwork2.Connection.HostCannotConnect)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { MyNetwork2.Connection.HostCannotConnect ww3 ww4 ->
+                 MyNetwork2.Connection.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fExceptionHostCannotConnect_$ctoException ::
+    MyNetwork2.Connection.HostCannotConnect
+    -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved ::
+    GHC.Exception.Exception MyNetwork2.Connection.HostNotResolved
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.HostNotResolved
+                  MyNetwork2.Connection.$fExceptionHostNotResolved4
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <MyNetwork2.Connection.HostNotResolved>_N)
+                  MyNetwork2.Connection.$fShowHostNotResolved
+                  MyNetwork2.Connection.$fExceptionHostNotResolved_$ctoException
+                  MyNetwork2.Connection.$fExceptionHostNotResolved_$cfromException
+                  MyNetwork2.Connection.$fExceptionHostNotResolved_$cshow -}
+7be194fd74e35f0a0a24f1cff5429023
+  $fExceptionHostNotResolved1 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fb2f1c705dc9ce1e32d9d1d9943a2833
+  $fExceptionHostNotResolved2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HostNotResolved "#) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved3 :: GHC.Fingerprint.Type.Fingerprint
+  {- Unfolding: (Data.Typeable.Internal.typeRepFingerprint
+                   @ *
+                   @ MyNetwork2.Connection.HostNotResolved
+                   MyNetwork2.Connection.$fExceptionHostNotResolved4) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved4 ::
+    Data.Typeable.Internal.TypeRep
+      MyNetwork2.Connection.HostNotResolved
+  {- Unfolding: (case Data.Typeable.Internal.$wmkTrCon
+                        @ *
+                        @ MyNetwork2.Connection.HostNotResolved
+                        519273606317888011##
+                        4925053729131585702##
+                        MyNetwork2.Connection.$trModule
+                        MyNetwork2.Connection.$fExceptionHostNotResolved5
+                        0#
+                        GHC.Types.krep$*
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.SomeTypeRep) of ww7 { (#,,,,#) ww8 ww9 ww10 ww11 ww12 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ MyNetwork2.Connection.HostNotResolved
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12 }) -}
+7447446ec12a0d3cc7fc521d7626e900
+  $fExceptionHostNotResolved5 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$fExceptionHostNotResolved6) -}
+62d27df7afa87c4b0a57412abba2ec4c
+  $fExceptionHostNotResolved6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HostNotResolved"#) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe MyNetwork2.Connection.HostNotResolved
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.typeRepFingerprint
+                        @ *
+                        @ e1
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N) of wild1 { GHC.Fingerprint.Type.Fingerprint dt dt1 ->
+                 case MyNetwork2.Connection.$fExceptionHostNotResolved3 of wild2 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                 case GHC.Prim.eqWord# dt dt2 of lwild {
+                   DEFAULT -> GHC.Base.Nothing @ MyNetwork2.Connection.HostNotResolved
+                   1#
+                   -> case GHC.Prim.eqWord# dt1 dt3 of lwild1 {
+                        DEFAULT -> GHC.Base.Nothing @ MyNetwork2.Connection.HostNotResolved
+                        1#
+                        -> (GHC.Base.Just @ e1 e2)
+                             `cast`
+                           (GHC.Base.Maybe
+                              (UnsafeCo representational e1 MyNetwork2.Connection.HostNotResolved))_R } } } } }) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved_$cshow ::
+    MyNetwork2.Connection.HostNotResolved -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: MyNetwork2.Connection.HostNotResolved) ->
+                 case w of ww { MyNetwork2.Connection.HostNotResolved ww1 ->
+                 MyNetwork2.Connection.$w$cshow ww1 }) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fExceptionHostNotResolved_$ctoException ::
+    MyNetwork2.Connection.HostNotResolved
+    -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong ::
+    GHC.Exception.Exception MyNetwork2.Connection.LineTooLong
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.LineTooLong
+                  MyNetwork2.Connection.$fExceptionLineTooLong4
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <MyNetwork2.Connection.LineTooLong>_N)
+                  MyNetwork2.Connection.$fShowLineTooLong
+                  MyNetwork2.Connection.$fExceptionLineTooLong_$ctoException
+                  MyNetwork2.Connection.$fExceptionLineTooLong_$cfromException
+                  MyNetwork2.Connection.$fExceptionLineTooLong_$cshow -}
+5b69461e39f590f2f16f2c3005cf7b7a
+  $fExceptionLineTooLong1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.$fExceptionLineTooLong2) -}
+d5cfe9880970a23eb3d9e39f041a73ad
+  $fExceptionLineTooLong2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LineTooLong"#) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong3 :: GHC.Fingerprint.Type.Fingerprint
+  {- Unfolding: (Data.Typeable.Internal.typeRepFingerprint
+                   @ *
+                   @ MyNetwork2.Connection.LineTooLong
+                   MyNetwork2.Connection.$fExceptionLineTooLong4) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong4 ::
+    Data.Typeable.Internal.TypeRep MyNetwork2.Connection.LineTooLong
+  {- Unfolding: (case Data.Typeable.Internal.$wmkTrCon
+                        @ *
+                        @ MyNetwork2.Connection.LineTooLong
+                        9278488600586220679##
+                        14902106404532506266##
+                        MyNetwork2.Connection.$trModule
+                        MyNetwork2.Connection.$fExceptionLineTooLong5
+                        0#
+                        GHC.Types.krep$*
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.SomeTypeRep) of ww7 { (#,,,,#) ww8 ww9 ww10 ww11 ww12 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ MyNetwork2.Connection.LineTooLong
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12 }) -}
+ce558bedee86b90bff26044a2720111e
+  $fExceptionLineTooLong5 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$fExceptionLineTooLong2) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe MyNetwork2.Connection.LineTooLong
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.typeRepFingerprint
+                        @ *
+                        @ e1
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N) of wild1 { GHC.Fingerprint.Type.Fingerprint dt dt1 ->
+                 case MyNetwork2.Connection.$fExceptionLineTooLong3 of wild2 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                 case GHC.Prim.eqWord# dt dt2 of lwild {
+                   DEFAULT -> GHC.Base.Nothing @ MyNetwork2.Connection.LineTooLong
+                   1#
+                   -> case GHC.Prim.eqWord# dt1 dt3 of lwild1 {
+                        DEFAULT -> GHC.Base.Nothing @ MyNetwork2.Connection.LineTooLong
+                        1#
+                        -> (GHC.Base.Just @ e1 e2)
+                             `cast`
+                           (GHC.Base.Maybe
+                              (UnsafeCo representational e1 MyNetwork2.Connection.LineTooLong))_R } } } } }) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong_$cshow ::
+    MyNetwork2.Connection.LineTooLong -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyNetwork2.Connection.LineTooLong) ->
+                 case x of wild { MyNetwork2.Connection.LineTooLong ->
+                 MyNetwork2.Connection.$fExceptionLineTooLong1 }) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fExceptionLineTooLong_$ctoException ::
+    MyNetwork2.Connection.LineTooLong -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fShowHostCannotConnect ::
+    GHC.Show.Show MyNetwork2.Connection.HostCannotConnect
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.HostCannotConnect
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect_$cshowsPrec
+                  MyNetwork2.Connection.$fExceptionHostCannotConnect_$cshow
+                  MyNetwork2.Connection.$fShowHostCannotConnect_$cshowList -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fShowHostCannotConnect1 ::
+    MyNetwork2.Connection.HostCannotConnect -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U,1*U)><L,U>,
+     Unfolding: (\ (w :: MyNetwork2.Connection.HostCannotConnect)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { MyNetwork2.Connection.HostCannotConnect ww1 ww2 ->
+                 MyNetwork2.Connection.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
+b0e9de4c10b233dd75590062f9ef6421
+  $fShowHostCannotConnect_$cshowList ::
+    [MyNetwork2.Connection.HostCannotConnect] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork2.Connection.HostCannotConnect])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork2.Connection.HostCannotConnect
+                   MyNetwork2.Connection.$fShowHostCannotConnect1
+                   ls
+                   s) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fShowHostNotResolved ::
+    GHC.Show.Show MyNetwork2.Connection.HostNotResolved
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.HostNotResolved
+                  MyNetwork2.Connection.$fShowHostNotResolved_$cshowsPrec
+                  MyNetwork2.Connection.$fExceptionHostNotResolved_$cshow
+                  MyNetwork2.Connection.$fShowHostNotResolved_$cshowList -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fShowHostNotResolved1 ::
+    MyNetwork2.Connection.HostNotResolved -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(1*U)><L,U>,
+     Unfolding: (\ (w :: MyNetwork2.Connection.HostNotResolved)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { MyNetwork2.Connection.HostNotResolved ww1 ->
+                 MyNetwork2.Connection.$w$cshowsPrec1 0# ww1 w1 }) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fShowHostNotResolved_$cshowList ::
+    [MyNetwork2.Connection.HostNotResolved] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork2.Connection.HostNotResolved])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork2.Connection.HostNotResolved
+                   MyNetwork2.Connection.$fShowHostNotResolved1
+                   ls
+                   s) -}
+f41576c5fb1244a6b3e602a7f80ab4b8
+  $fShowHostNotResolved_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.HostNotResolved -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: MyNetwork2.Connection.HostNotResolved)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { MyNetwork2.Connection.HostNotResolved ww3 ->
+                 MyNetwork2.Connection.$w$cshowsPrec1 ww1 ww3 w2 } }) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fShowLineTooLong ::
+    GHC.Show.Show MyNetwork2.Connection.LineTooLong
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ MyNetwork2.Connection.LineTooLong
+                  MyNetwork2.Connection.$fShowLineTooLong_$cshowsPrec
+                  MyNetwork2.Connection.$fExceptionLineTooLong_$cshow
+                  MyNetwork2.Connection.$fShowLineTooLong_$cshowList -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fShowLineTooLong1 ::
+    MyNetwork2.Connection.LineTooLong -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*H><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: MyNetwork2.Connection.LineTooLong)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild { MyNetwork2.Connection.LineTooLong ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      MyNetwork2.Connection.$fExceptionLineTooLong1)
+                   eta }) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fShowLineTooLong_$cshowList ::
+    [MyNetwork2.Connection.LineTooLong] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [MyNetwork2.Connection.LineTooLong])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ MyNetwork2.Connection.LineTooLong
+                   MyNetwork2.Connection.$fShowLineTooLong1
+                   ls
+                   s) -}
+0bea884f9facecfd5c3112e73ab95bda
+  $fShowLineTooLong_$cshowsPrec ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.LineTooLong -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: MyNetwork2.Connection.LineTooLong)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild { MyNetwork2.Connection.LineTooLong ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      MyNetwork2.Connection.$fExceptionLineTooLong1)
+                   eta }) -}
+6ae515887a1b35c0150ca8350fa18928
+  $tc'HostCannotConnect :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2129611129598703151##
+                   4719239976231529821##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$tc'HostCannotConnect2
+                   0#
+                   MyNetwork2.Connection.$tc'HostCannotConnect1) -}
+2485ace1b3705e0d34358986afaea4e9
+  $tc'HostCannotConnect1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6fa926c2eda8f764cb890765afefde78
+  $tc'HostCannotConnect2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$tc'HostCannotConnect3) -}
+0b6e8b7c9dbad47e6958e5ac378669cd
+  $tc'HostCannotConnect3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HostCannotConnect"#) -}
+d94c49e80dc33f9efbb5cf5d0bc72f1b
+  $tc'HostNotResolved :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6396133425773711800##
+                   3264534939297686244##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$tc'HostNotResolved2
+                   0#
+                   MyNetwork2.Connection.$tc'HostNotResolved1) -}
+26bb3a950077901dbfad91e739194d7f
+  $tc'HostNotResolved1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e3961ae9b3e9887cd4f81184ef21cbf6
+  $tc'HostNotResolved2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$tc'HostNotResolved3) -}
+ddb0a6c53133a6f6eabb464480305490
+  $tc'HostNotResolved3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HostNotResolved"#) -}
+0c9ad8f31d081d4b63d3dfabdd6be89f
+  $tc'LineTooLong :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15501849476992815403##
+                   11349424129803563320##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$tc'LineTooLong2
+                   0#
+                   MyNetwork2.Connection.$tc'LineTooLong1) -}
+8a1928e28c25c7479bddf919324a8882
+  $tc'LineTooLong1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+4f877cb769248f51ac41924c6556827b
+  $tc'LineTooLong2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork2.Connection.$tc'LineTooLong3) -}
+c5473343f662818bea5de1aeadcb2a50
+  $tc'LineTooLong3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LineTooLong"#) -}
+e183fcb49898cf625e1a8227722d8bb9
+  $tcHostCannotConnect :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15186413227349377266##
+                   18403186070091392950##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$fExceptionHostCannotConnect5
+                   0#
+                   GHC.Types.krep$*) -}
+f790affbbde57b3b23ddcf7d1ed98758
+  $tcHostNotResolved :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   519273606317888011##
+                   4925053729131585702##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$fExceptionHostNotResolved5
+                   0#
+                   GHC.Types.krep$*) -}
+a66ea77456e1c3df8ca66965f02f71e2
+  $tcLineTooLong :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9278488600586220679##
+                   14902106404532506266##
+                   MyNetwork2.Connection.$trModule
+                   MyNetwork2.Connection.$fExceptionLineTooLong5
+                   0#
+                   GHC.Types.krep$*) -}
+c6af58a30791aaa67a613552cb338f2b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork2.Connection.$trModule3
+                   MyNetwork2.Connection.$trModule1) -}
+4e0ceb0f937a0c1ad36352b7df655bcd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork2.Connection.$trModule2) -}
+dc6b0e87e6bc179d622c234c6966aa99
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork2.Connection"#) -}
+60920204ddd04c1ec9dde90516df1e84
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork2.Connection.$trModule4) -}
+1866c98120faa6a2046babaeae26bf6a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+25e20d0a474b630a61136e58f850344b
+  $w$cshow :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   MyNetwork2.Connection.$fExceptionHostNotResolved2
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.$fShow(,)3
+                      (GHC.Show.showLitString
+                         ww
+                         MyNetwork2.Connection.$fExceptionHostNotResolved1))) -}
+1fab0e5330688249d6fb13a98110e794
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> [GHC.IO.Exception.IOException]
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Base.String)
+                   (ww2 :: [GHC.IO.Exception.IOException])
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       MyNetwork2.Connection.$fExceptionHostCannotConnect2
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.$fShow(,)3
+                          (GHC.Show.showLitString
+                             ww1
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (case ww2 of wild {
+                                      [] -> GHC.CString.unpackAppendCString# GHC.Show.showList__4 x
+                                      : x1 xs
+                                      -> GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.showList__3
+                                           (case x1 of ww3 { GHC.IO.Exception.IOError ww4 ww5 ww6 ww7 ww8 ww9 ->
+                                            GHC.IO.Exception.$w$cshowsPrec3
+                                              ww4
+                                              ww5
+                                              ww6
+                                              ww7
+                                              ww9
+                                              (let {
+                                                 lvl43 :: [GHC.Types.Char]
+                                                 = GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     GHC.Show.showList__2
+                                                     x
+                                               } in
+                                               letrec {
+                                                 showl :: [GHC.IO.Exception.IOException]
+                                                          -> GHC.Base.String
+                                                   {- Arity: 1, Strictness: <S,1*U> -}
+                                                 = \ (ds2 :: [GHC.IO.Exception.IOException]) ->
+                                                   case ds2 of wild1 {
+                                                     [] -> lvl43
+                                                     : y ys
+                                                     -> GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          GHC.Show.showList__1
+                                                          (case y of ww10 { GHC.IO.Exception.IOError ww11 ww12 ww13 ww14 ww15 ww16 ->
+                                                           GHC.IO.Exception.$w$cshowsPrec3
+                                                             ww11
+                                                             ww12
+                                                             ww13
+                                                             ww14
+                                                             ww16
+                                                             (showl ys) }) }
+                                               } in
+                                               showl xs) }) })))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p w
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
+d1e81c011879ea087f966d2611dbff41
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> GHC.CString.unpackAppendCString#
+                        MyNetwork2.Connection.$fExceptionHostNotResolved2
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)3
+                           (GHC.Show.showLitString
+                              ww1
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 w)))
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.CString.unpackAppendCString#
+                           MyNetwork2.Connection.$fExceptionHostNotResolved2
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.$fShow(,)3
+                              (GHC.Show.showLitString
+                                 ww1
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.$fShow(,)3
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))))) }) -}
+def14e59f5014cf864e98fb5a27c0314
+  $wconnectFromHandle ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> GHC.IO.Handle.Types.Handle
+    -> Network.Socket.HostName
+    -> Network.Socket.Types.PortNumber
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 6, Strictness: <L,1*U(U)><L,U><L,U><L,U(U)><S,1*U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: GHC.IO.Handle.Types.Handle)
+                   (ww :: Network.Socket.HostName)
+                   (ww1 :: Network.Socket.Types.PortNumber)
+                   (ww2 :: GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   cid :: (Network.Socket.HostName, Network.Socket.Types.PortNumber)
+                   = (ww, ww1)
+                 } in
+                 case ww2 of wild {
+                   GHC.Base.Nothing
+                   -> case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             w2 of ds { (#,#) ipv ipv1 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv1
+                             (MyNetwork2.Connection.Types.ConnectionStream w1)
+                             ipv of s2# { DEFAULT ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             s2# of ds1 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             ipv3
+                             MyNetwork2.Connection.connectFromHandle6
+                             ipv2 of s2#1 { DEFAULT ->
+                      (# s2#1,
+                         MyNetwork2.Connection.Types.Connection
+                           (GHC.MVar.MVar
+                              @ MyNetwork2.Connection.Types.ConnectionBackend
+                              ipv1)
+                           (GHC.MVar.MVar
+                              @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                              ipv3)
+                           cid #) } } } }
+                   GHC.Base.Just tlsSettings
+                   -> case (Network.TLS.Context.contextNew
+                              @ GHC.Types.IO
+                              @ GHC.IO.Handle.Types.Handle
+                              @ Network.TLS.Parameters.ClientParams
+                              Control.Monad.IO.Class.$fMonadIOIO
+                              Network.TLS.Backend.$fHasBackendHandle
+                              Network.TLS.Context.$fTLSParamsClientParams
+                              w1
+                              (case MyNetwork2.Connection.$wmakeTLSParams
+                                      w
+                                      cid
+                                      tlsSettings of ww3 { (#,,,,,,,#) ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                               Network.TLS.Parameters.ClientParams
+                                 ww4
+                                 ww5
+                                 ww6
+                                 ww7
+                                 ww8
+                                 ww9
+                                 ww10
+                                 ww11 }))
+                             `cast`
+                           (GHC.Types.N:IO[0] <Network.TLS.Context.Internal.Context>_R)
+                             w2 of ds1 { (#,#) ipv ipv1 ->
+                      case (Network.TLS.Handshake.handshake
+                              @ GHC.Types.IO
+                              Control.Monad.IO.Class.$fMonadIOIO
+                              ipv1)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv2 of ds { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv5
+                             (MyNetwork2.Connection.Types.ConnectionTLS ipv1)
+                             ipv4 of s2# { DEFAULT ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             s2# of ds3 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             ipv7
+                             MyNetwork2.Connection.connectFromHandle6
+                             ipv6 of s2#1 { DEFAULT ->
+                      (# s2#1,
+                         MyNetwork2.Connection.Types.Connection
+                           (GHC.MVar.MVar
+                              @ MyNetwork2.Connection.Types.ConnectionBackend
+                              ipv5)
+                           (GHC.MVar.MVar
+                              @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                              ipv7)
+                           cid #) } } } } } } }) -}
+e1d2ddb0092ff48758bb2eb800c5559c
+  $wconnectFromSocket ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> Network.Socket.Types.Socket
+    -> Network.Socket.HostName
+    -> Network.Socket.Types.PortNumber
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 6, Strictness: <L,1*U(U)><L,U><L,U><L,U(U)><S,1*U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: Network.Socket.Types.Socket)
+                   (ww :: Network.Socket.HostName)
+                   (ww1 :: Network.Socket.Types.PortNumber)
+                   (ww2 :: GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   cid :: (Network.Socket.HostName, Network.Socket.Types.PortNumber)
+                   = (ww, ww1)
+                 } in
+                 case ww2 of wild {
+                   GHC.Base.Nothing
+                   -> case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             w2 of ds { (#,#) ipv ipv1 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv1
+                             (MyNetwork2.Connection.Types.ConnectionSocket w1)
+                             ipv of s2# { DEFAULT ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             s2# of ds1 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             ipv3
+                             MyNetwork2.Connection.connectFromHandle6
+                             ipv2 of s2#1 { DEFAULT ->
+                      (# s2#1,
+                         MyNetwork2.Connection.Types.Connection
+                           (GHC.MVar.MVar
+                              @ MyNetwork2.Connection.Types.ConnectionBackend
+                              ipv1)
+                           (GHC.MVar.MVar
+                              @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                              ipv3)
+                           cid #) } } } }
+                   GHC.Base.Just tlsSettings
+                   -> case (Network.TLS.Context.contextNew
+                              @ GHC.Types.IO
+                              @ Network.Socket.Types.Socket
+                              @ Network.TLS.Parameters.ClientParams
+                              Control.Monad.IO.Class.$fMonadIOIO
+                              Network.TLS.Backend.$fHasBackendSocket
+                              Network.TLS.Context.$fTLSParamsClientParams
+                              w1
+                              (case MyNetwork2.Connection.$wmakeTLSParams
+                                      w
+                                      cid
+                                      tlsSettings of ww3 { (#,,,,,,,#) ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ->
+                               Network.TLS.Parameters.ClientParams
+                                 ww4
+                                 ww5
+                                 ww6
+                                 ww7
+                                 ww8
+                                 ww9
+                                 ww10
+                                 ww11 }))
+                             `cast`
+                           (GHC.Types.N:IO[0] <Network.TLS.Context.Internal.Context>_R)
+                             w2 of ds1 { (#,#) ipv ipv1 ->
+                      case (Network.TLS.Handshake.handshake
+                              @ GHC.Types.IO
+                              Control.Monad.IO.Class.$fMonadIOIO
+                              ipv1)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv2 of ds { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ MyNetwork2.Connection.Types.ConnectionBackend
+                             ipv5
+                             (MyNetwork2.Connection.Types.ConnectionTLS ipv1)
+                             ipv4 of s2# { DEFAULT ->
+                      case GHC.Prim.newMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             s2# of ds3 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                             ipv7
+                             MyNetwork2.Connection.connectFromHandle6
+                             ipv6 of s2#1 { DEFAULT ->
+                      (# s2#1,
+                         MyNetwork2.Connection.Types.Connection
+                           (GHC.MVar.MVar
+                              @ MyNetwork2.Connection.Types.ConnectionBackend
+                              ipv5)
+                           (GHC.MVar.MVar
+                              @ (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+                              ipv7)
+                           cid #) } } } } } } }) -}
+2125b5f12cbc43ce5f335b380b73993c
+  $wconnectTo ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> Network.Socket.HostName
+    -> Network.Socket.Types.PortNumber
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Base.Maybe MyNetwork2.Connection.Types.ProxySettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 6,
+     Strictness: <L,1*U(U)><L,U><L,U(U)><L,1*U><S,1*U><S,U>,
+     Inline: [0] -}
+80562103596b877952362df4898e1bc0
+  $wconnectionClose ::
+    GHC.Prim.MVar#
+      GHC.Prim.RealWorld MyNetwork2.Connection.Types.ConnectionBackend
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.MVar#
+                            GHC.Prim.RealWorld MyNetwork2.Connection.Types.ConnectionBackend)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.readMVar#
+                        @ GHC.Prim.RealWorld
+                        @ MyNetwork2.Connection.Types.ConnectionBackend
+                        ww
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   MyNetwork2.Connection.Types.ConnectionStream h
+                   -> GHC.IO.Handle.hClose1 h ipv
+                   MyNetwork2.Connection.Types.ConnectionSocket sock
+                   -> Network.Socket.close1 sock ipv
+                   MyNetwork2.Connection.Types.ConnectionTLS ctx
+                   -> case ctx of wild1 { Network.TLS.Context.Internal.Context ds ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                      case ds of wild2 { Network.TLS.Backend.Backend ds19 ds20 ds21 ds22 ->
+                      Control.Exception.Base.finally1
+                        @ ()
+                        @ ()
+                        (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                         GHC.Prim.catch#
+                           @ ()
+                           @ GHC.Exception.SomeException
+                           (Network.TLS.Core.bye
+                              @ GHC.Types.IO
+                              Control.Monad.IO.Class.$fMonadIOIO
+                              wild1)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                           MyNetwork2.Connection.connectionClose2
+                           eta)
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0] <()>_R))
+                        ds20
+                        ipv } } } }) -}
+3cd791f75c055e28a125409212a9a390
+  $wconnectionGet ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.<# ww 0# of lwild {
+                   DEFAULT
+                   -> case ww of wild {
+                        DEFAULT
+                        -> case w of ww1 { MyNetwork2.Connection.Types.Connection ww2 ww3 ww4 ->
+                           case ww3 of ww5 { GHC.MVar.MVar ww6 ->
+                           MyNetwork2.Connection.$wconnectionGetChunkBase
+                             @ Data.ByteString.Internal.ByteString
+                             MyNetwork2.Connection.connectionGet4
+                             ww2
+                             ww6
+                             ww4
+                             (Data.ByteString.splitAt (GHC.Types.I# wild))
+                             w1 } }
+                        0# -> (# w1, Data.ByteString.empty #) }
+                   1#
+                   -> (GHC.Magic.noinline
+                         @ (forall a. [GHC.Types.Char] -> GHC.Types.IO a)
+                         GHC.IO.failIO1
+                           `cast`
+                         (forall (a :: <*>_N).
+                          <GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                         @ Data.ByteString.Internal.ByteString
+                         MyNetwork2.Connection.connectionGet2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Data.ByteString.Internal.ByteString>_R)
+                        w1 }) -}
+09513bccb0091265f9a2157b7da45037
+  $wconnectionGetChunkBase ::
+    GHC.Base.String
+    -> GHC.MVar.MVar MyNetwork2.Connection.Types.ConnectionBackend
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+    -> MyNetwork2.Connection.Types.ConnectionID
+    -> (Data.ByteString.Internal.ByteString
+        -> (a, Data.ByteString.Internal.ByteString))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U(U)><S,U><L,1*U(1*U,1*U(U))><L,1*C1(U(U,1*U(U,U,U,U)))><S,U>,
+     Inline: [0] -}
+d6dbc197bdb28f2c74fcfb6cb3831569
+  $wconnectionGetExact ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 3, Strictness: <L,U(U(U),U(U),U(U,U(U)))><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 letrec {
+                   $wloop :: Data.ByteString.Internal.ByteString
+                             -> GHC.Prim.Int#
+                             -> GHC.Prim.State# GHC.Prim.RealWorld
+                             -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                   Data.ByteString.Internal.ByteString #)
+                     <join 3> {- Arity: 3, Strictness: <L,U><S,U><S,U>, Inline: [0] -}
+                   = \ (w2 :: Data.ByteString.Internal.ByteString)
+                       (ww1 :: GHC.Prim.Int#)
+                       (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case GHC.Prim.==# ww1 ww of lwild {
+                       DEFAULT
+                       -> let {
+                            x :: GHC.Prim.Int# = GHC.Prim.-# ww ww1
+                          } in
+                          case GHC.Prim.<# x 0# of lwild1 {
+                            DEFAULT
+                            -> case x of wild {
+                                 DEFAULT
+                                 -> case w of ww2 { MyNetwork2.Connection.Types.Connection ww3 ww4 ww5 ->
+                                    case ww4 of ww6 { GHC.MVar.MVar ww7 ->
+                                    case MyNetwork2.Connection.$wconnectionGetChunkBase
+                                           @ Data.ByteString.Internal.ByteString
+                                           MyNetwork2.Connection.connectionGet4
+                                           ww3
+                                           ww7
+                                           ww5
+                                           (Data.ByteString.splitAt (GHC.Types.I# wild))
+                                           w3 of ds1 { (#,#) ipv ipv1 ->
+                                    case ipv1 of wild1 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                                    $wloop
+                                      (GHC.Base.mappend
+                                         @ Data.ByteString.Internal.ByteString
+                                         Data.ByteString.Internal.$fMonoidByteString
+                                         w2
+                                         wild1)
+                                      (GHC.Prim.+# ww1 dt3)
+                                      ipv } } } }
+                                 0#
+                                 -> $wloop
+                                      (GHC.Base.mappend
+                                         @ Data.ByteString.Internal.ByteString
+                                         Data.ByteString.Internal.$fMonoidByteString
+                                         w2
+                                         Data.ByteString.empty)
+                                      ww1
+                                      w3 }
+                            1#
+                            -> case (GHC.Magic.noinline
+                                       @ (forall a. [GHC.Types.Char] -> GHC.Types.IO a)
+                                       GHC.IO.failIO1
+                                         `cast`
+                                       (forall (a :: <*>_N).
+                                        <GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                                       @ Data.ByteString.Internal.ByteString
+                                       MyNetwork2.Connection.connectionGet2)
+                                      `cast`
+                                    (GHC.Types.N:IO[0] <Data.ByteString.Internal.ByteString>_R)
+                                      w3 of ds1 { (#,#) ipv ipv1 ->
+                               case ipv1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                               $wloop
+                                 (GHC.Base.mappend
+                                    @ Data.ByteString.Internal.ByteString
+                                    Data.ByteString.Internal.$fMonoidByteString
+                                    w2
+                                    wild)
+                                 (GHC.Prim.+# ww1 dt3)
+                                 ipv } } }
+                       1# -> (# w3, w2 #) }
+                 } in
+                 $wloop Data.ByteString.empty 0# w1) -}
+706e7c7e92265e1760f85df4b2f0c60d
+  $wconnectionGetLine ::
+    GHC.Types.Int
+    -> GHC.MVar.MVar MyNetwork2.Connection.Types.ConnectionBackend
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+    -> MyNetwork2.Connection.Types.ConnectionID
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,U><L,U(U,U(U))><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int)
+                   (ww :: GHC.MVar.MVar MyNetwork2.Connection.Types.ConnectionBackend)
+                   (ww1 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld
+                             (GHC.Base.Maybe Data.ByteString.Internal.ByteString))
+                   (ww2 :: MyNetwork2.Connection.Types.ConnectionID)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 letrec {
+                   $wmore :: GHC.Prim.Int#
+                             -> ([Data.ByteString.Internal.ByteString]
+                                 -> [Data.ByteString.Internal.ByteString])
+                             -> GHC.Prim.State# GHC.Prim.RealWorld
+                             -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                   Data.ByteString.Internal.ByteString #)
+                     {- Arity: 3, Strictness: <L,U><S,1*U><S,U>, Inline: [0] -}
+                   = \ (ww3 :: GHC.Prim.Int#)
+                       (w2 :: [Data.ByteString.Internal.ByteString]
+                              -> [Data.ByteString.Internal.ByteString])
+                       (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case w2 of dl { DEFAULT ->
+                     case MyNetwork2.Connection.$wconnectionGetChunkBase
+                            @ (GHC.Types.IO Data.ByteString.Internal.ByteString)
+                            MyNetwork2.Connection.connectionGetLine_loc
+                            ww
+                            ww1
+                            ww2
+                            (\ (s :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                             case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                             case GHC.Prim.<=# dt3 0# of lwild {
+                               DEFAULT
+                               -> let {
+                                    p' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt dt2
+                                  } in
+                                  case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                                        -> GHC.Prim.Int#
+                                                                        -> GHC.Prim.Word#
+                                                                        -> GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld
+                                                                        -> (# GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld,
+                                                                              GHC.Prim.Addr# #)}
+                                         p'
+                                         10#
+                                         (GHC.Prim.int2Word# dt3)
+                                         GHC.Prim.realWorld# of wild2 { (#,#) ds4 ds5 ->
+                                  let {
+                                    $w$j :: Data.ByteString.Internal.ByteString
+                                            -> GHC.Prim.Addr#
+                                            -> GHC.ForeignPtr.ForeignPtrContents
+                                            -> GHC.Prim.Int#
+                                            -> GHC.Prim.Int#
+                                            -> (GHC.Types.IO Data.ByteString.Internal.ByteString,
+                                                Data.ByteString.Internal.ByteString)
+                                      <join 5> {- Arity: 5,
+                                                  Strictness: <L,U(U,U,U,U)><L,U><L,U><L,U><S,U>m,
+                                                  Inline: [0] -}
+                                    = \ (w4 :: Data.ByteString.Internal.ByteString)[OneShot]
+                                        (ww4 :: GHC.Prim.Addr#)[OneShot]
+                                        (ww5 :: GHC.ForeignPtr.ForeignPtrContents)[OneShot]
+                                        (ww6 :: GHC.Prim.Int#)[OneShot]
+                                        (ww7 :: GHC.Prim.Int#)[OneShot] ->
+                                      case GHC.Prim.<=# ww7 0# of lwild1 {
+                                        DEFAULT
+                                        -> ((\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                             case Data.ByteString.concat
+                                                    (dl
+                                                       (GHC.Types.:
+                                                          @ Data.ByteString.Internal.ByteString
+                                                          w4
+                                                          (GHC.Types.[]
+                                                             @ Data.ByteString.Internal.ByteString))) of vx { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                                             (# eta, vx #) })
+                                              `cast`
+                                            (Sym (GHC.Types.N:IO[0]
+                                                      <Data.ByteString.Internal.ByteString>_R)),
+                                            Data.ByteString.Internal.PS
+                                              ww4
+                                              ww5
+                                              (GHC.Prim.+# ww6 1#)
+                                              (GHC.Prim.-# ww7 1#))
+                                        1#
+                                        -> (case w4 of wild1 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                                            case w of wild3 { GHC.Types.I# y ->
+                                            case GHC.Prim.># (GHC.Prim.+# ww3 dt7) y of lwild2 {
+                                              DEFAULT
+                                              -> (\ (w5 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                                  $wmore
+                                                    (GHC.Prim.+# ww3 dt7)
+                                                    (\ (x :: [Data.ByteString.Internal.ByteString]) ->
+                                                     dl
+                                                       (GHC.Types.:
+                                                          @ Data.ByteString.Internal.ByteString
+                                                          wild1
+                                                          x))
+                                                    w5)
+                                                   `cast`
+                                                 (Sym (GHC.Types.N:IO[0]
+                                                           <Data.ByteString.Internal.ByteString>_R))
+                                              1#
+                                              -> (MyNetwork2.Connection.connectionGetLine2
+                                                    @ Data.ByteString.Internal.ByteString)
+                                                   `cast`
+                                                 (Sym (GHC.Types.N:IO[0]
+                                                           <Data.ByteString.Internal.ByteString>_R)) } } },
+                                            Data.ByteString.empty) }
+                                  } in
+                                  case GHC.Prim.eqAddr# ds5 __NULL of lwild1 {
+                                    DEFAULT
+                                    -> case GHC.Prim.touch#
+                                              @ 'GHC.Types.LiftedRep
+                                              @ GHC.ForeignPtr.ForeignPtrContents
+                                              dt1
+                                              ds4 of s' { DEFAULT ->
+                                       let {
+                                         n :: GHC.Prim.Int# = GHC.Prim.minusAddr# ds5 p'
+                                       } in
+                                       $w$j
+                                         (Data.ByteString.Internal.PS dt dt1 dt2 n)
+                                         dt
+                                         dt1
+                                         (GHC.Prim.+# dt2 n)
+                                         (GHC.Prim.-# dt3 n) }
+                                    1#
+                                    -> case GHC.Prim.touch#
+                                              @ 'GHC.Types.LiftedRep
+                                              @ GHC.ForeignPtr.ForeignPtrContents
+                                              dt1
+                                              ds4 of s' { DEFAULT ->
+                                       $w$j
+                                         wild
+                                         __NULL
+                                         Data.ByteString.Internal.$fMonoidByteString1
+                                         0#
+                                         0# } } }
+                               1#
+                               -> let {
+                                    eofK :: GHC.Prim.State# GHC.Prim.RealWorld
+                                            -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                  Data.ByteString.Internal.ByteString #)
+                                      {- Arity: 1, Strictness: <S,U>,
+                                         Unfolding: InlineRule (1, True, False)
+                                                    (\ (eta :: GHC.Prim.State#
+                                                                 GHC.Prim.RealWorld) ->
+                                                     case Data.ByteString.concat
+                                                            (dl
+                                                               (GHC.Types.[]
+                                                                  @ Data.ByteString.Internal.ByteString)) of vx { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                                                     (# eta, vx #) }) -}
+                                    = \ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                      case Data.ByteString.concat
+                                             (dl
+                                                (GHC.Types.[]
+                                                   @ Data.ByteString.Internal.ByteString)) of vx { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                                      (# eta, vx #) }
+                                  } in
+                                  (eofK
+                                     `cast`
+                                   (Sym (GHC.Types.N:IO[0]
+                                             <Data.ByteString.Internal.ByteString>_R)),
+                                   Data.ByteString.empty) } })
+                            w3 of ds1 { (#,#) ipv ipv1 ->
+                     ipv1
+                       `cast`
+                     (GHC.Types.N:IO[0] <Data.ByteString.Internal.ByteString>_R)
+                       ipv } }
+                 } in
+                 $wmore
+                   0#
+                   (GHC.Base.id @ [Data.ByteString.Internal.ByteString])
+                   w1) -}
+a43ff41b5726577dfb43d627e5d0e746
+  $wconnectionPut ::
+    GHC.Prim.MVar#
+      GHC.Prim.RealWorld MyNetwork2.Connection.Types.ConnectionBackend
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,U><L,U(U,U,U,U)><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.MVar#
+                            GHC.Prim.RealWorld MyNetwork2.Connection.Types.ConnectionBackend)
+                   (w :: Data.ByteString.Internal.ByteString)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.readMVar#
+                        @ GHC.Prim.RealWorld
+                        @ MyNetwork2.Connection.Types.ConnectionBackend
+                        ww
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   MyNetwork2.Connection.Types.ConnectionStream h
+                   -> case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             MyNetwork2.Connection.connectionPut9
+                             GHC.Types.True
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case w of ww1 { Data.ByteString.Internal.PS ww2 ww3 ww4 ww5 ->
+                      case ww5 of ds {
+                        DEFAULT
+                        -> case GHC.IO.Handle.Text.$whPutBuf'
+                                  @ GHC.Types.Any
+                                  h
+                                  (GHC.Ptr.Ptr @ GHC.Types.Any (GHC.Prim.plusAddr# ww2 ww4))
+                                  ds
+                                  GHC.Types.True
+                                  ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  ww3
+                                  ipv4 of s' { DEFAULT ->
+                           GHC.IO.Handle.Internals.wantWritableHandle1
+                             @ ()
+                             GHC.IO.Handle.hFlush2
+                             h
+                             GHC.IO.Handle.Internals.flushWriteBuffer1
+                               `cast`
+                             (<GHC.IO.Handle.Types.Handle__>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             s' } }
+                        0#
+                        -> GHC.IO.Handle.Internals.wantWritableHandle1
+                             @ ()
+                             GHC.IO.Handle.hFlush2
+                             h
+                             GHC.IO.Handle.Internals.flushWriteBuffer1
+                               `cast`
+                             (<GHC.IO.Handle.Types.Handle__>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             ipv2 } } }
+                   MyNetwork2.Connection.Types.ConnectionSocket s
+                   -> case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             MyNetwork2.Connection.connectionPut7
+                             GHC.Types.True
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case MyNetwork2.Connection.connectionPut6
+                             s
+                             w
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        MyNetwork2.Connection.connectionPut4
+                        GHC.Types.True
+                        ipv4 } }
+                   MyNetwork2.Connection.Types.ConnectionTLS ctx
+                   -> case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             MyNetwork2.Connection.connectionPut2
+                             GHC.Types.True
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      (Network.TLS.Core.sendData
+                         @ GHC.Types.IO
+                         Control.Monad.IO.Class.$fMonadIOIO
+                         ctx
+                         (Data.ByteString.Lazy.fromChunks_go
+                            (GHC.Types.:
+                               @ Data.ByteString.Internal.ByteString
+                               w
+                               (GHC.Types.[] @ Data.ByteString.Internal.ByteString))))
+                        `cast`
+                      (GHC.Types.N:IO[0] <()>_R)
+                        ipv2 } } }) -}
+eb5b56be3b813f66ea78cdfa2ce03d73
+  $wconnectionSetSecure ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> GHC.MVar.MVar MyNetwork2.Connection.Types.ConnectionBackend
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+    -> MyNetwork2.Connection.Types.ConnectionID
+    -> MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 6,
+     Strictness: <L,1*U(U)><L,1*U(U)><S,U><L,U(U,U(U))><L,1*U><S,U>,
+     Inline: [0] -}
+35b6526b697a2801c2bab5f807944fc6
+  $wconnectionWaitForInput ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Timeout.$wtimeout
+                        @ ()
+                        (GHC.Prim.*# ww 1000#)
+                        (\ (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case w of ww1 { MyNetwork2.Connection.Types.Connection ww2 ww3 ww4 ->
+                         case ww3 of ww5 { GHC.MVar.MVar ww6 ->
+                         MyNetwork2.Connection.$wconnectionGetChunkBase
+                           @ ()
+                           MyNetwork2.Connection.connectionWaitForInput3
+                           ww2
+                           ww6
+                           ww4
+                           MyNetwork2.Connection.connectionWaitForInput2
+                           w2 } })
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0] <()>_R))
+                        w1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    case ipv1 of wild {
+                      GHC.Base.Nothing -> GHC.Types.False
+                      GHC.Base.Just x -> GHC.Types.True } #) }) -}
+12ecbc386d56b730de0c347e16f57f1d
+  $wmakeTLSParams ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> MyNetwork2.Connection.Types.ConnectionID
+    -> MyNetwork2.Connection.Types.TLSSettings
+    -> (# GHC.Base.Maybe Network.TLS.Extension.MaxFragmentEnum,
+          (Network.TLS.Parameters.HostName,
+           Data.ByteString.Internal.ByteString),
+          GHC.Types.Bool,
+          GHC.Base.Maybe
+            (Network.TLS.Types.SessionID, Network.TLS.Types.SessionData),
+          Network.TLS.Parameters.Shared, Network.TLS.Parameters.ClientHooks,
+          Network.TLS.Parameters.Supported,
+          Network.TLS.Parameters.DebugParams #)
+  {- Arity: 3, Strictness: <L,1*U(U)><L,U(1*U,1*U(U))><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: MyNetwork2.Connection.Types.ConnectionID)
+                   (w2 :: MyNetwork2.Connection.Types.TLSSettings) ->
+                 case w2 of wild {
+                   MyNetwork2.Connection.Types.TLSSettingsSimple ds ds1 ds2
+                   -> (# GHC.Base.Nothing @ Network.TLS.Extension.MaxFragmentEnum,
+                         (Data.Tuple.fst
+                            @ Network.Socket.HostName
+                            @ Network.Socket.Types.PortNumber
+                            w1,
+                          case w1 of wild1 { (,) ds3 y ->
+                          case y `cast`
+                               (Network.Socket.Types.N:PortNumber[0]) of ww { GHC.Word.W16# ww1 ->
+                          case {__pkg_ccall network-2.6.3.6 GHC.Prim.Word#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Word# #)}
+                                 ww1
+                                 GHC.Prim.realWorld# of wild2 { (#,#) ds4 ds5 ->
+                          case GHC.Show.$wshowSignedInt
+                                 0#
+                                 (GHC.Prim.word2Int# (GHC.Prim.narrow16Word# ds5))
+                                 (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                          let {
+                            cs :: [GHC.Types.Char] = GHC.Types.: @ GHC.Types.Char ww3 ww4
+                          } in
+                          case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww7 { DEFAULT ->
+                          Data.ByteString.Internal.$wunsafePackLenChars ww7 cs } } } } }),
+                         GHC.Types.True,
+                         GHC.Base.Nothing
+                           @ (Network.TLS.Types.SessionID, Network.TLS.Types.SessionData),
+                         Network.TLS.Parameters.Shared
+                           (GHC.Types.[] @ Network.TLS.Credentials.Credential)
+                             `cast`
+                           (Sym (Network.TLS.Credentials.N:Credentials[0]))
+                           Network.TLS.Session.noSessionManager
+                           (MyNetwork2.Connection.Types.globalCertificateStore w)
+                           (case ds of wild1 {
+                              GHC.Types.False
+                              -> Data.X509.Validation.Cache.$fDefaultValidationCache_$cdef
+                              GHC.Types.True -> MyNetwork2.Connection.connectFromHandle3 }),
+                         Network.TLS.Parameters.$fDefaultClientHooks_$cdef,
+                         MyNetwork2.Connection.connectFromHandle2,
+                         Network.TLS.Parameters.defaultDebugParams #)
+                   MyNetwork2.Connection.Types.TLSSettings p
+                   -> case p of wild1 { Network.TLS.Parameters.ClientParams ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                      (# ds,
+                         (Data.Tuple.fst
+                            @ Network.Socket.HostName
+                            @ Network.Socket.Types.PortNumber
+                            w1,
+                          case w1 of wild2 { (,) ds8 y ->
+                          case y `cast`
+                               (Network.Socket.Types.N:PortNumber[0]) of ww { GHC.Word.W16# ww1 ->
+                          case {__pkg_ccall network-2.6.3.6 GHC.Prim.Word#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Word# #)}
+                                 ww1
+                                 GHC.Prim.realWorld# of wild3 { (#,#) ds9 ds10 ->
+                          case GHC.Show.$wshowSignedInt
+                                 0#
+                                 (GHC.Prim.word2Int# (GHC.Prim.narrow16Word# ds10))
+                                 (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                          let {
+                            cs :: [GHC.Types.Char] = GHC.Types.: @ GHC.Types.Char ww3 ww4
+                          } in
+                          case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww7 { DEFAULT ->
+                          Data.ByteString.Internal.$wunsafePackLenChars ww7 cs } } } } }),
+                         ds2, ds3, ds4, ds5, ds6, ds7 #) } }) -}
+b0e9de4c10b233dd75590062f9ef6421
+  data HostCannotConnect
+    = HostCannotConnect GHC.Base.String [GHC.IO.Exception.IOException]
+f41576c5fb1244a6b3e602a7f80ab4b8
+  data HostNotResolved = HostNotResolved GHC.Base.String
+0bea884f9facecfd5c3112e73ab95bda
+  data LineTooLong = LineTooLong
+e391c3667a18e82d8e28aaf5d3f38cbe
+  type Manager =
+    GHC.MVar.MVar
+      (Data.Map.Internal.Map
+         Network.TLS.Types.SessionID Network.TLS.Types.SessionData)
+90f0aebf13443027c34e31f87d5229ad
+  connectFromHandle ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> GHC.IO.Handle.Types.Handle
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Types.IO MyNetwork2.Connection.Types.Connection
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><L,U><S(LLSL),1*U(U,U(U),1*U,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectFromHandle1
+                  `cast`
+                (<MyNetwork2.Connection.Types.ConnectionContext>_R
+                 ->_R <GHC.IO.Handle.Types.Handle>_R
+                 ->_R <MyNetwork2.Connection.Types.ConnectionParams>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <MyNetwork2.Connection.Types.Connection>_R)) -}
+baa2a39afcdadd93af5bfcb9bf1fdd61
+  connectFromHandle1 ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> GHC.IO.Handle.Types.Handle
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><L,U><S(LLSL),1*U(U,U(U),1*U,A)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: GHC.IO.Handle.Types.Handle)
+                   (w2 :: MyNetwork2.Connection.Types.ConnectionParams)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w2 of ww { MyNetwork2.Connection.Types.ConnectionParams ww1 ww2 ww3 ww4 ->
+                 MyNetwork2.Connection.$wconnectFromHandle w w1 ww1 ww2 ww3 w3 }) -}
+fde825e2480c6b012b5288f958d7e50b
+  connectFromHandle2 :: Network.TLS.Parameters.Supported
+  {- Strictness: m,
+     Unfolding: (Network.TLS.Parameters.Supported
+                   Network.TLS.Parameters.$fDefaultServerParams22
+                   Network.TLS.Extra.Cipher.ciphersuite_all
+                   Network.TLS.Parameters.$fDefaultServerParams21
+                   Network.TLS.Parameters.$fDefaultServerParams5
+                   GHC.Types.True
+                   GHC.Types.False
+                   GHC.Types.True
+                   GHC.Types.True
+                   GHC.Types.True
+                   Network.TLS.Parameters.$fDefaultServerParams1) -}
+f0b11b7c08e64a0b8fd0d5e277644f23
+  connectFromHandle3 :: Data.X509.Validation.Cache.ValidationCache
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.X509.Validation.Cache.ValidationCache
+                   MyNetwork2.Connection.connectFromHandle5
+                     `cast`
+                   (<Data.X509.Validation.Types.ServiceID>_R
+                    ->_R <Data.X509.Validation.Fingerprint.Fingerprint>_R
+                    ->_R <Data.X509.Cert.Certificate>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.X509.Validation.Cache.ValidationCacheResult>_R))
+                   MyNetwork2.Connection.connectFromHandle4
+                     `cast`
+                   (<Data.X509.Validation.Types.ServiceID>_R
+                    ->_R <Data.X509.Validation.Fingerprint.Fingerprint>_R
+                    ->_R <Data.X509.Cert.Certificate>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <()>_R))) -}
+f31c5e6e38e2cae35439de4d4adbed1d
+  connectFromHandle4 ::
+    Data.X509.Validation.Types.ServiceID
+    -> Data.X509.Validation.Fingerprint.Fingerprint
+    -> Data.X509.Cert.Certificate
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><S,U>,
+     Unfolding: InlineRule (4, True, True)
+                (\ (ds :: Data.X509.Validation.Types.ServiceID)
+                   (ds1 :: Data.X509.Validation.Fingerprint.Fingerprint)
+                   (ds2 :: Data.X509.Cert.Certificate)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, GHC.Tuple.() #)) -}
+8c11329ad11a5fe47e558ef736d2344d
+  connectFromHandle5 ::
+    Data.X509.Validation.Types.ServiceID
+    -> Data.X509.Validation.Fingerprint.Fingerprint
+    -> Data.X509.Cert.Certificate
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.X509.Validation.Cache.ValidationCacheResult #)
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><S,U>,
+     Unfolding: InlineRule (4, True, True)
+                (\ (ds :: Data.X509.Validation.Types.ServiceID)
+                   (ds1 :: Data.X509.Validation.Fingerprint.Fingerprint)
+                   (ds2 :: Data.X509.Cert.Certificate)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, Data.X509.Validation.Cache.ValidationCachePass #)) -}
+f43e8f9011b5c45438c3386d1650605f
+  connectFromHandle6 ::
+    GHC.Base.Maybe Data.ByteString.Internal.ByteString
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.ByteString.Internal.ByteString
+                   Data.ByteString.empty) -}
+0c5ccebef0989704f59b8ab9ea1c7de5
+  connectFromSocket ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> Network.Socket.Types.Socket
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Types.IO MyNetwork2.Connection.Types.Connection
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><L,U><S(LLSL),1*U(U,U(U),1*U,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectFromSocket1
+                  `cast`
+                (<MyNetwork2.Connection.Types.ConnectionContext>_R
+                 ->_R <Network.Socket.Types.Socket>_R
+                 ->_R <MyNetwork2.Connection.Types.ConnectionParams>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <MyNetwork2.Connection.Types.Connection>_R)) -}
+d97618d0e6c559e7907ec918533029ff
+  connectFromSocket1 ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> Network.Socket.Types.Socket
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><L,U><S(LLSL),1*U(U,U(U),1*U,A)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: Network.Socket.Types.Socket)
+                   (w2 :: MyNetwork2.Connection.Types.ConnectionParams)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w2 of ww { MyNetwork2.Connection.Types.ConnectionParams ww1 ww2 ww3 ww4 ->
+                 MyNetwork2.Connection.$wconnectFromSocket w w1 ww1 ww2 ww3 w3 }) -}
+3703722f0849cb7aebe4b9ee4967b35c
+  connectTo ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Types.IO MyNetwork2.Connection.Types.Connection
+  {- Arity: 3,
+     Strictness: <L,1*U(U)><S(LLLS),1*U(U,U(U),1*U,1*U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectTo1
+                  `cast`
+                (<MyNetwork2.Connection.Types.ConnectionContext>_R
+                 ->_R <MyNetwork2.Connection.Types.ConnectionParams>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <MyNetwork2.Connection.Types.Connection>_R)) -}
+49fdd6185313dc33ad309715249250a8
+  connectTo1 ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> MyNetwork2.Connection.Types.ConnectionParams
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.Connection #)
+  {- Arity: 3,
+     Strictness: <L,1*U(U)><S(LLLS),1*U(U,U(U),1*U,1*U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: MyNetwork2.Connection.Types.ConnectionParams)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { MyNetwork2.Connection.Types.ConnectionParams ww1 ww2 ww3 ww4 ->
+                 MyNetwork2.Connection.$wconnectTo w ww1 ww2 ww3 ww4 w2 }) -}
+a4c0eb62a54bfeb820c5165b408a553d
+  connectionClose ::
+    MyNetwork2.Connection.Types.Connection -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionClose1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+cdfed2a2f4f5c53bfbdedec003998e39
+  connectionClose1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionClose ww5 w1 } }) -}
+6fcd9b6fd0c1309fcb0d21b63a4003ce
+  connectionClose2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.typeRepFingerprint
+                        @ *
+                        @ e2
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N) of wild1 { GHC.Fingerprint.Type.Fingerprint dt dt1 ->
+                 case GHC.IO.Exception.$fExceptionIOException4 of wild2 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                 case GHC.Prim.eqWord# dt dt2 of lwild {
+                   DEFAULT
+                   -> GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () wild eta
+                   1#
+                   -> case GHC.Prim.eqWord# dt1 dt3 of lwild1 {
+                        DEFAULT
+                        -> GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () wild eta
+                        1# -> (# eta, GHC.Tuple.() #) } } } } }) -}
+3627a48f1a4d87f7cf62170cb5b9d75a
+  connectionGet ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionGet1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.ByteString.Internal.ByteString>_R)) -}
+eb23c0fb77a519c6429954bb92193e6a
+  connectionGet1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 MyNetwork2.Connection.$wconnectionGet w ww1 w2 }) -}
+ede9159e3ddf77eac54c724d9b1ac4ad
+  connectionGet2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionGet3) -}
+a5ebc62e0105d41a083d01ff142f6c11
+  connectionGet3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Network.Connection.connectionGet: size < 0"#) -}
+53327fa8b3cd68d32ad98388922f1b08
+  connectionGet4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionGet5) -}
+85ebce8255942c90bbb1acd54fb948fa
+  connectionGet5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionGet"#) -}
+feb6d1583dc421827c169bc61514fe26
+  connectionGetChunk ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 2,
+     Strictness: <S(LS(S)L),1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionGetChunk1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.ByteString.Internal.ByteString>_R)) -}
+d3ea52d1c88b3af877c2e74b884cb27c
+  connectionGetChunk' ::
+    MyNetwork2.Connection.Types.Connection
+    -> (Data.ByteString.Internal.ByteString
+        -> (a, Data.ByteString.Internal.ByteString))
+    -> GHC.Types.IO a
+  {- Arity: 3,
+     Strictness: <S(LS(S)L),1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><L,1*C1(U(U,1*U(U,U,U,U)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionGetChunk'1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <Data.ByteString.Internal.ByteString
+                       -> (a, Data.ByteString.Internal.ByteString)>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <a>_R)) -}
+884da66e8f118c1b8aa0977c810ec2e5
+  connectionGetChunk'1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> (Data.ByteString.Internal.ByteString
+        -> (a, Data.ByteString.Internal.ByteString))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3,
+     Strictness: <S(LS(S)L),1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><L,1*C1(U(U,1*U(U,U,U,U)))><S,U>,
+     Unfolding: (\ @ a
+                   (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: Data.ByteString.Internal.ByteString
+                          -> (a, Data.ByteString.Internal.ByteString))
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww2 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionGetChunkBase
+                   @ a
+                   MyNetwork2.Connection.connectionGetChunk'2
+                   ww1
+                   ww5
+                   ww3
+                   w1
+                   w2 } }) -}
+fdcf2f5c1b05998bf28d64afb74fbfe8
+  connectionGetChunk'2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionGetChunk'3) -}
+19e707a7a34e80621e84619ebc17cf02
+  connectionGetChunk'3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionGetChunk'"#) -}
+0f5d5c8e3da0176e9ed0929b17b1a3a6
+  connectionGetChunk1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 2,
+     Strictness: <S(LS(S)L),1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (conn :: MyNetwork2.Connection.Types.Connection) ->
+                 MyNetwork2.Connection.connectionGetChunk5
+                   @ Data.ByteString.Internal.ByteString
+                   MyNetwork2.Connection.connectionGetChunk3
+                   conn
+                   MyNetwork2.Connection.connectionGetChunk2) -}
+bd76cd919b6f28eaf99cb3c955a00997
+  connectionGetChunk2 ::
+    Data.ByteString.Internal.ByteString
+    -> (Data.ByteString.Internal.ByteString,
+        Data.ByteString.Internal.ByteString)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 (s, Data.ByteString.empty)) -}
+fe943db1fb719f881e1ec8883a3306e6
+  connectionGetChunk3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionGetChunk4) -}
+2bf8d74e4759d985b57ccc90fb218ce7
+  connectionGetChunk4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionGetChunk"#) -}
+65f908c82ac1b57edcafe8b6d29fcf49
+  connectionGetChunk5 ::
+    GHC.Base.String
+    -> MyNetwork2.Connection.Types.Connection
+    -> (Data.ByteString.Internal.ByteString
+        -> (a, Data.ByteString.Internal.ByteString))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4,
+     Strictness: <L,U><S(LS(S)L),1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><L,1*C1(U(U,1*U(U,U,U,U)))><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   (w :: GHC.Base.String)
+                   (w1 :: MyNetwork2.Connection.Types.Connection)
+                   (w2 :: Data.ByteString.Internal.ByteString
+                          -> (a, Data.ByteString.Internal.ByteString))
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww2 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionGetChunkBase
+                   @ a
+                   w
+                   ww1
+                   ww5
+                   ww3
+                   w2
+                   w3 } }) -}
+cad7aa5b1d1af974ac06ffa30f4fbd48
+  connectionGetExact ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 3,
+     Strictness: <L,U(U(U),U(U),U(U,U(U)))><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionGetExact1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.ByteString.Internal.ByteString>_R)) -}
+8f325f35d17b33a262434f9f2bbd3349
+  connectionGetExact1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 3,
+     Strictness: <L,U(U(U),U(U),U(U,U(U)))><S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 MyNetwork2.Connection.$wconnectionGetExact w ww1 w2 }) -}
+00df2240c8ce18538c62398d1d41db5e
+  connectionGetLine ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(LS(S)L),1*U(U(U),1*U(U),U(U,U(U)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionGetLine1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R <MyNetwork2.Connection.Types.Connection>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.ByteString.Internal.ByteString>_R)) -}
+7fcd875b7b7175570b4a8f794d8569fe
+  connectionGetLine1 ::
+    GHC.Types.Int
+    -> MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(LS(S)L),1*U(U(U),1*U(U),U(U,U(U)))><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: MyNetwork2.Connection.Types.Connection)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww2 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionGetLine w ww1 ww5 ww3 w2 } }) -}
+5298bbec82e378c2286c3bec03b15d8f
+  connectionGetLine2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 1, Strictness: <B,U>x -}
+6e0d97cab59f60eb577b3f657e734ee8
+  connectionGetLine3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionGetLine"#) -}
+b0a4bb0371630fb80d50d0a43539e099
+  connectionGetLine_loc :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionGetLine3) -}
+a0630a7c7a984ddea472e3dbf3c83bf4
+  connectionIsSecure ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.IO GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionIsSecure1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
+417bcc11b4e950be1e6fdff581c07c0f
+  connectionIsSecure1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (conn :: MyNetwork2.Connection.Types.Connection)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case conn of wild { MyNetwork2.Connection.Types.Connection ds1 ds2 ds3 ->
+                 case ds1 of wild1 { GHC.MVar.MVar mvar# ->
+                 case GHC.Prim.readMVar#
+                        @ GHC.Prim.RealWorld
+                        @ MyNetwork2.Connection.Types.ConnectionBackend
+                        mvar#
+                        s of ds4 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild2 {
+                   DEFAULT -> (# ipv, GHC.Types.False #)
+                   MyNetwork2.Connection.Types.ConnectionTLS ds
+                   -> (# ipv, GHC.Types.True #) } } } }) -}
+06530ff0fa9d9ec21995d629eef77a29
+  connectionPut ::
+    MyNetwork2.Connection.Types.Connection
+    -> Data.ByteString.Internal.ByteString -> GHC.Types.IO ()
+  {- Arity: 3,
+     Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><L,U(U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionPut1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <Data.ByteString.Internal.ByteString>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+afe6119d837d13ded1e3335dd5db70de
+  connectionPut1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3,
+     Strictness: <S(S(S)LL),1*U(1*U(U),A,A)><L,U(U,U,U,U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: Data.ByteString.Internal.ByteString)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionPut ww5 w1 w2 } }) -}
+518231a285c86020650ab5890b184acd
+  connectionPut10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("connectionPut :: ConnectionStream"#) -}
+9995127c8218863ecd9fb1edfc3e4c8f
+  connectionPut2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionPut3) -}
+2f1766a9f037f99bb528b394950d29e3
+  connectionPut3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionPut :: ConnectionTLS"#) -}
+5d71d29420f6bb23743c802319e5d217
+  connectionPut4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionPut5) -}
+5d2a32d208364216120a8cc031ee1010
+  connectionPut5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("connectionPut :: ConnectionSocket :: done"#) -}
+7eaca51027754f238eaece35c64fbd0a
+  connectionPut6 ::
+    Network.Socket.Types.Socket
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3,
+     Strictness: <L,1*U(U(U),A,A,A,A)><L,U(U,U,U,U)><S,U> -}
+6c6478634bb6ba2e82d972a20ecc07ab
+  connectionPut7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionPut8) -}
+ba794ebd8834d54e0943904c2e8de017
+  connectionPut8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("connectionPut :: ConnectionSocket :: start"#) -}
+3d575d923e4596c9f5d912129d008306
+  connectionPut9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionPut10) -}
+4899557c583120c63f35d1fe79567a6f
+  connectionSetSecure ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> MyNetwork2.Connection.Types.Connection
+    -> MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><S(LS(S)L),1*U(1*U(U),1*U(U),U(U,U(U)))><L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionSetSecure1
+                  `cast`
+                (<MyNetwork2.Connection.Types.ConnectionContext>_R
+                 ->_R <MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <MyNetwork2.Connection.Types.TLSSettings>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+08fa8214a2b3e648e7d34d3b3ba37c98
+  connectionSetSecure1 ::
+    MyNetwork2.Connection.Types.ConnectionContext
+    -> MyNetwork2.Connection.Types.Connection
+    -> MyNetwork2.Connection.Types.TLSSettings
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,1*U(U)><S(LS(S)L),1*U(1*U(U),1*U(U),U(U,U(U)))><L,1*U><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.ConnectionContext)
+                   (w1 :: MyNetwork2.Connection.Types.Connection)
+                   (w2 :: MyNetwork2.Connection.Types.TLSSettings)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { MyNetwork2.Connection.Types.Connection ww1 ww2 ww3 ->
+                 case ww2 of ww4 { GHC.MVar.MVar ww5 ->
+                 MyNetwork2.Connection.$wconnectionSetSecure
+                   w
+                   ww1
+                   ww5
+                   ww3
+                   w2
+                   w3 } }) -}
+afb2c3d34cd57cc9ccb597f7da17458e
+  connectionWaitForInput ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int -> GHC.Types.IO GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.connectionWaitForInput1
+                  `cast`
+                (<MyNetwork2.Connection.Types.Connection>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
+47820ef745f3449557bf34e403230b5e
+  connectionWaitForInput1 ::
+    MyNetwork2.Connection.Types.Connection
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(U),1*U(U),1*U(1*U,1*U(U)))><S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork2.Connection.Types.Connection)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 MyNetwork2.Connection.$wconnectionWaitForInput w ww1 w2 }) -}
+470e57fc200ead539b3656ac1391d74b
+  connectionWaitForInput2 ::
+    Data.ByteString.Internal.ByteString
+    -> ((), Data.ByteString.Internal.ByteString)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (buf :: Data.ByteString.Internal.ByteString) ->
+                 (GHC.Tuple.(), buf)) -}
+9b3f7913b477d4a7acdceab5686e17fd
+  connectionWaitForInput3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   MyNetwork2.Connection.connectionWaitForInput4) -}
+bc72dca5124a290f8b3f89d29322b7b7
+  connectionWaitForInput4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("connectionWaitForInput"#) -}
+4462f56f787045d8296168641c3e72e6
+  initConnectionContext ::
+    GHC.Types.IO MyNetwork2.Connection.Types.ConnectionContext
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork2.Connection.initConnectionContext1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <MyNetwork2.Connection.Types.ConnectionContext>_R)) -}
+c3838deb9256b216279d480246b3250a
+  initConnectionContext1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork2.Connection.Types.ConnectionContext #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.X509.MacOS.getSystemCertificateStore1
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    MyNetwork2.Connection.Types.$WConnectionContext ipv1 #) }) -}
+instance GHC.Exception.Exception [MyNetwork2.Connection.HostCannotConnect]
+  = MyNetwork2.Connection.$fExceptionHostCannotConnect
+instance GHC.Exception.Exception [MyNetwork2.Connection.HostNotResolved]
+  = MyNetwork2.Connection.$fExceptionHostNotResolved
+instance GHC.Exception.Exception [MyNetwork2.Connection.LineTooLong]
+  = MyNetwork2.Connection.$fExceptionLineTooLong
+instance GHC.Show.Show [MyNetwork2.Connection.HostCannotConnect]
+  = MyNetwork2.Connection.$fShowHostCannotConnect
+instance GHC.Show.Show [MyNetwork2.Connection.HostNotResolved]
+  = MyNetwork2.Connection.$fShowHostNotResolved
+instance GHC.Show.Show [MyNetwork2.Connection.LineTooLong]
+  = MyNetwork2.Connection.$fShowLineTooLong
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

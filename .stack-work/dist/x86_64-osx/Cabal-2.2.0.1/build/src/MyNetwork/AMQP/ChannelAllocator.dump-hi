@@ -1,0 +1,573 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:10.416099 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork.AMQP.ChannelAllocator 8044
+  interface hash: 2f81baefe468402c3c01c55b6a7b829c
+  ABI hash: 00781864a114ef3bf917a20fe5aa8843
+  export-list hash: 0815d2bfac3fabdf46ab287dd8219333
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 155df7927c588260f727ffb5f3524ffe
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork.AMQP.ChannelAllocator.allocateChannel
+  MyNetwork.AMQP.ChannelAllocator.findFreeIndex
+  MyNetwork.AMQP.ChannelAllocator.findUnsetBit
+  MyNetwork.AMQP.ChannelAllocator.freeChannel
+  MyNetwork.AMQP.ChannelAllocator.newChannelAllocator
+  MyNetwork.AMQP.ChannelAllocator.ChannelAllocator{MyNetwork.AMQP.ChannelAllocator.ChannelAllocator}
+module dependencies: MyNetwork.AMQP.Types
+package dependencies: array-0.5.2.0 base-4.11.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.11.0 data-binary-ieee754-0.4.4
+                      deepseq-1.4.3.0 ghc-prim-0.5.2.0 integer-gmp-1.0.2.0
+                      primitive-0.6.3.0 text-1.2.3.1 transformers-0.5.5.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array text-1.2.3.1:Data.Text
+import  -/  base-4.11.1.0:Control.Exception 3d8e6cda20877f889f07bc7c0f5cac36
+import  -/  base-4.11.1.0:Data.Bits bbb4ac3d5246b98befe8bd31900b1c2f
+import  -/  base-4.11.1.0:Data.Word 22a60783baa8ba4f33c4588b366fade3
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Err 5e26aa744981f14e0f1e4d29c44ac52e
+import  -/  base-4.11.1.0:GHC.IO 1d5542cc02075c5e948018bfacea89c1
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Real b4beb0389ba1ad5d9640aae67848c5d3
+import  -/  base-4.11.1.0:GHC.Word bc9bdf9b61a0f9352e5a1baeee5690a5
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  MyNetwork.AMQP.Types b8f148f2de1f7b1663f31cc0624f4831
+  exports: 79710897a339f37e0aa0cd0013badcb8
+  AllChannelsAllocatedException f1b3a84ae0207139b07a3cce9ba04e21
+import  -/  vector-0.12.0.1:Data.Vector.Mutable e09e8bccd569472cc65f5c99a3d45010
+89385654aeb97394ecee0694b8a8f393
+  $tc'ChannelAllocator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   961060670748236951##
+                   7089518240015145460##
+                   MyNetwork.AMQP.ChannelAllocator.$trModule
+                   MyNetwork.AMQP.ChannelAllocator.$tc'ChannelAllocator2
+                   0#
+                   MyNetwork.AMQP.ChannelAllocator.$tc'ChannelAllocator1) -}
+cc601c3de04d21421472f32febe9d4e8
+  $tc'ChannelAllocator1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fad90fefcf894bb36a333ca35e71b752
+  $tc'ChannelAllocator2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.ChannelAllocator.$tc'ChannelAllocator3) -}
+86451ead7ca4c4979db0b179e95ce580
+  $tc'ChannelAllocator3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ChannelAllocator"#) -}
+f2e8943f904610f038e3fa852819c1a4
+  $tcChannelAllocator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5235863701888019297##
+                   10103811082098174##
+                   MyNetwork.AMQP.ChannelAllocator.$trModule
+                   MyNetwork.AMQP.ChannelAllocator.$tcChannelAllocator1
+                   0#
+                   GHC.Types.krep$*) -}
+5d2cee2eb7cf43e0af19f31f9530c227
+  $tcChannelAllocator1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.ChannelAllocator.$tcChannelAllocator2) -}
+dca34c3249548e0206db4b4bacfd4340
+  $tcChannelAllocator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ChannelAllocator"#) -}
+aa52e392a06a55143163cf985c56970c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork.AMQP.ChannelAllocator.$trModule3
+                   MyNetwork.AMQP.ChannelAllocator.$trModule1) -}
+a2c8084b69b0bbe6c0fb5cf35af308d1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.ChannelAllocator.$trModule2) -}
+6e50ab8de833a9ff351c3b762d6d1570
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork.AMQP.ChannelAllocator"#) -}
+c3fa9ddc6eb4175643e28b75837895cd
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   MyNetwork.AMQP.ChannelAllocator.$trModule4) -}
+f561d06bb770bd0e5a8a6844150f64ee
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+469b6318c999f02732ab80ba37a20359
+  $wallocateChannel ::
+    GHC.Types.Int
+    -> Data.Vector.Mutable.IOVector GHC.Word.Word64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+  {- Arity: 3, Strictness: <L,U(U)><L,U(U,U,U)><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Int)
+                   (ww1 :: Data.Vector.Mutable.IOVector GHC.Word.Word64)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case MyNetwork.AMQP.ChannelAllocator.allocateChannel5
+                        ww1
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Base.Nothing
+                   -> MyNetwork.AMQP.ChannelAllocator.allocateChannel4 ipv ww
+                   GHC.Base.Just chunk
+                   -> case chunk of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.>=# x 0# of lwild {
+                        DEFAULT
+                        -> case ww1
+                                  `cast`
+                                (Data.Vector.Mutable.MVector
+                                   (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                   <GHC.Word.Word64>_R)_R of wild2 { Data.Vector.Mutable.MVector dt dt1 dt2 ->
+                           case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 dt1 x
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+                           of {} }
+                        1#
+                        -> case ww1
+                                  `cast`
+                                (Data.Vector.Mutable.MVector
+                                   (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                   <GHC.Word.Word64>_R)_R of wild2 { Data.Vector.Mutable.MVector dt dt1 dt2 ->
+                           case GHC.Prim.<# x dt1 of lwild1 {
+                             DEFAULT
+                             -> case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 dt1 x
+                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+                                of {}
+                             1#
+                             -> case (GHC.Prim.readArray#
+                                        @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                        @ GHC.Word.Word64
+                                        dt2
+                                        (GHC.Prim.+# dt x)
+                                        ipv
+                                          `cast`
+                                        (GHC.Prim.State#
+                                           (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R)
+                                       `cast`
+                                     ((#,#)
+                                        <'GHC.Types.TupleRep '[]>_R
+                                        <'GHC.Types.LiftedRep>_R
+                                        (GHC.Prim.State#
+                                           (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R
+                                        <GHC.Word.Word64>_R)_R of ds2 { (#,#) ipv2 ipv3 ->
+                                case ipv3 of ww2 { GHC.Word.W64# ww3 ->
+                                let {
+                                  $j :: GHC.Prim.Int#
+                                        -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+                                    <join 1> {- Arity: 1, Strictness: <S,U> -}
+                                  = \ (ww4 :: GHC.Prim.Int#)[OneShot] ->
+                                    case ww of wild3 { GHC.Types.I# y ->
+                                    let {
+                                      x1 :: GHC.Prim.Int# = GHC.Prim.+# (GHC.Prim.*# x 64#) ww4
+                                    } in
+                                    case GHC.Prim.># x1 y of lwild2 {
+                                      DEFAULT
+                                      -> case GHC.Prim.writeArray#
+                                                @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                                @ GHC.Word.Word64
+                                                dt2
+                                                (GHC.Prim.+# dt x)
+                                                (case GHC.Prim.>=# ww4 64# of lwild3 {
+                                                   DEFAULT
+                                                   -> GHC.Word.W64#
+                                                        (GHC.Prim.or#
+                                                           ww3
+                                                           (GHC.Prim.uncheckedShiftL# 1## ww4))
+                                                   1# -> ww2 })
+                                                ipv2
+                                                  `cast`
+                                                (GHC.Prim.State#
+                                                   (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R of s'# { DEFAULT ->
+                                         (# s'#
+                                              `cast`
+                                            (GHC.Prim.State#
+                                               (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R,
+                                            GHC.Types.I# x1 #) }
+                                      1#
+                                      -> MyNetwork.AMQP.ChannelAllocator.allocateChannel4
+                                           ipv2
+                                           wild3 } }
+                                } in
+                                letrec {
+                                  $wgo :: GHC.Prim.Int#
+                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+                                    <join 1> {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                                  = \ (ww4 :: GHC.Prim.Int#) ->
+                                    case ww4 of ds {
+                                      DEFAULT
+                                      -> case GHC.Prim.>=# ds 64# of lwild2 {
+                                           DEFAULT
+                                           -> case GHC.Prim.and#
+                                                     ww3
+                                                     (GHC.Prim.uncheckedShiftL# 1## ds) of wild3 {
+                                                DEFAULT -> $wgo (GHC.Prim.+# ds 1#) 0## -> $j ds }
+                                           1# -> $j ds }
+                                      65#
+                                      -> case MyNetwork.AMQP.ChannelAllocator.allocateChannel2
+                                         ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                   GHC.Types.Int #)
+                                         of {} }
+                                } in
+                                $wgo 0# } } } } } } } }) -}
+bd73cd884d1f78d2c83e19e6789439da
+  $wfreeChannel ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray# GHC.Prim.RealWorld GHC.Word.Word64
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 5, Strictness: <S,U><S,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.MutableArray# GHC.Prim.RealWorld GHC.Word.Word64)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   $w$j :: GHC.Prim.Int#
+                           -> GHC.Types.Int
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+                     <join 2> {- Arity: 2, Strictness: <S,U><L,1*U(U)>, Inline: [0] -}
+                   = \ (ww4 :: GHC.Prim.Int#)[OneShot]
+                       (w1 :: GHC.Types.Int)[OneShot] ->
+                     case GHC.Prim.>=# ww4 0# of lwild {
+                       DEFAULT
+                       -> case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 ww1 ww4
+                          ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+                          of {}
+                       1#
+                       -> case GHC.Prim.<# ww4 ww1 of lwild1 {
+                            DEFAULT
+                            -> case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 ww1 ww4
+                               ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+                               of {}
+                            1#
+                            -> case (GHC.Prim.readArray#
+                                       @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                       @ GHC.Word.Word64
+                                       ww2
+                                         `cast`
+                                       (GHC.Prim.MutableArray#
+                                          (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                          <GHC.Word.Word64>_R)_R
+                                       (GHC.Prim.+# ww ww4)
+                                       w `cast`
+                                       (GHC.Prim.State#
+                                          (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R)
+                                      `cast`
+                                    ((#,#)
+                                       <'GHC.Types.TupleRep '[]>_R
+                                       <'GHC.Types.LiftedRep>_R
+                                       (GHC.Prim.State#
+                                          (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R
+                                       <GHC.Word.Word64>_R)_R of ds1 { (#,#) ipv ipv1 ->
+                               case ipv1 of wild { GHC.Word.W64# x# ->
+                               case w1 of wild1 { GHC.Types.I# i# ->
+                               case GHC.Prim.>=# i# 64# of lwild2 {
+                                 DEFAULT
+                                 -> case GHC.Prim.and#
+                                           x#
+                                           (GHC.Prim.uncheckedShiftL# 1## i#) of wild2 {
+                                      DEFAULT
+                                      -> case GHC.Prim.writeArray#
+                                                @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                                @ GHC.Word.Word64
+                                                ww2
+                                                  `cast`
+                                                (GHC.Prim.MutableArray#
+                                                   (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                   <GHC.Word.Word64>_R)_R
+                                                (GHC.Prim.+# ww ww4)
+                                                (GHC.Word.W64#
+                                                   (GHC.Prim.and#
+                                                      x#
+                                                      (GHC.Prim.xor#
+                                                         (GHC.Prim.uncheckedShiftL# 1## i#)
+                                                         18446744073709551615##)))
+                                                ipv
+                                                  `cast`
+                                                (GHC.Prim.State#
+                                                   (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R of s'# { DEFAULT ->
+                                         (# s'#
+                                              `cast`
+                                            (GHC.Prim.State#
+                                               (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R,
+                                            GHC.Types.True #) }
+                                      0## -> (# ipv, GHC.Types.False #) }
+                                 1# -> (# ipv, GHC.Types.False #) } } } } } }
+                 } in
+                 case GHC.Prim.<# ww3 0# of lwild1 {
+                   DEFAULT
+                   -> case GHC.Prim.quotRemInt# ww3 64# of ds { (#,#) ipv ipv1 ->
+                      $w$j ipv (GHC.Types.I# ipv1) }
+                   1#
+                   -> case GHC.Prim.quotRemInt#
+                             (GHC.Prim.+# ww3 1#)
+                             64# of ds { (#,#) ipv ipv1 ->
+                      $w$j
+                        (GHC.Prim.-# ipv 1#)
+                        (GHC.Types.I# (GHC.Prim.-# (GHC.Prim.+# ipv1 64#) 1#)) } }) -}
+cefbee2f015a090ffc82691da1bdd659
+  data ChannelAllocator
+    = ChannelAllocator GHC.Types.Int
+                       (Data.Vector.Mutable.IOVector GHC.Word.Word64)
+498ad339b40fc7076390a270e537f155
+  allocateChannel ::
+    MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+    -> GHC.Types.IO GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U(U(U),U(U,U,U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.ChannelAllocator.allocateChannel1
+                  `cast`
+                (<MyNetwork.AMQP.ChannelAllocator.ChannelAllocator>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Int>_R)) -}
+9ae481c20a23c0ff9d6bab5a10454571
+  allocateChannel1 ::
+    MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+  {- Arity: 2, Strictness: <S,1*U(U(U),U(U,U,U))><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: MyNetwork.AMQP.ChannelAllocator.ChannelAllocator)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork.AMQP.ChannelAllocator.ChannelAllocator ww1 ww2 ->
+                 MyNetwork.AMQP.ChannelAllocator.$wallocateChannel ww1 ww2 w1 }) -}
+4cbc31df5705bc1f5bc377d4f39f5974
+  allocateChannel2 :: GHC.Types.Int
+  {- Strictness: x -}
+4faf7cec76c62cc4c91318c85d082e0c
+  allocateChannel3 ::
+    GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.IO GHC.Word.Word64
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+9d878f05fca71c71af9d3edb0a81c4b7
+  allocateChannel4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> GHC.Types.Int
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+dd977661f1106d4eb0336f3f387fed83
+  allocateChannel5 ::
+    Data.Vector.Mutable.IOVector GHC.Word.Word64
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,U>,
+     Unfolding: (\ (vec :: Data.Vector.Mutable.IOVector GHC.Word.Word64)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 let {
+                   exit :: GHC.Prim.Int#
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                 GHC.Base.Maybe GHC.Types.Int #)
+                     <join 1> {- Arity: 1, Strictness: <B,U>b -}
+                   = \ (ds :: GHC.Prim.Int#)[OneShot] ->
+                     case vec
+                            `cast`
+                          (Data.Vector.Mutable.MVector
+                             (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                             <GHC.Word.Word64>_R)_R of wild { Data.Vector.Mutable.MVector dt dt1 dt2 ->
+                     case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 dt1 ds
+                     ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                               GHC.Base.Maybe GHC.Types.Int #)
+                     of {} }
+                 } in
+                 letrec {
+                   $wgo :: GHC.Prim.Int#
+                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                 GHC.Base.Maybe GHC.Types.Int #)
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [0] -}
+                   = \ (ww :: GHC.Prim.Int#)
+                       (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case ww of ds {
+                       DEFAULT
+                       -> case GHC.Prim.>=# ds 0# of lwild {
+                            DEFAULT -> exit ds
+                            1#
+                            -> case vec
+                                      `cast`
+                                    (Data.Vector.Mutable.MVector
+                                       (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                       <GHC.Word.Word64>_R)_R of wild { Data.Vector.Mutable.MVector dt dt1 dt2 ->
+                               case GHC.Prim.<# ds dt1 of lwild1 {
+                                 DEFAULT
+                                 -> case MyNetwork.AMQP.ChannelAllocator.allocateChannel3 dt1 ds
+                                    ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                              GHC.Base.Maybe GHC.Types.Int #)
+                                    of {}
+                                 1#
+                                 -> case (GHC.Prim.readArray#
+                                            @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                                            @ GHC.Word.Word64
+                                            dt2
+                                            (GHC.Prim.+# dt ds)
+                                            w `cast`
+                                            (GHC.Prim.State#
+                                               (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R)
+                                           `cast`
+                                         ((#,#)
+                                            <'GHC.Types.TupleRep '[]>_R
+                                            <'GHC.Types.LiftedRep>_R
+                                            (GHC.Prim.State#
+                                               (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R
+                                            <GHC.Word.Word64>_R)_R of ds1 { (#,#) ipv ipv1 ->
+                                    case ipv1 of wild1 { GHC.Word.W64# x ->
+                                    case x of wild2 {
+                                      DEFAULT
+                                      -> (# ipv, GHC.Base.Just @ GHC.Types.Int (GHC.Types.I# ds) #)
+                                      18446744073709551615##
+                                      -> $wgo (GHC.Prim.+# ds 1#) ipv } } } } } }
+                       1024# -> (# w, GHC.Base.Nothing @ GHC.Types.Int #) }
+                 } in
+                 $wgo 0# eta) -}
+e5e52c8a4f7d31f1a7b9f5269f7f97ee
+  findFreeIndex ::
+    Data.Vector.Mutable.IOVector GHC.Word.Word64
+    -> GHC.Types.IO (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.ChannelAllocator.allocateChannel5
+                  `cast`
+                (<Data.Vector.Mutable.IOVector GHC.Word.Word64>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Types.Int>_R)) -}
+22721a4e889b015f87d1ea0d181635f8
+  findUnsetBit :: GHC.Word.Word64 -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U(U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Word.Word64) ->
+                 case w of ww { GHC.Word.W64# ww1 ->
+                 letrec {
+                   $wgo :: GHC.Prim.Int# -> GHC.Types.Int
+                     <join 1> {- Arity: 1, Strictness: <S,U>m, Inline: [0] -}
+                   = \ (ww2 :: GHC.Prim.Int#) ->
+                     case ww2 of ds {
+                       DEFAULT
+                       -> case GHC.Prim.>=# ds 64# of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.and#
+                                      ww1
+                                      (GHC.Prim.uncheckedShiftL# 1## ds) of wild {
+                                 DEFAULT -> $wgo (GHC.Prim.+# ds 1#) 0## -> GHC.Types.I# ds }
+                            1# -> GHC.Types.I# ds }
+                       65# -> MyNetwork.AMQP.ChannelAllocator.allocateChannel2 }
+                 } in
+                 $wgo 0# }) -}
+01a822a253aefd637cab8753dfef7097
+  freeChannel ::
+    MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+    -> GHC.Types.Int -> GHC.Types.IO GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <S(LS(SSS)),1*U(A,1*U(U,U,U))><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.ChannelAllocator.freeChannel1
+                  `cast`
+                (<MyNetwork.AMQP.ChannelAllocator.ChannelAllocator>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)) -}
+9404f5e5a3f56e38c7dc982c66bf38dc
+  freeChannel1 ::
+    MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
+  {- Arity: 3,
+     Strictness: <S(LS(SSS)),1*U(A,1*U(U,U,U))><S(S),1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: MyNetwork.AMQP.ChannelAllocator.ChannelAllocator)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { MyNetwork.AMQP.ChannelAllocator.ChannelAllocator ww1 ww2 ->
+                 case ww2 of ww3 { Data.Vector.Mutable.MVector ww4 ww5 ww6 ->
+                 case w1 of ww7 { GHC.Types.I# ww8 ->
+                 MyNetwork.AMQP.ChannelAllocator.$wfreeChannel
+                   ww4
+                   ww5
+                   ww6
+                   ww8
+                   w2 } } }) -}
+98f92a07385227c6c60a74e2e0a7b8b1
+  newChannelAllocator ::
+    GHC.Types.Int
+    -> GHC.Types.IO MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                MyNetwork.AMQP.ChannelAllocator.newChannelAllocator1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <MyNetwork.AMQP.ChannelAllocator.ChannelAllocator>_R)) -}
+22eb38533615a8badc4ba74d7b393414
+  newChannelAllocator1 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          MyNetwork.AMQP.ChannelAllocator.ChannelAllocator #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (maxChannel :: GHC.Types.Int)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newArray#
+                        @ GHC.Word.Word64
+                        @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                        1024#
+                        MyNetwork.AMQP.ChannelAllocator.newChannelAllocator2
+                        s `cast`
+                        (GHC.Prim.State#
+                           (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])))_R of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv
+                      `cast`
+                    (GHC.Prim.State# (Control.Monad.Primitive.D:R:PrimStateIO[0]))_R,
+                    MyNetwork.AMQP.ChannelAllocator.ChannelAllocator
+                      maxChannel
+                      (Data.Vector.Mutable.MVector
+                         @ (Control.Monad.Primitive.PrimState GHC.Types.IO)
+                         @ GHC.Word.Word64
+                         0#
+                         1024#
+                         ipv1)
+                        `cast`
+                      (Data.Vector.Mutable.MVector
+                         (Control.Monad.Primitive.D:R:PrimStateIO[0])
+                         <GHC.Word.Word64>_R)_R #) }) -}
+35337383a22a72693df95515f881878b
+  newChannelAllocator2 :: GHC.Word.Word64
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Word.W64# 0##) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

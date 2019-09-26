@@ -1,0 +1,142 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:18:45.041148 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:Lib 8044
+  interface hash: be76397a5201ce32eaaeea25aee840a2
+  ABI hash: e46b5d576d45b41a4f09f9e4654855cd
+  export-list hash: 79f26b011c7f406a7804fb2ef23ed539
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be022818a1059e1d97974599f911b559
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.someFunc
+module dependencies:
+package dependencies: amqp-0.18.1 array-0.5.2.0 asn1-encoding-0.9.5
+                      asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1 base-4.11.1.0
+                      basement-0.0.8 binary-0.8.5.1 bytestring-0.10.8.2 cereal-0.5.7.0
+                      clock-0.7.2 connection-0.2.8 containers-0.5.11.0 cryptonite-0.25
+                      data-binary-ieee754-0.4.4 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 filepath-1.4.2 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 integer-gmp-1.0.2.0
+                      memory-0.14.18 mtl-2.2.2 network-2.6.3.6 network-uri-2.6.1.0
+                      parsec-3.1.13.0 pem-0.2.4 primitive-0.6.3.0 process-1.6.3.0
+                      socks-0.5.6 split-0.2.3.3 stm-2.4.5.1 text-1.2.3.1 time-1.8.0.2
+                      tls-1.4.1 transformers-0.5.5.0 unix-2.7.2.2 vector-0.12.0.1
+                      x509-1.7.4 x509-store-1.6.6 x509-system-1.6.6
+                      x509-validation-1.6.10
+orphans: network-2.6.3.6:Network.Socket
+         stm-2.4.5.1:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base clock-0.7.2:System.Clock
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         network-uri-2.6.1.0:Network.URI
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  amqp-0.18.1:Network.AMQP e640b4ca62c417d065a087b8336c0367
+import  -/  amqp-0.18.1:Network.AMQP.Internal 2244f9f02bf6512e77b912f26ecd8882
+import  -/  base-4.11.1.0:Data.Monoid c40cd435d79b84293ce5503253ee6d44
+import  -/  base-4.11.1.0:Data.Word 22a60783baa8ba4f33c4588b366fade3
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Num 8e54b26dce4495382dc4b50cf36ab754
+import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO e02b6055b5362a3eac04f83991602a53
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 9b14d99e53cf2d30c74c7ddcd59ad2e2
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+6b18ddbdd315983290ce0bb7ea981282
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
+af485fced27e784d329774aa1afb1842
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
+cc0c951971894ac00fc218251ec5b457
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
+ca1fa1c85b5d3f0a4edac832ea043159
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
+6155a8e5f755e7a7f81d3e5f24b537e7
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+40b8599d593b6b3fa996ef66f44e6c01
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+d88da32306187c4789eba449f672fdf9
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

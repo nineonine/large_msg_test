@@ -1,0 +1,270 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 17:12:17.884239 UTC
+
+interface largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC:MyNetwork.AMQP.Lifted 8044
+  interface hash: 644131c55fff0125f677a3717a407e84
+  ABI hash: 31436fcb5f3633c63d8a49d6d7f1bc01
+  export-list hash: ff2e83974e22ba04568167e4ccaa8a5b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 702cf12612ace30e11567819792034f8
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyNetwork.AMQP.Lifted.consumeMsgs
+  MyNetwork.AMQP.Lifted.consumeMsgs'
+module dependencies: MyNetwork.AMQP MyNetwork.AMQP.ChannelAllocator
+                     MyNetwork.AMQP.Generated MyNetwork.AMQP.Helpers
+                     MyNetwork.AMQP.Internal MyNetwork.AMQP.Protocol
+                     MyNetwork.AMQP.Types MyNetwork2.Connection
+                     MyNetwork2.Connection.Types
+package dependencies: array-0.5.2.0 asn1-encoding-0.9.5
+                      asn1-parse-0.9.4 asn1-types-0.3.2 async-2.2.1 base-4.11.1.0
+                      basement-0.0.8 binary-0.8.5.1 bytestring-0.10.8.2 cereal-0.5.7.0
+                      clock-0.7.2 containers-0.5.11.0 cryptonite-0.25
+                      data-binary-ieee754-0.4.4 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 directory-1.3.1.5 filepath-1.4.2 ghc-prim-0.5.2.0
+                      hashable-1.2.7.0 hourglass-0.2.12 integer-gmp-1.0.2.0
+                      memory-0.14.18 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
+                      network-uri-2.6.1.0 parsec-3.1.13.0 pem-0.2.4 primitive-0.6.3.0
+                      process-1.6.3.0 socks-0.5.6 split-0.2.3.3 stm-2.4.5.1 text-1.2.3.1
+                      time-1.8.0.2 tls-1.4.1 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 unix-2.7.2.2 vector-0.12.0.1 x509-1.7.4
+                      x509-store-1.6.6 x509-system-1.6.6 x509-validation-1.6.10
+orphans: network-2.6.3.6:Network.Socket
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         stm-2.4.5.1:Control.Monad.STM text-1.2.3.1:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base clock-0.7.2:System.Clock
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.11.1.0:Control.Monad c5f960c67d822497578bffbd3e4c01cf
+import  -/  base-4.11.1.0:Data.Functor f522c3501272159820fd6f242510732f
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  MyNetwork.AMQP f57d9d4330fea4d609b9e818625a384c
+  exports: 08e7024c51e0c250765ea3ee0f96da1b
+  Ack 1ca0e2eb2d1c1869bc2ceb2487541b6e
+  consumeMsgs cad87496bf56288a50a566a0f238b370
+  consumeMsgs' 28ce562d545d4488bcb15ff68da29b76
+import  -/  MyNetwork.AMQP.Internal 0b8431299e0481cf499af36ef840bd59
+  Channel 7d542ee1ef20270f61c1e8689122e18c
+  Envelope 7d542ee1ef20270f61c1e8689122e18c
+  Message 526afa0333c4fb39d6fd1fa459b2940d
+import  -/  MyNetwork.AMQP.Types b8f148f2de1f7b1663f31cc0624f4831
+  exports: 79710897a339f37e0aa0cd0013badcb8
+  ConsumerTag 5cb78a23bfa6f324df665b5ead71beda
+  FieldTable e2dab219ac237204a5b8f05eb2c223b2
+import  -/  monad-control-1.0.2.3:Control.Monad.Trans.Control 09090fb0467b6605098a53c54e9d5f3d
+import  -/  text-1.2.3.1:Data.Text e8581f8e8ebc78d94a3747f354f0ee37
+import  -/  text-1.2.3.1:Data.Text.Internal 4893d0339f20e05978e1af2720305fa2
+ecc21a2662adcb49d06035c8d09af762
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyNetwork.AMQP.Lifted.$trModule3
+                   MyNetwork.AMQP.Lifted.$trModule1) -}
+ff6fc4ef85c46a87f398e4101a7f709a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Lifted.$trModule2) -}
+0d893072ffcf8b1c379fb354eb6279a9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MyNetwork.AMQP.Lifted"#) -}
+e102a51c18d9b3b5ee5819356814ffc9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS MyNetwork.AMQP.Lifted.$trModule4) -}
+2f3e22e93e14af69857c8c20bf360ecd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("largemsgtest-0.1.0.0-BAlIjeLvE8DKjAjJ9aXXGC"#) -}
+a471be209cbbd6434349100f1b9f7d2a
+  consumeMsgs ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    MyNetwork.AMQP.Internal.Channel
+    -> Data.Text.Internal.Text
+    -> MyNetwork.AMQP.Ack
+    -> ((MyNetwork.AMQP.Internal.Message,
+         MyNetwork.AMQP.Internal.Envelope)
+        -> m ())
+    -> m MyNetwork.AMQP.Types.ConsumerTag
+  {- Arity: 5,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,U(U(U(U(U),A,A),A,U(U),U(U),U(U),A,U(U),A,A,A,U(U),A),A,A,U(U),U(U),A,A,A,A,U(A,U(U)),U(U),U(U),A,A,A)><L,U><L,U><L,C(U)>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                            GHC.Types.IO m)
+                   (chan :: MyNetwork.AMQP.Internal.Channel)
+                   (queueName :: Data.Text.Internal.Text)
+                   (ack :: MyNetwork.AMQP.Ack)
+                   (callback :: (MyNetwork.AMQP.Internal.Message,
+                                 MyNetwork.AMQP.Internal.Envelope)
+                                -> m ()) ->
+                 Control.Monad.Trans.Control.liftBaseWith
+                   @ GHC.Types.IO
+                   @ m
+                   $dMonadBaseControl
+                   @ MyNetwork.AMQP.Types.ConsumerTag
+                   (\ (runInIO :: Control.Monad.Trans.Control.RunInBase
+                                    m GHC.Types.IO)
+                      (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    MyNetwork.AMQP.consumeMsgs3
+                      chan
+                      queueName
+                      ack
+                      (\ (x :: (MyNetwork.AMQP.Internal.Message,
+                                MyNetwork.AMQP.Internal.Envelope))
+                         (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case (runInIO @ () (callback x))
+                              `cast`
+                            (GHC.Types.N:IO[0] <Control.Monad.Trans.Control.StM m ()>_R)
+                              eta1 of ds { (#,#) ipv ipv1 ->
+                       (# ipv, GHC.Tuple.() #) })
+                        `cast`
+                      (<(MyNetwork.AMQP.Internal.Message,
+                         MyNetwork.AMQP.Internal.Envelope)>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      MyNetwork.AMQP.consumeMsgs2
+                        `cast`
+                      (<MyNetwork.AMQP.Types.ConsumerTag>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      MyNetwork.AMQP.bindExchange4
+                      eta)
+                     `cast`
+                   (<Control.Monad.Trans.Control.RunInBase m GHC.Types.IO>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <MyNetwork.AMQP.Types.ConsumerTag>_R))) -}
+f2dd95723bea6c948b728264c31fd762
+  consumeMsgs' ::
+    Control.Monad.Trans.Control.MonadBaseControl GHC.Types.IO m =>
+    MyNetwork.AMQP.Internal.Channel
+    -> Data.Text.Internal.Text
+    -> MyNetwork.AMQP.Ack
+    -> ((MyNetwork.AMQP.Internal.Message,
+         MyNetwork.AMQP.Internal.Envelope)
+        -> m ())
+    -> (MyNetwork.AMQP.Types.ConsumerTag -> m ())
+    -> MyNetwork.AMQP.Types.FieldTable
+    -> m MyNetwork.AMQP.Types.ConsumerTag
+  {- Arity: 7,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,U(U(U(U(U),A,A),A,U(U),U(U),U(U),A,U(U),A,A,A,U(U),A),A,A,U(U),U(U),A,A,A,A,U(A,U(U)),U(U),U(U),A,A,A)><L,U><L,U><L,C(U)><L,C(U)><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                            GHC.Types.IO m)
+                   (chan :: MyNetwork.AMQP.Internal.Channel)
+                   (queueName :: Data.Text.Internal.Text)
+                   (ack :: MyNetwork.AMQP.Ack)
+                   (callback :: (MyNetwork.AMQP.Internal.Message,
+                                 MyNetwork.AMQP.Internal.Envelope)
+                                -> m ())
+                   (cancelled :: MyNetwork.AMQP.Types.ConsumerTag -> m ())
+                   (args :: MyNetwork.AMQP.Types.FieldTable) ->
+                 Control.Monad.Trans.Control.liftBaseWith
+                   @ GHC.Types.IO
+                   @ m
+                   $dMonadBaseControl
+                   @ MyNetwork.AMQP.Types.ConsumerTag
+                   (\ (runInIO :: Control.Monad.Trans.Control.RunInBase
+                                    m GHC.Types.IO)
+                      (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    MyNetwork.AMQP.consumeMsgs3
+                      chan
+                      queueName
+                      ack
+                      (\ (x :: (MyNetwork.AMQP.Internal.Message,
+                                MyNetwork.AMQP.Internal.Envelope))
+                         (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case (runInIO @ () (callback x))
+                              `cast`
+                            (GHC.Types.N:IO[0] <Control.Monad.Trans.Control.StM m ()>_R)
+                              eta1 of ds { (#,#) ipv ipv1 ->
+                       (# ipv, GHC.Tuple.() #) })
+                        `cast`
+                      (<(MyNetwork.AMQP.Internal.Message,
+                         MyNetwork.AMQP.Internal.Envelope)>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      (\ (x :: MyNetwork.AMQP.Types.ConsumerTag)
+                         (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       case (runInIO @ () (cancelled x))
+                              `cast`
+                            (GHC.Types.N:IO[0] <Control.Monad.Trans.Control.StM m ()>_R)
+                              eta1 of ds { (#,#) ipv ipv1 ->
+                       (# ipv, GHC.Tuple.() #) })
+                        `cast`
+                      (<MyNetwork.AMQP.Types.ConsumerTag>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      args
+                      eta)
+                     `cast`
+                   (<Control.Monad.Trans.Control.RunInBase m GHC.Types.IO>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <MyNetwork.AMQP.Types.ConsumerTag>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
